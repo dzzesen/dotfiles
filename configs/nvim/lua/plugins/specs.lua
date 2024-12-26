@@ -7,6 +7,9 @@ local plugin_specs = {
         lazy = false,
         -- make sure to load this before all the other start plugins
         priority = 1000,
+        config = function()
+            vim.cmd("colorscheme kanagawa")
+        end,
     },
 	{
 		"smoka7/hop.nvim",
@@ -65,7 +68,7 @@ local plugin_specs = {
     {
         "derektata/lorem.nvim",
         config = function()
-            require('lorem').opts(lorem_options)
+            require("lorem").opts(lorem_options)
         end
     },
     {
