@@ -3,11 +3,6 @@ require("options")
 require("plugins")
 
 
-vim.keymap.set("n", "f", function() require("hop").hint_words({current_line_only=true}) end)
-vim.keymap.set("n", "F", function() require("hop").hint_words() end)
-vim.keymap.set("v", "f", function() require("hop").hint_words({current_line_only=true}) end)
-vim.keymap.set("v", "F", function() require("hop").hint_words() end)
-
 local on_attach = function(client, bufnr)
 	vim.api.nvim_buf_set_option(bufnr, "omnifunc", "v:lua.vim.lspomnifunc")
 
