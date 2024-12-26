@@ -20,17 +20,10 @@ require("lspconfig").ruff.setup{
 	on_attach = on_attach,
 }
 
-require("mini.icons").setup()
 local which_key = require("which-key")
 which_key.add(
     {
         { "<leader>f", group = "Format" },
-        {
-            "<leader>n",
-            "<cmd>Neotree<cr>",
-            desc = "Neotree",
-            icon = MiniIcons.get("filetype", "neo-tree")
-        },
         { "<leader>t", group = "Telescope" },
         { "<leader>l", "<cmd>Lazy<cr>", desc = "Lazy" },
     }
