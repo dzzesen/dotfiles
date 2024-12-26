@@ -1,5 +1,6 @@
 require("globals") 
 require("options")
+require("configs")
 require("plugins")
 
 
@@ -24,27 +25,6 @@ local which_key = require("which-key")
 which_key.add({
     { "<leader>f", group = "Format" },
 })
-
-vim.api.nvim_create_autocmd(
-    "BufEnter",
-    {pattern = {"*.html", "*.htmldjango"}, command = "setlocal expandtab"}
-)
-vim.api.nvim_create_autocmd(
-    "BufEnter",
-    {pattern = {"*.html", "*.htmldjango"}, command = "setlocal tabstop=2"}
-)
-vim.api.nvim_create_autocmd(
-    "BufEnter",
-    {pattern = {"*.html", "*.htmldjango"}, command = "setlocal softtabstop=2"}
-)
-vim.api.nvim_create_autocmd(
-    "BufEnter",
-    {pattern = {"*.html", "*.htmldjango"}, command = "setlocal shiftwidth=2"}
-)
-vim.api.nvim_create_autocmd(
-    "BufEnter",
-    {pattern = {"*.html", "*.htmldjango"}, command = "echo 'Entering a html file'"}
-)
 
 vim.keymap.set("", "H", "^")
 vim.keymap.set("", "L", "$")
