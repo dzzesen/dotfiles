@@ -20,7 +20,6 @@ require("lspconfig").ruff.setup{
 	on_attach = on_attach,
 }
 
-local resession = require("resession")
 require("mini.icons").setup()
 local which_key = require("which-key")
 which_key.add(
