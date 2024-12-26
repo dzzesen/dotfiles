@@ -1,6 +1,7 @@
 require("globals") 
 require("options")
 require("configs")
+require("mappings")
 require("plugins")
 
 
@@ -25,6 +26,3 @@ local which_key = require("which-key")
 which_key.add({
     { "<leader>f", group = "Format" },
 })
-
-vim.keymap.set("", "H", "^")
-vim.keymap.set("", "L", "$")
