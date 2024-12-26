@@ -20,12 +20,6 @@ require("lspconfig").ruff.setup{
 	on_attach = on_attach,
 }
 
-local builtin = require("telescope.builtin")
-vim.keymap.set("n", "<leader>tf", builtin.find_files, { desc="Find File"})
-vim.keymap.set("n", "<leader>tg", builtin.live_grep, { desc="Live Grep"})
-vim.keymap.set("n", "<leader>tb", builtin.buffers, { desc="Buffers"})
-vim.keymap.set("n", "<leader>th", builtin.help_tags, { desc="Help Tags"})
-
 local resession = require("resession")
 require("mini.icons").setup()
 local which_key = require("which-key")
