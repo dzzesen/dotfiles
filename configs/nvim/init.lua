@@ -21,12 +21,9 @@ require("lspconfig").ruff.setup{
 }
 
 local which_key = require("which-key")
-which_key.add(
-    {
-        { "<leader>f", group = "Format" },
-        { "<leader>l", "<cmd>Lazy<cr>", desc = "Lazy" },
-    }
-)
+which_key.add({
+    { "<leader>f", group = "Format" },
+})
 
 vim.api.nvim_create_autocmd(
     "BufEnter",
