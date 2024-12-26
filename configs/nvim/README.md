@@ -27,6 +27,6 @@
 
 - Plagin manager ([lazy.nvim](https://github.com/folke/lazy.nvim?tab=readme-ov-file))
 
-    Requirements: git, nerd-fonts, luarocks
+>   Requirements: git, nerd-fonts, luarocks
 
 - something

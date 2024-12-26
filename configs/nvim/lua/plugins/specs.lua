@@ -54,7 +54,7 @@ local plugin_specs = {
 	},
 	{
 		"folke/which-key.nvim",
-        lazy = true,
+        lazy = false,
 		dependencies = { "echasnovski/mini.icons" },
 	},
 	{
@@ -82,12 +82,9 @@ local plugin_specs = {
         end
     },
     {
-        "OXY2DEV/markview.nvim",
-        lazy = false,
-        dependencies = {
-            "nvim-treesitter/nvim-treesitter",
-            "nvim-tree/nvim-web-devicons"
-        },
+        "MeanderingProgrammer/render-markdown.nvim",
+        dependencies = { 'nvim-treesitter/nvim-treesitter', 'echasnovski/mini.icons' },
+        opts = {},
     },
 }
 
