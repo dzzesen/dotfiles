@@ -1,10 +1,6 @@
 require("globals") 
 require("options")
-require("plugins.globals")
-require("plugins.lazy")
-require("plugins.specs")
-require("plugins.configs")
-require("plugins.mappings")
+require("plugins")
 
 
 vim.keymap.set("n", "f", function() require("hop").hint_words({current_line_only=true}) end)
