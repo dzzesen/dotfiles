@@ -1,5 +1,12 @@
+local which_key = require("which-key")
 local builtin = require("telescope.builtin")
-vim.keymap.set("n", "<leader>tf", builtin.find_files, { desc="Find File"})
-vim.keymap.set("n", "<leader>tg", builtin.live_grep, { desc="Live Grep"})
-vim.keymap.set("n", "<leader>tb", builtin.buffers, { desc="Buffers"})
-vim.keymap.set("n", "<leader>th", builtin.help_tags, { desc="Help Tags"})
+
+which_key.add(
+    {
+        { "<leader>t", group = "Telescope" },
+        { "<leader>tf", builtin.find_files, desc="Find File" },
+        { "<leader>tg", builtin.live_grep, desc="Live Grep" },
+        { "<leader>tb", builtin.buffers, desc="Buffers" },
+        { "<leader>th", builtin.help_tags, desc="Help Tags" },
+    }
+)

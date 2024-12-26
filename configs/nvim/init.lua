@@ -24,7 +24,6 @@ local which_key = require("which-key")
 which_key.add(
     {
         { "<leader>f", group = "Format" },
-        { "<leader>t", group = "Telescope" },
         { "<leader>l", "<cmd>Lazy<cr>", desc = "Lazy" },
     }
 )
