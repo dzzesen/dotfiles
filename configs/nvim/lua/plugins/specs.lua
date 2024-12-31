@@ -26,11 +26,8 @@ local plugin_specs = {
         opts = {},
     },
     {
-        "willothy/nvim-cokeline",
-        dependencies = {
-            "nvim-lua/plenary.nvim",
-            "nvim-tree/nvim-web-devicons",
-        },
+        "akinsho/bufferline.nvim",
+        dependencies = "nvim-tree/nvim-web-devicons",
         opts = {},
     },
 	{
