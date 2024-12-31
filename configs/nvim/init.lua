@@ -1,8 +1,8 @@
 require("globals") 
 require("options")
+require("plugins")
 require("configs")
 require("mappings")
-require("plugins")
 
 
 local on_attach = function(client, bufnr)
