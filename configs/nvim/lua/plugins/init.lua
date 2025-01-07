@@ -1,5 +1,0 @@
-require("plugins.globals")
-require("plugins.lazy")
-require("plugins.specs")
-require("plugins.configs")
-require("plugins.mappings")

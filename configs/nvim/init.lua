@@ -1,7 +1,5 @@
-require("globals") 
-require("options")
+require("settings")
 require("plugins")
-require("configs")
 require("mappings")
 
 

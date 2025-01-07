@@ -1,3 +1,6 @@
+vim.g.mapleader = ' '
+
+
 vim.opt.encoding = "utf-8"
 vim.opt.fileencoding = "utf-8"
 
@@ -48,3 +51,25 @@ vim.opt.smartcase = true
 
 vim.opt.diffopt = "vertical,filler,closeoff,context:3,internal,indent-heuristic," ..
 "algorithm:histogram,linematch:60"
+
+
+vim.api.nvim_create_autocmd(
+    "BufEnter",
+    {pattern = {"*.html", "*.htmldjango"}, command = "setlocal expandtab"}
+)
+vim.api.nvim_create_autocmd(
+    "BufEnter",
+    {pattern = {"*.html", "*.htmldjango"}, command = "setlocal tabstop=2"}
+)
+vim.api.nvim_create_autocmd(
+    "BufEnter",
+    {pattern = {"*.html", "*.htmldjango"}, command = "setlocal softtabstop=2"}
+)
+vim.api.nvim_create_autocmd(
+    "BufEnter",
+    {pattern = {"*.html", "*.htmldjango"}, command = "setlocal shiftwidth=2"}
+)
+vim.api.nvim_create_autocmd(
+    "BufEnter",
+    {pattern = {"*.html", "*.htmldjango"}, command = "echo 'Entering a html file'"}
+)
