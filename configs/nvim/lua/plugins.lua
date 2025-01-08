@@ -156,8 +156,15 @@ require("lazy").setup({
     },
 	{
 		"neovim/nvim-lspconfig",
-		dependencies = { "williamboman/mason.nvim", "williamboman/mason-lspconfig.nvim" },
+		dependencies = {
+            "williamboman/mason.nvim",
+            "williamboman/mason-lspconfig.nvim",
+            "hrsh7th/cmp-nvim-lsp"
+        },
         config = function()
+            local capabilities = vim.lsp.protocol.make_client_capabilities()
+            capabilities = require("cmp_nvim_lsp").default_capabilities(capabilities)
+
             require("lspconfig").lua_ls.setup{
                 settings = {
                     Lua = {
@@ -172,6 +179,7 @@ require("lazy").setup({
             }
             require("lspconfig").ruff.setup{}
             require("lspconfig").pyright.setup{
+                capabilities = capabilities,
                 settings = {
                     pyright = {
                         disableOrganizeImports = true
@@ -185,6 +193,43 @@ require("lazy").setup({
             }
         end,
 	},
+    {
+        "hrsh7th/nvim-cmp",
+        dependencies = { "hrsh7th/cmp-nvim-lsp" },
+        config = function()
+            local cmp = require("cmp")
+            cmp.setup({
+                complition = {
+                    autocomplete = false,
+                },
+                mapping = cmp.mapping.preset.insert({
+                    ["<C-j>"] = cmp.mapping(function(fallback)
+                        if cmp.visible() then cmp.select_next_item()
+                        else fallback()
+                        end
+                    end),
+                    ["<C-k>"] = cmp.mapping(function(fallback)
+                        if cmp.visible() then cmp.select_prev_item()
+                        else fallback()
+                        end
+                    end),
+                    ["<C-h>"] = cmp.mapping(function(fallback)
+                        if cmp.visible() then cmp.abort()
+                        else fallback()
+                        end
+                    end),
+                    ["<C-l>"] = cmp.mapping(function(fallback)
+                        if cmp.visible() then cmp.confirm({ select=true })
+                        else fallback()
+                        end
+                    end),
+                }),
+                sources = {
+                    { name = "nvim_lsp" },
+                },
+            })
+        end,
+    },
 	{
 		"nvim-telescope/telescope.nvim",
 		tag = '0.1.6',
