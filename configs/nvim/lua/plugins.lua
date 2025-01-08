@@ -33,13 +33,15 @@ local colors = {
 
 require("lazy").setup({
     {
-        "rebelot/kanagawa.nvim",
-        -- make sure we load this during startup if it is your main colorscheme
-        lazy = false,
-        -- make sure to load this before all the other start plugins
+        "catppuccin/nvim",
+        name = "catppuccin",
+		dependencies = { "nvim-tree/nvim-web-devicons" },
         priority = 1000,
         config = function()
-            vim.cmd("colorscheme kanagawa")
+            require("catppuccin").setup({
+                flavour = "macchiato",
+            })
+            vim.cmd("colorscheme catppuccin")
         end,
     },
 	{
@@ -127,8 +129,61 @@ require("lazy").setup({
         lazy = false,
 		dependencies = { "echasnovski/mini.icons" },
 	},
+    {
+        "williamboman/mason.nvim",
+        opts = {
+            ui = {
+                icons = {
+                    package_installed = "✓",
+                    package_pending = "➜",
+                    package_uninstalled = "✗"
+                },
+                width = 0.7,
+                height = 0.8,
+                keymaps = {
+                    install_package = "i",
+                    uninstall_package = "I",
+                },
+            }
+        },
+    },
+    {
+        "williamboman/mason-lspconfig.nvim",
+		dependencies = { "williamboman/mason.nvim" },
+        opts = {
+            ensure_installed = { "ruff", "pyright", "lua_ls" },
+        },
+    },
 	{
 		"neovim/nvim-lspconfig",
+		dependencies = { "williamboman/mason.nvim", "williamboman/mason-lspconfig.nvim" },
+        config = function()
+            require("lspconfig").lua_ls.setup{
+                settings = {
+                    Lua = {
+                        runtime = {
+                            version = "LuaJIT"
+                        },
+                        diagnostics = {
+                            globals = { "vim", "require" }
+                        },
+                    },
+                },
+            }
+            require("lspconfig").ruff.setup{}
+            require("lspconfig").pyright.setup{
+                settings = {
+                    pyright = {
+                        disableOrganizeImports = true
+                    },
+                    python = {
+                        analysis = {
+                            ignore = { "*" }
+                        },
+                    },
+                },
+            }
+        end,
 	},
 	{
 		"nvim-telescope/telescope.nvim",
@@ -155,7 +210,7 @@ require("lazy").setup({
         "nvim-treesitter/nvim-treesitter",
         config = function()
             require("nvim-treesitter.configs").setup({
-                ensure_installed = { 
+                ensure_installed = {
                     "lua",
                     "vim",
                     "vimdoc",
@@ -168,13 +223,6 @@ require("lazy").setup({
                 auto_install = true,
                 highlight = {
                     enable = true,
-                    disable = function(lang, buf)
-                        local max_filesize = 100 * 1024
-                        local ok, stats = pcall(vim.loop.fs_stat, vim.api.nvim_buf_get_name(buf))
-                        if ok and stats and stats.size > max_filesize then
-                            return true
-                        end
-                    end,
                     additional_vim_regex_highlighting = false,
                 },
             })

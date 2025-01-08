@@ -3,7 +3,7 @@ require("plugins")
 require("mappings")
 
 
-local on_attach = function(client, bufnr)
+--[[ local on_attach = function(client, bufnr)
 	vim.api.nvim_buf_set_option(bufnr, "omnifunc", "v:lua.vim.lspomnifunc")
 
 	local bufopts = { noremap=true, silent=true, buffer=bufnr }
@@ -23,4 +23,4 @@ require("lspconfig").ruff.setup{
 local which_key = require("which-key")
 which_key.add({
     { "<leader>f", group = "Format" },
-})
+}) ]]

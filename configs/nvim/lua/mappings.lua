@@ -9,22 +9,22 @@ which_key.add({
     { "<leader>sl", resession.load, desc = "Load" },
     { "<leader>sd", resession.deleta, desc = "Delete" },
 
-    { "<leader>u", group = "Utils" },
-    { "<leader>ul", "<cmd>LoremIpsum words 42 10<cr>", desc = "LoremIpsum" },
+    { "<leader>c", group = "Code" },
+    { "<leader>cl", "<cmd>LoremIpsum words 42 10<cr>", desc = "LoremIpsum" },
 
     { 
         mode = { "n" },
-        { "<leader>u", group = "Utils" },
-        { "<leader>uc", "<Plug>kommentary_line_default", desc = "Comment" },
+        { "<leader>c", group = "Code" },
+        { "<leader>cc", "<Plug>kommentary_line_default", desc = "Comment" },
     },
     { 
         mode = { "x" },
-        { "<leader>u", group = "Utils" },
-        { "<leader>uc", "<Plug>kommentary_visual_default", desc = "Comment" },
+        { "<leader>c", group = "Code" },
+        { "<leader>cc", "<Plug>kommentary_visual_default", desc = "Comment" },
     },
 
-    { "<leader>u", group = "Utils" },
-    { "<leader>um", "<cmd>RenderMarkdown toggle<cr>", desc = "Markdown toggle" },
+    { "<leader>c", group = "Code" },
+    { "<leader>cm", "<cmd>RenderMarkdown toggle<cr>", desc = "Markdown toggle" },
 
     { "f", function() hop.hint_words({current_line_only=true}) end },
     { "F", function() hop.hint_words() end },
@@ -48,7 +48,11 @@ which_key.add({
     {"<c-x>", "<cmd>bdelete<cr>"},
     {"<leader>bp", "<cmd>BufferLineTogglePin<cr>", desc = "Toggle pin buffer"},
 
-    { "<leader>l", "<cmd>Lazy<cr>", desc = "Lazy" },
+    { "<leader>u", group = "Utils" },
+    { "<leader>ul", "<cmd>Lazy<cr>", desc = "Lazy" },
+
+    { "<leader>u", group = "Utils" },
+    { "<leader>um", "<cmd>Mason<cr>", desc = "Mason" },
 
     { "H", "^", desc = "To beginning of line" },
     { "L", "$", desc = "To ending of line" },
