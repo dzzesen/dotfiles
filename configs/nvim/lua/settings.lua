@@ -1,15 +1,15 @@
-vim.g.mapleader = ' '
-
+vim.g.mapleader = " "
 
 vim.opt.encoding = "utf-8"
 vim.opt.fileencoding = "utf-8"
 
 vim.opt.clipboard = "unnamedplus"
 
-vim.opt.wildignore = vim.opt.wildignore + [["*.o,*.obj,*.dylib,*.bin,*.dll,*.exe,"
-"*/.git/*,*/.svn/*,*/__pycache__/*,*/build/**,*.jpg,*.png,*.jpeg,*.bmp,*.gif,*.tiff,"
-"*.svg,*.ico,*.pyc,*.pkl,*.DS_Store,*.aux,*.bbl,*.blg,*.brf,*.fls,*.fdb_latexmk,"
-"*.synctex.gz,*.xdv"]]
+vim.opt.wildignore = vim.opt.wildignore
+	+ [["*.o,*.obj,*.dylib,*.bin,*.dll,*.exe,"
+    "*/.git/*,*/.svn/*,*/__pycache__/*,*/build/**,*.jpg,*.png,*.jpeg,*.bmp,*.gif,"
+    "*.tiff,*.svg,*.ico,*.pyc,*.pkl,*.DS_Store,*.aux,*.bbl,*.blg,*.brf,*.fls,"
+    "*.fdb_latexmk,*.synctex.gz,*.xdv"]]
 
 vim.opt.completeopt = vim.opt.completeopt + "popup,noselect"
 vim.opt.shortmess = vim.opt.shortmess + "cIs"
@@ -49,27 +49,9 @@ vim.opt.matchpairs = vim.opt.matchpairs + "<:>,':',\":\""
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
-vim.opt.diffopt = "vertical,filler,closeoff,context:3,internal,indent-heuristic," ..
-"algorithm:histogram,linematch:60"
+vim.opt.diffopt = "vertical,filler,closeoff,context:3,internal,indent-heuristic,algorithm:histogram,linematch:60"
 
-
-vim.api.nvim_create_autocmd(
-    "BufEnter",
-    {pattern = {"*.html", "*.htmldjango"}, command = "setlocal expandtab"}
-)
-vim.api.nvim_create_autocmd(
-    "BufEnter",
-    {pattern = {"*.html", "*.htmldjango"}, command = "setlocal tabstop=2"}
-)
-vim.api.nvim_create_autocmd(
-    "BufEnter",
-    {pattern = {"*.html", "*.htmldjango"}, command = "setlocal softtabstop=2"}
-)
-vim.api.nvim_create_autocmd(
-    "BufEnter",
-    {pattern = {"*.html", "*.htmldjango"}, command = "setlocal shiftwidth=2"}
-)
-vim.api.nvim_create_autocmd(
-    "BufEnter",
-    {pattern = {"*.html", "*.htmldjango"}, command = "echo 'Entering a html file'"}
-)
+vim.api.nvim_create_autocmd("BufEnter", { pattern = { "*.html", "*.htmldjango" }, command = "setlocal expandtab" })
+vim.api.nvim_create_autocmd("BufEnter", { pattern = { "*.html", "*.htmldjango" }, command = "setlocal tabstop=2" })
+vim.api.nvim_create_autocmd("BufEnter", { pattern = { "*.html", "*.htmldjango" }, command = "setlocal softtabstop=2" })
+vim.api.nvim_create_autocmd("BufEnter", { pattern = { "*.html", "*.htmldjango" }, command = "setlocal shiftwidth=2" })
