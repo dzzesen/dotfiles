@@ -2,6 +2,7 @@ local which_key = require("which-key")
 local resession = require("resession")
 local hop = require("hop")
 local builtin = require("telescope.builtin")
+local conform = require("conform")
 
 which_key.add({
     { "<leader>s", group = "Session" },
@@ -43,10 +44,13 @@ which_key.add({
     },
 
     { "<leader>b", group = "Bufferline" },
-    {"<c-l>", "<cmd>BufferLineCycleNext<cr>"},
-    {"<c-h>", "<cmd>BufferLineCyclePrev<cr>"},
-    {"<c-x>", "<cmd>bdelete<cr>"},
-    {"<leader>bp", "<cmd>BufferLineTogglePin<cr>", desc = "Toggle pin buffer"},
+    { "<c-l>", "<cmd>BufferLineCycleNext<cr>" },
+    { "<c-h>", "<cmd>BufferLineCyclePrev<cr>" },
+    { "<c-x>", "<cmd>bdelete<cr>" },
+    { "<leader>bp", "<cmd>BufferLineTogglePin<cr>", desc = "Toggle pin buffer" },
+
+    { "<leader>f", group = "Format" },
+    { "<leader>ff", conform.format, desc = "File" },
 
     { "<leader>u", group = "Utils" },
     { "<leader>ul", "<cmd>Lazy<cr>", desc = "Lazy" },

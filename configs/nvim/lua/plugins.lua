@@ -128,6 +128,9 @@ require("lazy").setup({
 		"folke/which-key.nvim",
         lazy = false,
 		dependencies = { "echasnovski/mini.icons" },
+        config = function ()
+            require("mini.icons").setup()
+        end,
 	},
     {
         "williamboman/mason.nvim",
@@ -172,7 +175,7 @@ require("lazy").setup({
                             version = "LuaJIT"
                         },
                         diagnostics = {
-                            globals = { "vim", "require" }
+                            globals = { "vim", "require", "MiniIcons" }
                         },
                     },
                 },
@@ -230,6 +233,16 @@ require("lazy").setup({
             })
         end,
     },
+    {
+        "stevearc/conform.nvim",
+        config = function ()
+            require("conform").setup({
+                formatters_by_ft = {
+                    lua = { "stylua" }
+                }
+            })
+        end,
+    },
 	{
 		"nvim-telescope/telescope.nvim",
 		tag = '0.1.6',
@@ -282,9 +295,6 @@ require("lazy").setup({
 })
 
 
-require("mini.icons").setup()
-
-
 local resession = require("resession")
 
 
@@ -305,7 +315,7 @@ end
 
 local function load_last_session()
     if vim.fn.argc(-1) == 0 then
-        name = get_session_name()
+        local name = get_session_name()
         resession.load(name, { dir = "dirsession", silence_errors = true })
     end
 end
