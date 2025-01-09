@@ -238,7 +238,8 @@ require("lazy").setup({
         config = function ()
             require("conform").setup({
                 formatters_by_ft = {
-                    lua = { "stylua" }
+                    lua = { "stylua" },
+                    python = { "ruff_fix", "ruff_format", "ruff_organize_imports" },
                 }
             })
         end,
