@@ -156,7 +156,7 @@ require("lazy").setup({
 		"williamboman/mason-lspconfig.nvim",
 		dependencies = { "williamboman/mason.nvim" },
 		opts = {
-			ensure_installed = { "ruff", "pyright", "lua_ls" },
+			ensure_installed = { "ruff", "pyright", "lua_ls", "rust_analyzer" },
 		},
 	},
 	{
@@ -196,6 +196,7 @@ require("lazy").setup({
 					},
 				},
 			})
+			require("lspconfig").rust_analyzer.setup({})
 		end,
 	},
 	{
@@ -204,9 +205,6 @@ require("lazy").setup({
 		config = function()
 			local cmp = require("cmp")
 			cmp.setup({
-				complition = {
-					autocomplete = false,
-				},
 				mapping = cmp.mapping.preset.insert({
 					["<C-j>"] = cmp.mapping(function(fallback)
 						if cmp.visible() then
@@ -250,6 +248,7 @@ require("lazy").setup({
 				formatters_by_ft = {
 					lua = { "stylua" },
 					python = { "ruff_fix", "ruff_format", "ruff_organize_imports" },
+                    rust = { "rust_analyzer" },
 				},
 			})
 		end,
@@ -287,6 +286,7 @@ require("lazy").setup({
 					"markdown_inline",
 					"html",
 					"python",
+                    "rust",
 				},
 				sync_install = true,
 				auto_install = true,
