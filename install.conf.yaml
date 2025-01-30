@@ -27,6 +27,8 @@
       path: configs/qutebrowser/userscripts/translate
     ~/.config/rofi/config.rasi:
       path: configs/rofi/config.rasi
+    ~/.local/share/rofi/themes/catppuccin-macchiato.rasi:
+      path: configs/rofi/catppuccin-macchiato.rasi
     ~/.config/nvim:
       path: configs/nvim
     ~/.config/ptpython/config.py:
