@@ -156,7 +156,14 @@ require("lazy").setup({
 		"williamboman/mason-lspconfig.nvim",
 		dependencies = { "williamboman/mason.nvim" },
 		opts = {
-			ensure_installed = { "ruff", "pyright", "lua_ls", "rust_analyzer" },
+			ensure_installed = {
+				"ruff",
+				"pyright",
+				"lua_ls",
+				"rust_analyzer",
+				"html",
+				"emmet_language_server",
+			},
 		},
 	},
 	{
@@ -169,6 +176,7 @@ require("lazy").setup({
 		config = function()
 			local capabilities = vim.lsp.protocol.make_client_capabilities()
 			capabilities = require("cmp_nvim_lsp").default_capabilities(capabilities)
+			capabilities.textDocument.completion.completionItem.snippetSupport = true
 
 			require("lspconfig").lua_ls.setup({
 				settings = {
@@ -197,6 +205,8 @@ require("lazy").setup({
 				},
 			})
 			require("lspconfig").rust_analyzer.setup({})
+			require("lspconfig").html.setup({ capabilities = capabilities })
+			require("lspconfig").emmet_language_server.setup({})
 		end,
 	},
 	{
@@ -248,7 +258,7 @@ require("lazy").setup({
 				formatters_by_ft = {
 					lua = { "stylua" },
 					python = { "ruff_fix", "ruff_format", "ruff_organize_imports" },
-                    rust = { "rust_analyzer" },
+					rust = { "rust_analyzer" },
 				},
 			})
 		end,
@@ -286,7 +296,7 @@ require("lazy").setup({
 					"markdown_inline",
 					"html",
 					"python",
-                    "rust",
+					"rust",
 				},
 				sync_install = true,
 				auto_install = true,
