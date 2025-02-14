@@ -22,8 +22,8 @@ You can run these installation command safely multiple times.
 ## Modules
 
 - Icon Them: [papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
-- Terminal: [kitty](https://sw.kovidgoyal.net/kitty/)
+- Terminal: [wezterm](https://wezterm.org)
 - Shell: [zsh](https://www.zsh.org/)
+- Command line prompt: [Starship](https://starship.rs)
 - Code editor: [neovim](https://neovim.io/)
 - Display/Login manager: [sddm](https://github.com/sddm/sddm)
-- Command line prompt: [Starship](https://starship.rs)

@@ -1,8 +1,9 @@
 local wezterm = require("wezterm")
+local color_scheme = require("color_scheme")
 local config = {}
 
+color_scheme.apply_to_config(config)
 config.font = wezterm.font("Hack Nerd Font")
-config.color_scheme = "Catppuccin Macchiato"
 config.scrollback_lines = 30000
 config.enable_scroll_bar = false
 
