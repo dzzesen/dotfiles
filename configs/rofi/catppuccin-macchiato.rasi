@@ -8,8 +8,8 @@
     fg-col2: #ed8796;
     grey: #6e738d;
 
-    width: 600;
-    font: "JetBrainsMono Nerd Font 14";
+    width: 700;
+    font: "Hack Nerd Font 16";
 }
 
 element-text, element-icon , mode-switcher {
@@ -18,7 +18,7 @@ element-text, element-icon , mode-switcher {
 }
 
 window {
-    height: 360px;
+    height: 450px;
     border: 3px;
     border-radius: 5px;
     border-color: @border-col;
@@ -72,7 +72,7 @@ element {
 }
 
 element-icon {
-    size: 25px;
+    size: 50px;
 }
 
 element selected {
@@ -88,8 +88,6 @@ button {
     padding: 10px;
     background-color: @bg-col-light;
     text-color: @grey;
-    vertical-align: 0.5; 
-    horizontal-align: 0.5;
 }
 
 button selected {
