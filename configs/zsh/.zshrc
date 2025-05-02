@@ -16,11 +16,6 @@ HISTSIZE=10000
 SAVEHIST=10000
 
 
-alias confzsh="nvim $HOME/.dotfiles/configs/zsh/.zshrc"
-alias confstarship="nvim $HOME/.dotfiles/configs/starship/starship.toml"
-alias confkitty="nvim $HOME/.dotfiles/configs/kitty/kitty.conf"
-alias confqutebrowser="nvim $HOME/.dotfiles/configs/qutebrowser/config.py"
-
 alias apv="source .venv/bin/activate"
 alias dpv="deactivate"
 
