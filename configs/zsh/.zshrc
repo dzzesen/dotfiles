@@ -14,6 +14,8 @@ HISTSIZE=10000
 SAVEHIST=10000
 
 
+alias fm="yazi"
+
 alias apv="source .venv/bin/activate"
 alias dpv="deactivate"
 
