@@ -2,8 +2,6 @@ PATH=$HOME/.local/bin:$PATH
 
 export PIPENV_VENV_IN_PROJECT=1
 
-# Set up Node Version Manager
-source /usr/share/nvm/init-nvm.sh
 
 eval "$(starship init zsh)"
 
