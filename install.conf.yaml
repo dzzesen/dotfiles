@@ -26,6 +26,9 @@
       path: ~/.config/systemd/user/swaybg.service
     ~/.config/systemd/user/niri.service.wants/swayidle.service:
       path: ~/.config/systemd/user/swayidle.service
+    ~/.config/niri/config.kdl:
+      path: configs/niri/config.kdl
+      force: true
     ~/.config/kitty:
       path: configs/kitty
     ~/.config/wezterm:
