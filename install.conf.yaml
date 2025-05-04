@@ -23,10 +23,6 @@
       path: configs/zsh/.zshrc
     ~/.config/starship.toml:
       path: configs/starship/starship.toml
-    ~/.config/qutebrowser/config.py:
-      path: configs/qutebrowser/config.py
-    ~/.local/share/qutebrowser/userscripts/translate:
-      path: configs/qutebrowser/userscripts/translate
     ~/.config/rofi/config.rasi:
       path: configs/rofi/config.rasi
     ~/.local/share/rofi/themes/catppuccin-macchiato.rasi:
@@ -37,10 +33,6 @@
       path: configs/ptpython/config.py
 
 - shell:
-  - 
-    command: git submodule update --init --recursive
-    description: Installing dotbot
-    stdout: true
-  -
-    command: chmod +x ~/.local/share/qutebrowser/userscripts/translate
-    description: Make qutebrowser scripts executable
+    - command: git submodule update --init --recursive
+      description: Installing dotbot
+      stdout: true
