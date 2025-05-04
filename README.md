@@ -21,8 +21,12 @@ You can run these installation command safely multiple times.
 
 ## Modules
 
-- Compositor
-- Icon Them: [papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
+- Compositor: [niri](https://github.com/YaLTeR/niri)
+- Status bar: [waybar](https://github.com/Alexays/Waybar)
+- Wallpaper: [swaybg](https://github.com/swaywm/swaybg)
+- Notification daemon: [mako](https://github.com/emersion/mako)
+- Idle managment daemon: [swayidle](https://github.com/swaywm/swayidle)
+- Icon theme: [papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
 - Terminal: [wezterm](https://wezterm.org)
 - Shell: [zsh](https://www.zsh.org/)
 <!-- - Shell: [nushell](https://www.nushell.sh) -->
@@ -30,6 +34,5 @@ You can run these installation command safely multiple times.
 <!-- - Code editor: [neovim](https://neovim.io/) -->
 - Code editor: [zed](https://zed.dev)
 - Display/Login manager: [ly](https://codeberg.org/AnErrupTion/ly)
-<!-- - Display/Login manager: [sddm](https://github.com/sddm/sddm) -->
-<!-- - Display/Login manager: [lemurs](https://github.com/coastalwhite/lemurs) -->
 - File manager: [yazi](https://yazi-rs.github.io)
+- Browser: [vivaldi](https://vivaldi.com)

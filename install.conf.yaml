@@ -7,15 +7,23 @@
     ~/:
     ~/.config:
 
+- shell:
+    - command: rm -rf ~/.config/systemd/user/niri.service.wants
+    - command: mkdir ~/.config/systemd/user/niri.service.wants
+
 - link:
     ~/.dotfiles:
       path: ""
     ~/.gitconfig:
       path: configs/git/gitconfig
+    ~/.config/systemd/user/swaybg.service:
+      path: configs/swaybg/swaybg.service
+    ~/.config/systemd/user/swayidle.service:
+      path: configs/swayidle/swayidle.service
     ~/.config/qtile:
       path: configs/qtile
       force: true
-    ~/.config/kitty: 
+    ~/.config/kitty:
       path: configs/kitty
     ~/.config/wezterm:
       path: configs/wezterm
@@ -36,3 +44,8 @@
     - command: git submodule update --init --recursive
       description: Installing dotbot
       stdout: true
+    - command: systemctl --user daemon-reload
+    - command: ln -s /usr/lib/systemd/user/waybar.service ~/.config/systemd/user/niri.service.wants/
+    - command: ln -s /usr/lib/systemd/user/mako.service ~/.config/systemd/user/niri.service.wants/
+    - command: ln -s ~/.config/systemd/user/swaybg.service ~/.config/systemd/user/niri.service.wants/
+    - command: ln -s ~/.config/systemd/user/swayidle.service ~/.config/systemd/user/niri.service.wants/
