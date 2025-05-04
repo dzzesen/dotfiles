@@ -1,8 +1,0 @@
-[SddmGreeterTheme]
-Name=My light theme
-Description=My light theme for SDDM
-Author=dzesen
-Type=sddm-theme
-MainScript=Main.qml
-ConfigFile=theme.conf
-QtVersion=6
