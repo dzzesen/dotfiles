@@ -5,16 +5,22 @@
 
 - clean:
     /etc/keyd:
-    /etc/sddm.conf.d:
+    # /etc/sddm.conf.d:
+    /etc/ly/config.ini:
+
+- shell:
+    - command: sudo rm /etc/ly/config.ini
 
 - link:
     /etc/keyd/default.conf:
       path: configs/keyd/default.conf
-    /etc/sddm.conf.d/sddm.conf:
-      path: configs/sddm/sddm.conf
+    # /etc/sddm.conf.d/sddm.conf:
+    #   path: configs/sddm/sddm.conf
+    /etc/ly/config.ini:
+      path: configs/ly/config.ini
 
 - shell:
     - command: sudo keyd reload
     - command: sudo chsh -s $(which zsh)
-    - command: sudo rm -rf /usr/share/sddm/themes/light-theme
-    - command: sudo cp -r configs/sddm/themes/light-theme /usr/share/sddm/themes/light-theme
+    # - command: sudo rm -rf /usr/share/sddm/themes/light-theme
+    # - command: sudo cp -r configs/sddm/themes/light-theme /usr/share/sddm/themes/light-theme

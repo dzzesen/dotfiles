@@ -21,9 +21,15 @@ You can run these installation command safely multiple times.
 
 ## Modules
 
+- Compositor
 - Icon Them: [papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
 - Terminal: [wezterm](https://wezterm.org)
 - Shell: [zsh](https://www.zsh.org/)
+<!-- - Shell: [nushell](https://www.nushell.sh) -->
 - Command line prompt: [Starship](https://starship.rs)
-- Code editor: [neovim](https://neovim.io/)
-- Display/Login manager: [sddm](https://github.com/sddm/sddm)
+<!-- - Code editor: [neovim](https://neovim.io/) -->
+- Code editor: [zed](https://zed.dev)
+- Display/Login manager: [ly](https://codeberg.org/AnErrupTion/ly)
+<!-- - Display/Login manager: [sddm](https://github.com/sddm/sddm) -->
+<!-- - Display/Login manager: [lemurs](https://github.com/coastalwhite/lemurs) -->
+- File manager: [yazi](https://yazi-rs.github.io)
