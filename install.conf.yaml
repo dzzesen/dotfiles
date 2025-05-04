@@ -6,10 +6,8 @@
 - clean:
     ~/:
     ~/.config:
-
-- shell:
-    - command: rm -rf ~/.config/systemd/user/niri.service.wants
-    - command: mkdir ~/.config/systemd/user/niri.service.wants
+    ~/.config/systemd/user:
+    ~/.config/systemd/user/niri.service.wants:
 
 - link:
     ~/.dotfiles:
@@ -20,6 +18,14 @@
       path: configs/swaybg/swaybg.service
     ~/.config/systemd/user/swayidle.service:
       path: configs/swayidle/swayidle.service
+    ~/.config/systemd/user/niri.service.wants/waybar.service:
+      path: /usr/lib/systemd/user/waybar.service
+    ~/.config/systemd/user/niri.service.wants/mako.service:
+      path: /usr/lib/systemd/user/mako.service
+    ~/.config/systemd/user/niri.service.wants/swaybg.service:
+      path: ~/.config/systemd/user/swaybg.service
+    ~/.config/systemd/user/niri.service.wants/swayidle.service:
+      path: ~/.config/systemd/user/swayidle.service
     ~/.config/kitty:
       path: configs/kitty
     ~/.config/wezterm:
@@ -42,7 +48,3 @@
       description: Installing dotbot
       stdout: true
     - command: systemctl --user daemon-reload
-    - command: ln -s /usr/lib/systemd/user/waybar.service ~/.config/systemd/user/niri.service.wants/
-    - command: ln -s /usr/lib/systemd/user/mako.service ~/.config/systemd/user/niri.service.wants/
-    - command: ln -s ~/.config/systemd/user/swaybg.service ~/.config/systemd/user/niri.service.wants/
-    - command: ln -s ~/.config/systemd/user/swayidle.service ~/.config/systemd/user/niri.service.wants/
