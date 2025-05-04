@@ -20,9 +20,6 @@
       path: configs/swaybg/swaybg.service
     ~/.config/systemd/user/swayidle.service:
       path: configs/swayidle/swayidle.service
-    ~/.config/qtile:
-      path: configs/qtile
-      force: true
     ~/.config/kitty:
       path: configs/kitty
     ~/.config/wezterm:
