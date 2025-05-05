@@ -29,6 +29,10 @@
     ~/.config/niri/config.kdl:
       path: configs/niri/config.kdl
       force: true
+    ~/.config/waybar/config.jsonc:
+      path: configs/waybar/config.jsonc
+    ~/.config/waybar/style.css:
+      path: configs/waybar/style.css
     ~/.config/kitty:
       path: configs/kitty
     ~/.config/wezterm:
