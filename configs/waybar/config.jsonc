@@ -1,72 +1,84 @@
 {
   "layer": "top",
-  "spacing": 0,
+  "spacing": 8,
   "height": 0,
 
   "margin-top": 10,
-  "margin-right": 20,
+  "margin-right": 10,
   "margin-bottom": 0,
-  "margin-left": 20,
+  "margin-left": 10,
 
-  "modules-left": ["custom/launcher", "niri/workspaces"],
+  "modules-left": ["custom/launcher", "cpu", "niri/workspaces"],
 
   "modules-center": ["clock"],
 
   "modules-right": [
     "tray",
     "niri/language",
-    "cpu",
-    "battery",
-    "backlight",
     "pulseaudio",
+    "backlight",
+    "battery",
   ],
 
-  "backlight": {
-    "format": " {icon}",
-    "format-icons": ["󰃞 ", "󰃟 ", "󰃝 ", "󰃠 "],
-    "tooltip-format": "{percent}%",
-    "on-click": "",
-    "on-scroll-up": "brightnessctl s +5%",
-    "on-scroll-down": "brightnessctl s 5%-",
-  },
   "custom/launcher": {
     "format": " ",
     "on-click": "fuzzel",
     "tooltip": false,
   },
 
+  "cpu": {
+    "interval": 1,
+    "min-length": 6,
+    "format": "{icon} {usage}%",
+    "format-icons": ["󱙺 ", "󱚠 ", "󱚢 "],
+    "states": {
+      "warning": 50,
+      "critical": 85,
+    },
+    "on-click": "kitty -e btop",
+  },
+
   "niri/workspaces": {
     "disable-scroll": true,
-    "all-outputs": true,
     "tooltip": false,
+  },
+
+  "clock": {
+    "interval": 1,
+    "format": "{:%T (%Z) - %A, %d %b %Y}",
+    "timezones": ["Europe/Minsk", "Europe/Warsaw", "America/Los_Angeles"],
+    "tooltip-format": "<tt>{calendar}</tt>",
+    "calendar": {
+      "mode": "year",
+      "mode-mon-col": 4,
+      "weeks-pos": "left",
+      "format": {
+        "months": "<span color='#c6a0f6'><b>{}</b></span>",
+        "days": "<span color='#cad3f5'><b>{}</b></span>",
+        "weeks": "<span color='#8bd5ca'><b>{}</b></span>",
+        "weekdays": "<span color='#eed49f'><b>{}</b></span>",
+        "today": "<span color='#ee99a0'><b><u>{}</u></b></span>",
+      },
+    },
+    "actions": {
+      "on-click-middle": "tz_up",
+      "on-click": "shift_down",
+      "on-click-right": "shift_up",
+    },
+  },
+
+  "backlight": {
+    "format": "{icon}{percent}%",
+    "format-icons": ["󰃞 ", "󰃟 ", "󰃝 ", "󰃠 "],
+    "tooltip-format": "{percent}%",
+    "on-click": "",
+    "on-scroll-up": "brightnessctl s +1%",
+    "on-scroll-down": "brightnessctl s 1%-",
   },
 
   "tray": {
     "spacing": 10,
     "tooltip": false,
-  },
-
-  "clock": {
-    "format": "{:%H:%M - %a, %d %b %Y}",
-    "tooltip": false,
-  },
-
-  "cpu": {
-    "format": "cpu {usage}%",
-    "interval": 2,
-
-    "states": {
-      "critical": 90,
-    },
-  },
-
-  "memory": {
-    "format": "mem {percentage}%",
-    "interval": 2,
-
-    "states": {
-      "critical": 80,
-    },
   },
 
   "battery": {
@@ -76,14 +88,6 @@
       "warning": 20,
       "critical": 10,
     },
-    "tooltip": false,
-  },
-
-  "network": {
-    "format-wifi": "wifi {bandwidthDownBits}",
-    "format-ethernet": "enth {bandwidthDownBits}",
-    "format-disconnected": "no network",
-    "interval": 5,
     "tooltip": false,
   },
 
@@ -100,13 +104,4 @@
   "niri/language": {
     "format": "{short}",
   },
-
-  "custom/control": {
-    "format": " ",
-    "on-click": "control",
-    "on-click-right": "killall control",
-    "tooltip": false,
-  },
-
-  "reload_on_style_change": true,
 }

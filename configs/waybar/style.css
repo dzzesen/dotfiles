@@ -1,5 +1,5 @@
 * {
-    font-family: "Hack Nerd Font Mono";
+    font-family: "Symbols Nerd Font", "Hack Nerd Font Mono";
     font-weight: 500;
     font-size: 20px;
 }
@@ -19,100 +19,42 @@ tooltip label {
     margin: 4px;
 }
 
-#clock,
-#tray,
-#cpu,
-#battery,
-#pulseaudio,
-#language {
-    margin: 5px 5px 5px 5px;
-    padding: 2px 8px;
-    border-radius: 6px;
-}
-
-#workspaces {
-    margin: 5px 5px 5px 5px;
-}
-
-#workspaces button {
-    all: initial;
-    padding: 2px 8px;
-    color: #0da51f;
-    background-color: #120f19;
-    border: 2px solid #0da51f;
-    border-radius: 4px;
-    margin-right: 2px;
-}
-
-#workspaces button.active {
-    color: #000000;
-    background-color: #0da51f;
-}
-
-#workspaces button.urgent {
-    background-color: #a095f3;
-    color: #000000;
-    border: 2px solid #a095f3;
-}
-
-#clock {
-    background-color: #0da51f;
-    border: 2px solid #120f19;
-    color: #000000;
-}
-
 #cpu,
 #memory,
 #network,
 #pulseaudio,
 #battery,
 #tray,
-#language {
-    background-color: #120f19;
-    border: 2px solid #0da51f;
-    color: #0da51f;
+#language,
+#clock,
+#backlight,
+#workspaces button {
+    margin: 3px 0 3px;
+    padding: 4px 8px;
+    color: #cad3f5;
+    background-color: #1e2030;
+    border: 2px solid #494d64;
+    border-radius: 6px;
 }
 
-#network {
-    min-width: 100px;
+#workspaces button {
+    margin-right: 2px;
 }
 
-#cpu,
-#memory,
-#battery,
-#pulseaudio {
-    min-width: 60px;
+#workspaces button.active {
+    border-color: #c6a0f6;
+}
+
+#battery.warning {
+    border-color: #f5a97f;
 }
 
 #cpu.critical,
-#memory.critical {
-    color: #a095f3;
-    border: 2px solid #a095f3;
-}
-
-#battery.warning,
-#battery.critical,
-#battery.urgent {
-    color: #a095f3;
-    border: 2px solid #a095f3;
+#battery.critical {
+    border-color: #ed8796;
 }
 
 #custom-launcher {
-    font-size: 20px;
-    padding-left: 10px;
-    padding-right: 5px;
-    transition: none;
-    color: #0da51f;
-}
-
-#custom-control {
-    font-size: 20px;
-    padding-left: 5px;
-    padding-right: 5px;
-    transition: none;
-    color: #0da51f;
-}
-
-#language {
-    min-width: 20px;
+    font-size: 28px;
+    margin-left: 18px;
 }
