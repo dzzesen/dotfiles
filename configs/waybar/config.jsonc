@@ -21,6 +21,14 @@
     "pulseaudio",
   ],
 
+  "backlight": {
+    "format": " {icon}",
+    "format-icons": ["󰃞 ", "󰃟 ", "󰃝 ", "󰃠 "],
+    "tooltip-format": "{percent}%",
+    "on-click": "",
+    "on-scroll-up": "brightnessctl s +5%",
+    "on-scroll-down": "brightnessctl s 5%-",
+  },
   "custom/launcher": {
     "format": " ",
     "on-click": "fuzzel",

@@ -36,3 +36,4 @@ You can run these installation command safely multiple times.
 - Display/Login manager: [ly](https://codeberg.org/AnErrupTion/ly)
 - File manager: [yazi](https://yazi-rs.github.io)
 - Browser: [vivaldi](https://vivaldi.com)
+- Brightness: [brightnesctl](https://github.com/Hummer12007/brightnessctl)
