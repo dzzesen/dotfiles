@@ -20,7 +20,8 @@ tooltip label {
 
 #custom-launcher {
     font-size: 28px;
-    margin-left: 10px;
+    margin-left: 14px;
+    margin-top: 4px;
 }
 
 #tray,
@@ -47,12 +48,8 @@ tooltip label {
 #language,
 #clock,
 #backlight {
-    margin: 3px 0 3px;
+    margin: 5px 0;
     padding: 4px 8px;
-}
-
-#workspaces button.active {
-    border-color: #c6a0f6;
 }
 
 #battery.warning {
@@ -65,28 +62,30 @@ tooltip label {
 }
 
 #workspaces button {
-    margin: 2px 4px;
+    margin: 2px 5px;
     padding: 4px 0px;
 }
 
+#workspaces button.active {
+    border-color: #c6a0f6;
+}
+
 #workspaces {
-    margin-top: 10px;
+    margin-top: 8px;
 }
 
 #tray {
-    margin: 2px 4px;
-    padding: 10px 0px;
-}
-
-#cpu {
-    margin-left: 5px;
+    margin: 0px 5px 10px;
+    padding: 16px 0px;
 }
 
 #battery {
     margin-right: 10px;
 }
 
-#tray:hover,
+#taskbar {
+}
+
 #cpu:hover,
 #memory:hover,
 #network:hover,

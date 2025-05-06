@@ -3,6 +3,7 @@
     "name": "topbar",
     "layer": "top",
     "position": "top",
+    "height": 50,
     "spacing": 8,
 
     "modules-left": ["custom/launcher", "cpu"],
@@ -96,6 +97,7 @@
     "name": "leftbar",
     "layer": "top",
     "position": "left",
+    "width": 50,
     "spacing": 8,
 
     "modules-left": ["niri/workspaces"],
@@ -119,8 +121,8 @@
     },
 
     "tray": {
-      "spacing": 10,
-      "tooltip": false,
+      "spacing": 16,
+      "icon-size": 26,
     },
   },
 ]
