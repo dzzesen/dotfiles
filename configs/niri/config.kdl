@@ -250,7 +250,7 @@ layout {
 // See the binds section below for more spawn examples.
 // spawn-at-startup "alacritty" "-e" "fish"
 spawn-at-startup "xwayland-satellite" ":13"
-spawn-at-startup "xhost" "si:localuser:root"
+spawn-at-startup "sh" "/home/dzesen/.dotfiles/configs/niri/xhost.sh"
 spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 spawn-at-startup "kitty"
 

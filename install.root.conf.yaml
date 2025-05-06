@@ -15,6 +15,9 @@
       path: configs/keyd/default.conf
     /etc/ly/config.ini:
       path: configs/ly/config.ini
+    /etc/pam.d/ly:
+      path: configs/ly/pam
+      force: true
 
 - shell:
     - command: sudo keyd reload
