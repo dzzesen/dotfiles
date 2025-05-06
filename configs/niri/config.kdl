@@ -249,10 +249,13 @@ layout {
 // which may be more convenient to use.
 // See the binds section below for more spawn examples.
 // spawn-at-startup "alacritty" "-e" "fish"
-spawn-at-startup "kitty"
 spawn-at-startup "xwayland-satellite" ":13"
+spawn-at-startup "xhost" "si:localuser:root"
+spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
+spawn-at-startup "kitty"
 
 environment {
+    XAUTHORITY "$HOME/.Xauthority"
     DISPLAY ":13"
 }
 
