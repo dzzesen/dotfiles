@@ -18,26 +18,37 @@ tooltip label {
     margin: 4px;
 }
 
+#custom-launcher {
+    font-size: 28px;
+    margin-left: 10px;
+}
+
+#tray,
 #cpu,
 #memory,
 #network,
 #pulseaudio,
 #battery,
-#tray,
 #language,
 #clock,
 #backlight,
 #workspaces button {
-    margin: 3px 0 3px;
-    padding: 4px 8px;
     color: #cad3f5;
     background-color: #1e2030;
     border: 2px solid #494d64;
     border-radius: 6px;
 }
 
-#workspaces button {
-    margin-right: 2px;
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#battery,
+#language,
+#clock,
+#backlight {
+    margin: 3px 0 3px;
+    padding: 4px 8px;
 }
 
 #workspaces button.active {
@@ -53,7 +64,37 @@ tooltip label {
     border-color: #ed8796;
 }
 
-#custom-launcher {
-    font-size: 28px;
-    margin-left: 18px;
+#workspaces button {
+    margin: 2px 4px;
+    padding: 4px 0px;
+}
+
+#workspaces {
+    margin-top: 10px;
+}
+
+#tray {
+    margin: 2px 4px;
+    padding: 10px 0px;
+}
+
+#cpu {
+    margin-left: 5px;
+}
+
+#battery {
+    margin-right: 10px;
+}
+
+#tray:hover,
+#cpu:hover,
+#memory:hover,
+#network:hover,
+#pulseaudio:hover,
+#battery:hover,
+#language:hover,
+#clock:hover,
+#backlight:hover,
+#workspaces button:hover {
+    border-color: #c6a0f6;
 }

@@ -9,13 +9,7 @@
 
     "modules-center": ["clock"],
 
-    "modules-right": [
-      "tray",
-      "niri/language",
-      "pulseaudio",
-      "backlight",
-      "battery",
-    ],
+    "modules-right": ["niri/language", "pulseaudio", "backlight", "battery"],
 
     "custom/launcher": {
       "format": " ",
