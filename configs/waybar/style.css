@@ -79,6 +79,18 @@ tooltip label {
     padding: 16px 0px;
 }
 
+#pulseaudio {
+    min-width: 70px;
+}
+
+#pulseaudio.bluetooth {
+    min-width: 90px;
+}
+
+#pulseaudio.muted {
+    min-width: 0;
+}
+
 #battery {
     margin-right: 10px;
 }

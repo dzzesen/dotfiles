@@ -62,13 +62,14 @@
     },
 
     "pulseaudio": {
-      "scroll-step": 5,
-      "max-volume": 150,
-      "format": "vol {volume}%",
-      "format-bluetooth": "vol {volume}%",
-      "nospacing": 1,
-      "on-click": "pwvucontrol",
-      "tooltip": false,
+      "format": "{icon} {volume}",
+      "format-bluetooth": "󰂱 {icon} {volume}",
+      "format-muted": "  ",
+      "format-icons": [" ", " ", " ", " ", " "],
+      "on-click": "pavucontrol",
+      "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+      "scroll-step": 1,
+      "max-volume": 300,
     },
 
     "backlight": {
