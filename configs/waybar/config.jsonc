@@ -54,28 +54,11 @@
       },
     },
 
-    "backlight": {
-      "format": "{icon}{percent}%",
-      "format-icons": ["󰃞 ", "󰃟 ", "󰃝 ", "󰃠 "],
-      "tooltip-format": "{percent}%",
-      "on-click": "",
-      "on-scroll-up": "brightnessctl s +1%",
-      "on-scroll-down": "brightnessctl s 1%-",
-    },
-
-    "tray": {
-      "spacing": 10,
-      "tooltip": false,
-    },
-
-    "battery": {
-      "format": "bat {capacity}%",
-      "interval": 5,
-      "states": {
-        "warning": 20,
-        "critical": 10,
-      },
-      "tooltip": false,
+    "niri/language": {
+      "format-pl": "EN",
+      "format-ru": "RU",
+      "tooltip-format": "{long}",
+      "on-click": "niri msg action switch-layout next",
     },
 
     "pulseaudio": {
@@ -88,8 +71,23 @@
       "tooltip": false,
     },
 
-    "niri/language": {
-      "format": "{short}",
+    "backlight": {
+      "format": "{icon}{percent}%",
+      "format-icons": ["󰃞 ", "󰃟 ", "󰃝 ", "󰃠 "],
+      "tooltip-format": "{percent}%",
+      "on-click": "",
+      "on-scroll-up": "brightnessctl s +1%",
+      "on-scroll-down": "brightnessctl s 1%-",
+    },
+
+    "battery": {
+      "format": "bat {capacity}%",
+      "interval": 5,
+      "states": {
+        "warning": 20,
+        "critical": 10,
+      },
+      "tooltip": false,
     },
   },
 
