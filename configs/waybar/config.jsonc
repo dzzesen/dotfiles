@@ -5,19 +5,14 @@
     "position": "top",
     "height": 50,
     "spacing": 8,
-
     "modules-left": ["custom/launcher", "cpu"],
-
     "modules-center": ["clock"],
-
     "modules-right": ["niri/language", "pulseaudio", "backlight", "battery"],
-
     "custom/launcher": {
       "format": " ",
       "on-click": "fuzzel",
-      "tooltip": false,
+      "tooltip": false
     },
-
     "cpu": {
       "interval": 1,
       "min-length": 6,
@@ -25,11 +20,10 @@
       "format-icons": ["󱙺 ", "󱚠 ", "󱚢 "],
       "states": {
         "warning": 50,
-        "critical": 85,
+        "critical": 85
       },
-      "on-click": "kitty -e btop",
+      "on-click": "kitty -e btop"
     },
-
     "clock": {
       "interval": 1,
       "format": "{:%T (%Z) - %A, %d %B %Y}",
@@ -44,23 +38,21 @@
           "days": "<span color='#cad3f5'><b>{}</b></span>",
           "weeks": "<span color='#8bd5ca'><b>{}</b></span>",
           "weekdays": "<span color='#eed49f'><b>{}</b></span>",
-          "today": "<span color='#ee99a0'><b><u>{}</u></b></span>",
-        },
+          "today": "<span color='#ee99a0'><b><u>{}</u></b></span>"
+        }
       },
       "actions": {
         "on-click-middle": "tz_up",
         "on-click": "shift_down",
-        "on-click-right": "shift_up",
-      },
+        "on-click-right": "shift_up"
+      }
     },
-
     "niri/language": {
       "format-pl": "EN",
       "format-ru": "RU",
       "tooltip-format": "{long}",
-      "on-click": "niri msg action switch-layout next",
+      "on-click": "niri msg action switch-layout next"
     },
-
     "pulseaudio": {
       "format": "{icon} {volume}",
       "format-bluetooth": "󰂱 {icon} {volume}",
@@ -69,59 +61,80 @@
       "on-click": "pavucontrol",
       "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
       "scroll-step": 1,
-      "max-volume": 300,
+      "max-volume": 300
     },
-
     "backlight": {
-      "format": "{icon}{percent}%",
+      "format": "{icon}{percent}",
       "format-icons": ["󰃞 ", "󰃟 ", "󰃝 ", "󰃠 "],
       "tooltip-format": "{percent}%",
       "on-click": "",
       "on-scroll-up": "brightnessctl s +1%",
-      "on-scroll-down": "brightnessctl s 1%-",
+      "on-scroll-down": "brightnessctl s 1%-"
     },
-
     "battery": {
-      "format": "bat {capacity}%",
       "interval": 5,
       "states": {
-        "warning": 20,
-        "critical": 10,
+        "100": 100,
+        "90": 90,
+        "80": 80,
+        "70": 70,
+        "60": 60,
+        "50": 50,
+        "40": 40,
+        "30": 30,
+        "20": 20,
+        "10": 10
       },
-      "tooltip": false,
-    },
+      "format-100": "󰁹  {capacity}",
+      "format-90": "󰂂  {capacity}",
+      "format-80": "󰂁  {capacity}",
+      "format-70": "󰂀  {capacity}",
+      "format-60": "󰁿  {capacity}",
+      "format-50": "󰁾  {capacity}",
+      "format-40": "󰁽  {capacity}",
+      "format-30": "󰁼  {capacity}",
+      "format-20": "󰁻  {capacity}",
+      "format-10": "󱃍  {capacity}",
+      "format-charging-100": "󱟢  {capacity}",
+      "format-charging-90": "󰂋  {capacity}",
+      "format-charging-80": "󰂊  {capacity}",
+      "format-charging-70": "󰢞  {capacity}",
+      "format-charging-60": "󰢞  {capacity}",
+      "format-charging-50": "󰢝  {capacity}",
+      "format-charging-40": "󰂈  {capacity}",
+      "format-charging-30": "󰂇  {capacity}",
+      "format-charging-20": "󰂆  {capacity}",
+      "format-charging-10": "󰢜  {capacity}",
+      "on-click": "",
+      "format-time": "{H}h {M}min",
+      "tooltip-format": "󱧦  {time}",
+      "tooltip-format-charging": "󱧥  {time}"
+    }
   },
-
   {
     "name": "leftbar",
     "layer": "top",
     "position": "left",
     "width": 50,
     "spacing": 8,
-
     "modules-left": ["niri/workspaces"],
-
     "modules-center": ["wlr/taskbar"],
-
     "modules-right": ["tray"],
-
     "niri/workspaces": {
       "disable-scroll": true,
-      "tooltip": false,
+      "tooltip": false
     },
-
     "wlr/taskbar": {
       "format": "{icon}",
       "icon-theme": "Papirus-Dark",
       "icon-size": 28,
       "tooltip": false,
       "on-click": "activate",
-      "on-click-middle": "close",
+      "on-click-middle": "close"
     },
-
     "tray": {
       "spacing": 16,
-      "icon-size": 26,
-    },
-  },
+      "icon-size": 26
+    }
+  }
 ]

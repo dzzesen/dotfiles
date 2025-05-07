@@ -52,15 +52,6 @@ tooltip label {
     padding: 4px 8px;
 }
 
-#battery.warning {
-    border-color: #f5a97f;
-}
-
-#cpu.critical,
-#battery.critical {
-    border-color: #ed8796;
-}
-
 #workspaces button {
     margin: 2px 5px;
     padding: 4px 0px;
@@ -79,6 +70,8 @@ tooltip label {
     padding: 16px 0px;
 }
 
+#battery,
+#backlight,
 #pulseaudio {
     min-width: 70px;
 }
@@ -95,9 +88,6 @@ tooltip label {
     margin-right: 10px;
 }
 
-#taskbar {
-}
-
 #cpu:hover,
 #memory:hover,
 #network:hover,
@@ -108,4 +98,17 @@ tooltip label {
 #backlight:hover,
 #workspaces button:hover {
     border-color: #c6a0f6;
+}
+
+#battery.20 {
+    border-color: #f5a97f;
+}
+
+#cpu.critical,
+#battery.10 {
+    border-color: #ed8796;
+}
+
+#battery.charging {
+    border-color: #494d64;
 }
