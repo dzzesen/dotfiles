@@ -37,6 +37,9 @@
       path: configs/kitty
     ~/.config/wezterm:
       path: configs/wezterm
+    ~/.config/zed:
+      path: configs/zed
+      force: true
     ~/.zshrc:
       path: configs/zsh/.zshrc
     ~/.config/starship.toml:

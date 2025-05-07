@@ -1,0 +1,69 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "bindings": {
+      "ctrl-j": "menu::SelectNext",
+      "ctrl-k": "menu::SelectPrevious",
+      "ctrl-h": "pane::ActivatePreviousItem",
+      "ctrl-l": "pane::ActivateNextItem",
+      "ctrl-w": "pane::CloseActiveItem",
+      "ctrl-shift-w": "pane::ReopenClosedItem",
+      "ctrl-n": "project_panel::ToggleFocus",
+      "ctrl-shift-n": "workspace::ToggleLeftDock",
+      "ctrl-t": "terminal_panel::ToggleFocus",
+      "ctrl-shift-t": "workspace::ToggleBottomDock",
+      "ctrl-a": "assistant::ToggleFocus",
+      "ctrl-shift-a": "workspace::ToggleRightDock",
+      "ctrl-g": "git_panel::ToggleFocus",
+      "ctrl-shift-g": "workspace::ToggleLeftDock"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-shift-space": null,
+      "ctrl-j": null
+    }
+  },
+  {
+    "context": "VimControl && !menu",
+    "bindings": {
+      "shift-h": "vim::StartOfLine",
+      "shift-l": "vim::EndOfLine",
+      "ctrl-j": "editor::GoToDefinition"
+    }
+  },
+  {
+    "context": "Editor && (showing_code_actions || showing_completions)",
+    "bindings": {
+      "ctrl-j": "editor::ContextMenuNext",
+      "ctrl-k": "editor::ContextMenuPrevious",
+      "ctrl-l": "editor::ConfirmCompletion"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-l": "menu::Confirm"
+    }
+  },
+  {
+    "context": "Editor && !agent_diff",
+    "bindings": {
+      "ctrl-s": "git::ToggleStaged",
+      "ctrl-r": "git::Restore"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-n": "workspace::NewTerminal"
+    }
+  }
+]
