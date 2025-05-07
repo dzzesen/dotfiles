@@ -112,8 +112,8 @@
       "format-charging-0": "󰢟  {capacity}",
       "on-click": "",
       "format-time": "{H}h {M}min",
-      "tooltip-format": "󱧦  {time}",
-      "tooltip-format-charging": "󱧥  {time}"
+      "tooltip-format": "󱧦 {time}",
+      "tooltip-format-charging": "󱧥 {time}"
     }
   },
   {
