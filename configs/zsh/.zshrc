@@ -4,6 +4,7 @@ export PIPENV_VENV_IN_PROJECT=1
 
 
 eval "$(starship init zsh)"
+eval $(ssh-agent) > /dev/null
 
 
 unsetopt hist_save_by_copy

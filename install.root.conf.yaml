@@ -21,4 +21,4 @@
 
 - shell:
     - command: sudo keyd reload
-    - command: sudo chsh -s $(which zsh)
+    - command: sudo chsh -s /bin/zsh
