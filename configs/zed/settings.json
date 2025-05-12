@@ -9,10 +9,11 @@
 {
   "show_edit_predictions": false,
   "icon_theme": "Catppuccin Macchiato",
-  "assistant": {
+  "agent": {
+    "default_profile": "minimal",
     "default_model": {
       "provider": "zed.dev",
-      "model": "claude-3-7-sonnet-latest"
+      "model": "claude-3-5-sonnet-latest"
     },
     "version": "2"
   },
@@ -34,10 +35,7 @@
   "vertical_scroll_margin": 100,
   "languages": {
     "Python": {
-      "language_servers": [
-        "pyright",
-        "ruff"
-      ],
+      "language_servers": ["pyright", "ruff"],
       "formatter": [
         {
           "code_actions": {
@@ -53,9 +51,7 @@
       ]
     },
     "Rust": {
-      "language_servers": [
-        "rust-analyzer"
-      ]
+      "language_servers": ["rust-analyzer"]
     },
     "JSONC": {
       "prettier": {
@@ -70,16 +66,19 @@
         "settings": {
           "lineLength": 88,
           "lint": {
-            "extendSelect": [
-              "I"
-            ]
+            "extendSelect": ["I"]
           }
         }
       }
     },
     "pyright": {
       "settings": {
-        "typeCheckingMode": "off"
+        "python.analysis": {
+          "typeCheckingMode": "off"
+        },
+        "python": {
+          "pythonPath": ".venv/bin/python"
+        }
       }
     },
     "rust-analyzer": {
