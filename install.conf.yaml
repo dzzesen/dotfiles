@@ -35,6 +35,8 @@
       path: configs/waybar/style.css
     ~/.themes/Catppuccin-Macchiato-Standard-Sky-Dark:
       path: configs/gnome-themes/Catppuccin-Macchiato-Standard-Sky-Dark
+    ~/.config/mako/config:
+      path: configs/mako/config
     ~/.config/kitty:
       path: configs/kitty
     ~/.config/wezterm:
