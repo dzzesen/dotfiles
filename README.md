@@ -21,31 +21,31 @@ cd paru
 makepkg -si
 
 # Install drivers
-aura -S mesa nvidia-dkms vulkan-radeon vulkan-tools
+paru -S mesa nvidia-dkms vulkan-radeon vulkan-tools
 
 # Install display manager
-aura -S ly
+paru -S ly
 
 # Install compositor
-aura -S niri
+paru -S niri
 
 # Install important packages
-aura -S bluez bluez-utils brightnessctl gnome-keyring networkmanager pulseaudio pulseaudio-bluetooth wireguard-tools xdg-desktop-portal-gnome xdg-desktop-portal-wlr xwayland-satellite
+paru -S bluez bluez-utils brightnessctl gnome-keyring networkmanager pavucontrol pulseaudio pulseaudio-bluetooth wireguard-tools xdg-desktop-portal-gnome xdg-desktop-portal-wlr xwayland-satellite
 
 # Install workspace packages
-aura -S blueman fuzzel keyd nautilus network-manager-applet swaybg swayidle swaync ttf-hack-nerd ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono waybar
+paru -S blueman fuzzel keyd network-manager-applet papirus-icon-theme swaybg swayidle swaync ttf-hack-nerd ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono waybar
 
 # Install command line packages
-aura -S btop jq neovim starship vim yazi zsh
+paru -S btop jq neovim starship vim yazi zsh
 
 # Install gui packages
-aura -S firefox kitty obs-studio telegram-desktop totem wezterm zed
+paru -S firefox kitty obs-studio slack-desktop-wayland telegram-desktop totem wezterm zed
 
 # Install packages for coding
-aura -S bore cloudflared docker docker-compose nodejs npm pre-commit pyright ruff rustup uv
+paru -S bore cloudflared docker docker-compose luarocks npm pre-commit pyright ruff ruff-lsp rustup uv
 
 # Alternatively, install all packages with a single command
-aura -S blueman bluez bluez-utils bore brightnessctl btop cloudflared docker docker-compose firefox fuzzel git gnome-keyring jq keyd kitty ly mesa nautilus neovim network-manager-applet networkmanager niri nodejs npm nvidia-dkms obs-studio pre-commit pulseaudio pulseaudio-bluetooth pyright ruff rustup starship swaybg swayidle swaync telegram-desktop totem ttf-hack-nerd ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono uv vim vulkan-radeon vulkan-tools waybar wezterm wireguard-tools xdg-desktop-portal-gnome xdg-desktop-portal-wlr xwayland-satellite yazi zed zsh
+paru -S blueman bluez bluez-utils bore brightnessctl btop cloudflared docker docker-compose firefox fuzzel git gnome-keyring jq keyd kitty luarocks ly mesa neovim network-manager-applet networkmanager niri npm nvidia-dkms obs-studio papirus-icon-theme pavucontrol pre-commit pulseaudio pulseaudio-bluetooth pyright ruff ruff-lsp rustup slack-desktop-wayland starship swaybg swayidle swaync telegram-desktop totem ttf-hack-nerd ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono uv vim vulkan-radeon vulkan-tools waybar wezterm wireguard-tools xdg-desktop-portal-gnome xdg-desktop-portal-wlr xwayland-satellite yazi zed zsh
 
 # You can run these installation command safely multiple times.
 ./install
