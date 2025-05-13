@@ -13,12 +13,12 @@ These dotfiles use [Dotbot](https://github.com/anishathalye/dotbot) for installa
 # Install git
 sudo pacman -S git
 
-# Install aura package manager
+# Install paru package manager
+sudo pacman -S --needed base-devel
 cd ~/Downloads
-git clone https://aur.archlinux.org/aura.git
-cd aura
-makepkg -s
-sudo pacman -U the-package-file-that-makepkg-produces
+git clone https://aur.archlinux.org/paru.git
+cd paru
+makepkg -si
 
 # Install drivers
 aura -S mesa nvidia-dkms vulkan-radeon vulkan-tools
