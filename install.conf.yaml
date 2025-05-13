@@ -22,8 +22,10 @@
       path: configs/swayidle/swayidle.service
     ~/.config/systemd/user/niri.service.wants/waybar.service:
       path: /usr/lib/systemd/user/waybar.service
-    ~/.config/systemd/user/niri.service.wants/mako.service:
-      path: /usr/lib/systemd/user/mako.service
+    ~/.config/systemd/user/niri.service.wants/gnome-keyring-daemon.service:
+      path: /usr/lib/systemd/user/gnome-keyring-daemon.service
+    ~/.config/systemd/user/niri.service.wants/swaync.service:
+      path: ~/.config/systemd/user/swaync.service
     ~/.config/systemd/user/niri.service.wants/swaybg.service:
       path: ~/.config/systemd/user/swaybg.service
     ~/.config/systemd/user/niri.service.wants/swayidle.service:
@@ -37,8 +39,8 @@
       path: configs/waybar/style.css
     ~/.themes/Catppuccin-Macchiato-Standard-Sky-Dark:
       path: configs/gnome-themes/Catppuccin-Macchiato-Standard-Sky-Dark
-    ~/.config/mako/config:
-      path: configs/mako/config
+    ~/.config/swaync/style.css:
+      path: configs/swaync/style.css
     ~/.config/kitty:
       path: configs/kitty
     ~/.config/wezterm:
