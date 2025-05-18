@@ -41,6 +41,8 @@
       path: configs/gnome-themes/Catppuccin-Macchiato-Standard-Sky-Dark
     ~/.config/swaync/style.css:
       path: configs/swaync/style.css
+    ~/.config/paru/paru.conf:
+      path: configs/paru/paru.conf
     ~/.config/kitty:
       path: configs/kitty
     ~/.config/wezterm:

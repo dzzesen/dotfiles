@@ -6,17 +6,19 @@
 - clean:
     /etc/keyd:
     /etc/ly/config.ini:
-
-- shell:
-    - command: sudo rm /etc/ly/config.ini
+    /etc/pacman.conf:
 
 - link:
     /etc/keyd/default.conf:
       path: configs/keyd/default.conf
     /etc/ly/config.ini:
       path: configs/ly/config.ini
+      force: true
     /etc/pam.d/ly:
       path: configs/ly/pam
+      force: true
+    /etc/pacman.conf:
+      path: configs/paru/pacman.conf
       force: true
 
 - shell:
