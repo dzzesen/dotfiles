@@ -555,7 +555,7 @@ binds {
     Ctrl+Space       { switch-layout "next"; }
     // Mod+Shift+Space { switch-layout "prev"; }
 
-    Print { screenshot; }
+    Print { spawn "bash" "-c" "QT_QPA_PLATFORM=wayland XDG_CURRENT_DESKTOP=gnome flameshot gui"; }
     Ctrl+Print { screenshot-screen; }
     Alt+Print { screenshot-window; }
 
