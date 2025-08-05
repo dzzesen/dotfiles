@@ -257,6 +257,9 @@ spawn-at-startup "kitty"
 environment {
     XAUTHORITY "$HOME/.Xauthority"
     DISPLAY ":13"
+    GTK_THEME "Catppuccin-Macchiato-Standard-Sky-Dark"
+    QT_QPA_PLATFORM "wayland"
+    XDG_CURRENT_DESKTOP "gnome"
 }
 
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
