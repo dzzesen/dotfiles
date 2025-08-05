@@ -27,7 +27,7 @@
     "clock": {
       "interval": 1,
       "format": "{:%T (%Z) - %A, %d %B %Y}",
-      "timezones": ["Europe/Minsk", "Europe/Warsaw", "America/Los_Angeles"],
+      "timezones": ["Asia/Tbilisi", "Europe/Minsk", "Europe/Warsaw"],
       "tooltip-format": "<tt>{calendar}</tt>",
       "calendar": {
         "mode": "year",
