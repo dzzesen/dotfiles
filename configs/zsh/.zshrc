@@ -17,6 +17,7 @@ SAVEHIST=10000
 
 
 alias fm="yazi"
+alias cdp="cd ~/Projects"
 
 alias apv="source .venv/bin/activate"
 alias dpv="deactivate"
