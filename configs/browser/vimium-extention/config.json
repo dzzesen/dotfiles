@@ -1,8 +1,0 @@
-{
-  "keyMappings": "map h previousTab\nmap l nextTab\nmap H goBack\nmap L goForward",
-  "linkHintCharacters": "asdfghjkl",
-  "scrollStepSize": 80,
-  "grabBackFocus": true,
-  "settingsVersion": "2.2.1",
-  "exclusionRules": []
-}

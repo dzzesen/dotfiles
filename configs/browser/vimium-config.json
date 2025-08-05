@@ -1,0 +1,8 @@
+{
+  "keyMappings": "map <c-h> previousTab\nmap <c-l> nextTab\nmap H goBack\nmap L goForward\nmap <c-t> createTab\nmap <c-r> reload\nmap <c-w> removeTab\nmap <c-T> restoreTab",
+  "linkHintCharacters": "asdfghjkl",
+  "ignoreKeyboardLayout": true,
+  "scrollStepSize": 100,
+  "settingsVersion": "2.2.1",
+  "exclusionRules": []
+}
