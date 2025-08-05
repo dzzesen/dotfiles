@@ -1,4 +1,5 @@
 PATH=$HOME/.local/bin:$PATH
+PATH="$HOME/.cargo/bin:$PATH"
 
 export PIPENV_VENV_IN_PROJECT=1
 
