@@ -15,13 +15,14 @@ sudo pacman -S git
 
 # Install paru package manager
 sudo pacman -S --needed base-devel
+mkdir ~/Downloads
 cd ~/Downloads
 git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si
 
-# Install drivers
-paru -S mesa nvidia-dkms vulkan-radeon vulkan-tools
+# Install video drivers
+paru -S mesa
 
 # Install display manager
 paru -S ly
@@ -36,10 +37,10 @@ paru -S bluez bluez-utils brightnessctl gnome-keyring networkmanager pavucontrol
 paru -S blueman fuzzel keyd network-manager-applet papirus-icon-theme swaybg swayidle swaync ttf-hack-nerd ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono waybar
 
 # Install command line packages
-paru -S btop jq neovim starship vim yazi zsh
+paru -S btop jq neovim starship yazi zsh
 
 # Install gui packages
-paru -S firefox kitty obs-studio slack-desktop-wayland telegram-desktop totem wezterm zed
+paru -S vivaldi kitty obs-studio slack-desktop telegram-desktop totem wezterm zed
 
 # Install packages for coding
 paru -S bore cloudflared docker docker-compose luarocks npm pre-commit pyright ruff ruff-lsp rustup uv
