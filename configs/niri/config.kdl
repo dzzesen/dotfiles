@@ -252,6 +252,7 @@ layout {
 spawn-at-startup "xwayland-satellite" ":13"
 spawn-at-startup "sh" "/home/dzesen/.dotfiles/configs/niri/xhost.sh"
 spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
+spawn-at-startup "/opt/Boost Note - Local/boostnote.next-local"
 spawn-at-startup "kitty"
 
 environment {
