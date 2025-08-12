@@ -39,8 +39,8 @@
     }
   },
   "telemetry": {
-    "diagnostics": true,
-    "metrics": true
+    "diagnostics": false,
+    "metrics": false
   },
   "vim_mode": true,
   "ui_font_size": 20,
