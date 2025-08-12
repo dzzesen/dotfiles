@@ -22,7 +22,7 @@ cd paru
 makepkg -si
 
 # Install video drivers
-paru -S mesa
+paru -S mesa vulkan-noveau
 
 # Install display manager
 paru -S ly
@@ -34,13 +34,13 @@ paru -S niri
 paru -S bluez bluez-utils brightnessctl gnome-keyring networkmanager pavucontrol pulseaudio pulseaudio-bluetooth wireguard-tools xdg-desktop-portal-gnome xdg-desktop-portal-wlr xwayland-satellite
 
 # Install workspace packages
-paru -S blueman fuzzel keyd network-manager-applet papirus-icon-theme swaybg swayidle swaync ttf-hack-nerd ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono waybar
+paru -S blueman fuzzel keyd network-manager-applet noto-fonts-emoji papirus-icon-theme swaybg swayidle swaync ttf-hack-nerd ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono waybar
 
 # Install command line packages
-paru -S btop jq neovim starship yazi zsh
+paru -S btop jq neovim pgcli starship yazi zsh
 
 # Install gui packages
-paru -S vivaldi kitty obs-studio slack-desktop telegram-desktop totem wezterm zed
+paru -S boost-note-local-bin flameshot kitty obs-studio slack-desktop telegram-desktop totem vivaldi wezterm zed
 
 # Install packages for coding
 paru -S bore cloudflared docker docker-compose luarocks npm pre-commit pyright ruff ruff-lsp rustup uv
