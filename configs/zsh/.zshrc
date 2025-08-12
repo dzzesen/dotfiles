@@ -16,18 +16,12 @@ HISTSIZE=10000
 SAVEHIST=10000
 
 
-alias fm="yazi"
-alias cdp="cd ~/Projects"
-
 alias apv="source .venv/bin/activate"
 alias dpv="deactivate"
-
 alias ls="ls --color=auto"
-alias lsal="ls -al"
 function dockerps {
     docker ps $@ --format '{ "ID":"{{.ID}}", "Names":"{{.Names}}", "Status":"{{.Status}}", "State":"{{.State}}", "Size":"{{.Size}}", "Networks":"{{.Networks}}", "Ports":"{{.Ports}}", "CreatedAt":"{{.CreatedAt}}" }' | jq
 }
-
 alias ngrok="ngrok --config $HOME/.config/ngrok/ngrok.yml,$HOME/.dotfiles/configs/ngrok/ngrok.yml"
 
 export GROFF_NO_SGR=1
@@ -43,7 +37,7 @@ export LESS=\
 "--color=u+g$ "
 
 
-# Plug in plugins ;)
+# Plug in plugins
 
 # zsh-vi-mode
 source $HOME/.dotfiles/plugins/zsh/zsh-vi-mode/zsh-vi-mode.plugin.zsh
