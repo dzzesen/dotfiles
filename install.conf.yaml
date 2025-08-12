@@ -62,6 +62,7 @@
       path: configs/ptpython/config.py
 
 - shell:
+    - command: chsh -s /bin/zsh
     - command: git submodule update --init --recursive
       description: Installing dotbot
       stdout: true
