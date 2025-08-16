@@ -1,54 +1,67 @@
-<img width=150 height=50 align=right src="https://archlinux.org/static/logos/archlinux-logo-dark-90dpi.ebdee92a15b3.png">
+<img width=151 height=50 align=right src="https://archlinux.org/static/logos/archlinux-logo-dark-90dpi.ebdee92a15b3.png">
 
-# Dotfiles
-
-## Installing
+## Installation
 
 These dotfiles use [Dotbot](https://github.com/anishathalye/dotbot) for installation.
 
 
-## Installation
-
+Install git:
 ```bash
-# Install git
 sudo pacman -S git
+```
 
-# Install paru package manager
+Install paru package manager:
+```bash
 sudo pacman -S --needed base-devel
 mkdir ~/Downloads
 cd ~/Downloads
 git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si
+```
 
-# Install video drivers
+Install video drivers:
+```bash
 paru -S mesa vulkan-radeon
+```
 
-# Install display manager
+Install display manager:
+```bash
 paru -S ly
+```
 
-# Install compositor
+Install compositor:
+```bash
 paru -S niri
+```
 
-# Install important packages
+Install important packages:
+```bash
 paru -S bluez bluez-utils brightnessctl gnome-keyring networkmanager pavucontrol pulseaudio pulseaudio-bluetooth wireguard-tools xdg-desktop-portal-gnome xdg-desktop-portal-wlr xwayland-satellite
+```
 
-# Install workspace packages
+Install workspace packages:
+```bash
 paru -S blueman fuzzel keyd network-manager-applet noto-fonts-emoji papirus-icon-theme swaybg swayidle swaync ttf-hack-nerd ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono waybar
+```
 
-# Install command line packages
+Install tui packages:
+```bash
 paru -S btop jq neovim pgcli starship yazi zsh
+```
 
-# Install gui packages
+Install gui packages:
+```bash
 paru -S boost-note-local-bin chromium flameshot kitty obs-studio slack-desktop telegram-desktop totem wezterm zed
+```
 
-# Install packages for coding
+Install packages for coding:
+```bash
 paru -S bore cloudflared docker docker-compose luarocks npm pre-commit pyright ruff ruff-lsp rustup uv
+```
 
-# Alternatively, install all packages with a single command
-paru -S blueman bluez bluez-utils bore brightnessctl btop cloudflared docker docker-compose firefox fuzzel git gnome-keyring jq keyd kitty luarocks ly mesa neovim network-manager-applet networkmanager niri npm nvidia-dkms obs-studio papirus-icon-theme pavucontrol pre-commit pulseaudio pulseaudio-bluetooth pyright ruff ruff-lsp rustup slack-desktop-wayland starship swaybg swayidle swaync telegram-desktop totem ttf-hack-nerd ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono uv vim vulkan-radeon vulkan-tools waybar wezterm wireguard-tools xdg-desktop-portal-gnome xdg-desktop-portal-wlr xwayland-satellite yazi zed zsh
-
-# You can run these installation command safely multiple times.
+Run installation. You can do it safely multiple times:
+```bash
 ./install
 sudo ./install
 ```
