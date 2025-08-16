@@ -22,7 +22,7 @@ cd paru
 makepkg -si
 
 # Install video drivers
-paru -S mesa vulkan-noveau
+paru -S mesa vulkan-radeon
 
 # Install display manager
 paru -S ly
@@ -40,7 +40,7 @@ paru -S blueman fuzzel keyd network-manager-applet noto-fonts-emoji papirus-icon
 paru -S btop jq neovim pgcli starship yazi zsh
 
 # Install gui packages
-paru -S boost-note-local-bin flameshot kitty obs-studio slack-desktop telegram-desktop totem vivaldi wezterm zed
+paru -S boost-note-local-bin chromium flameshot kitty obs-studio slack-desktop telegram-desktop totem wezterm zed
 
 # Install packages for coding
 paru -S bore cloudflared docker docker-compose luarocks npm pre-commit pyright ruff ruff-lsp rustup uv
