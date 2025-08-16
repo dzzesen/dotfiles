@@ -14,7 +14,7 @@ input {
         drag true
         drag-lock
         accel-speed 0.25
-        scroll-factor 5.0
+        scroll-factor 1.5
         accel-profile "adaptive"
         scroll-method "two-finger"
         tap-button-map "left-right-middle"
@@ -282,6 +282,15 @@ window-rule {
     open-on-workspace "browser"
 }
 
+window-rule {
+    match is-focused=true app-id="kitty"
+    scroll-factor 10.0
+}
+
+window-rule {
+    match is-focused=true app-id="dev.zed.Zed"
+    scroll-factor 7.0
+}
 
 workspace "notes"
 workspace "code"
