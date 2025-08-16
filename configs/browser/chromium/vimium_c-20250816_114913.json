@@ -1,7 +1,7 @@
 {
 	"name": "Vimium C",
-	"@time": "8/15/2025, 4:35:10 PM",
-	"time": 1755261310433,
+	"@time": "8/16/2025, 11:49:13 AM",
+	"time": 1755330553664,
 	"environment": {
 		"extension": "2.12.2",
 		"platform": "linux",
@@ -17,10 +17,6 @@
 		"map <c-f> LinkHints.activateOpenInNewTab",
 		"map gb visitPreviousTab",
 		"shortcut userCustomized1 command=\"restoreTab\"",
-		"map <c-j> goBack",
-		"map <c-k> goForward",
-		"map <c-,> moveTabLeft",
-		"map <c-.> moveTabRight",
 		"map <c-o> Vomnibar.activateInNewTab",
 		"map <c-b> Vomnibar.activateBookmarksInNewTab",
 		"map <c-e> Vomnibar.activateEditUrl",
@@ -35,7 +31,7 @@
 		"map <c-0> zoomReset",
 		"map <c-=> zoomIn",
 		"map <c--> zoomOut",
-		"map <c-s-y> openUrl url=\"javascript:window.open('https://translate.yandex.com/en/?source_lang=en&target_lang=ru&text='+encodeURIComponent(getSelection().toString()))\"",
+		"map <c-y> openUrl url=\"javascript:window.open('https://translate.yandex.com/en/?source_lang=en&target_lang=ru&text='+encodeURIComponent(getSelection().toString()))\"",
 		""
 	],
 	"linkHintCharacters": "asdfghjkl",
