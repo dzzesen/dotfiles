@@ -57,7 +57,7 @@ paru -S boost-note-local-bin chromium flameshot kitty obs-studio slack-desktop t
 
 Install packages for coding:
 ```bash
-paru -S bore cloudflared docker docker-compose luarocks npm pre-commit pyright ruff ruff-lsp rustup uv
+paru -S bore cloudflared docker docker-compose lazygit luarocks npm python-pipenv pre-commit pyright ruff ruff-lsp rustup uv
 ```
 
 Run installation. You can do it safely multiple times:
