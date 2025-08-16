@@ -223,6 +223,8 @@ spawn-at-startup "sh" "/home/dzesen/.dotfiles/configs/niri/xhost.sh"
 spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 spawn-at-startup "/opt/Boost Note - Local/boostnote.next-local"
 spawn-at-startup "kitty"
+spawn-at-startup "zeditor"
+spawn-at-startup "chromium"
 
 environment {
     XAUTHORITY "$HOME/.Xauthority"
@@ -258,47 +260,33 @@ animations {
     // slowdown 3.0
 }
 
-// Window rules let you adjust behavior for individual windows.
-// Find more information on the wiki:
-// https://github.com/YaLTeR/niri/wiki/Configuration:-Window-Rules
-
-// Work around WezTerm's initial configure bug
-// by setting an empty default-column-width.
 window-rule {
-    // This regular expression is intentionally made as specific as possible,
-    // since this is the default config, and we want no false positives.
-    // You can get away with just app-id="wezterm" if you want.
-    match app-id=r#"^org\.wezfurlong\.wezterm$"#
-    default-column-width {}
-}
-
-// Open the Firefox picture-in-picture player as floating by default.
-window-rule {
-    // This app-id regular expression will work for both:
-    // - host Firefox (app-id is "firefox")
-    // - Flatpak Firefox (app-id is "org.mozilla.firefox")
-    match app-id=r#"firefox$"# title="^Picture-in-Picture$"
-    open-floating true
-}
-
-// Example: block out two password managers from screen capture.
-// (This example rule is commented out with a "/-" in front.)
-/-window-rule {
-    match app-id=r#"^org\.keepassxc\.KeePassXC$"#
-    match app-id=r#"^org\.gnome\.World\.Secrets$"#
-
-    block-out-from "screen-capture"
-
-    // Use this instead if you want them visible on third-party screenshot tools.
-    // block-out-from "screencast"
-}
-
-// Example: enable rounded corners for all windows.
-// (This example rule is commented out with a "/-" in front.)
-window-rule {
+    open-maximized true
     geometry-corner-radius 8
     clip-to-geometry true
 }
+
+window-rule {
+    match at-startup=true app-id="Boost Note - Local"
+    open-on-workspace "notes"
+}
+
+window-rule {
+    match at-startup=true app-id="kitty"
+    match at-startup=true app-id="dev.zed.Zed"
+    open-on-workspace "code"
+}
+
+window-rule {
+    match at-startup=true app-id="Chromium"
+    open-on-workspace "browser"
+}
+
+
+workspace "notes"
+workspace "code"
+workspace "browser"
+workspace "media"
 
 binds {
     // Keys consist of modifiers separated by + signs, followed by an XKB key name

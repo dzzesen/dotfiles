@@ -126,13 +126,21 @@
     "modules-right": ["tray"],
     "niri/workspaces": {
       "disable-scroll": true,
-      "tooltip": false
+      "format": "{icon}",
+      "format-icons": {
+        "notes": "󰠮",
+        "code": "",
+        "browser": "󰄙",
+        "media": "",
+        "default": ""
+      }
     },
     "wlr/taskbar": {
       "format": "{icon}",
       "icon-theme": "Papirus-Dark",
       "icon-size": 28,
-      "tooltip": false,
+      "tooltip": true,
+      "tooltip-format": "{title} | {app_id}",
       "on-click": "activate",
       "on-click-middle": "close"
     },
