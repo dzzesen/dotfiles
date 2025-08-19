@@ -101,6 +101,12 @@ window-rule {
 
 window-rule {
     match at-startup=true app-id="Chromium"
+    open-on-workspace "ai"
+}
+
+window-rule {
+    // Set title in Chromium settings
+    match at-startup=true title="Browser" app-id="Chromium"
     open-on-workspace "browser"
 }
 
@@ -143,31 +149,20 @@ window-rule {
 //     baba-is-float true
 // }
 
-workspace "ai"
 workspace "notes"
+workspace "ai"
 workspace "code"
 workspace "browser"
 workspace "media"
 
 binds {
-    // Keys consist of modifiers separated by + signs, followed by an XKB key name
-    // in the end. To find an XKB name for a particular key, you may use a program
-    // like wev.
-    //
-    // "Mod" is a special modifier equal to Super when running on a TTY, and to Alt
-    // when running as a winit window.
-    //
-    // Most actions that you can bind here can also be invoked programmatically with
-    // `niri msg action do-something`.
-
-    // Mod-Shift-/, which is usually the same as Mod-?,
-    // shows a list of important hotkeys.
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+T { spawn "kitty"; }
     Mod+O { spawn "fuzzel"; }
     Mod+Space { toggle-overview; }
+
     Super+Alt+L { spawn "swaylock"; }
 
     // You can also use a shell. Do this if you need pipes, multiple commands, etc.

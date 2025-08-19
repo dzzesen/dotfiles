@@ -60,6 +60,8 @@
       path: configs/nvim
     ~/.config/ptpython/config.py:
       path: configs/ptpython/config.py
+    ~/.local/share/applications/chatgpt.desktop:
+      path: configs/browser/chromium/webapps/chatgpt/chatgpt.desktop
 
 - shell:
     - command: git submodule update --init --recursive
