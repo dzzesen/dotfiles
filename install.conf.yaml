@@ -62,6 +62,8 @@
       path: configs/ptpython/config.py
     ~/.local/share/applications/chatgpt.desktop:
       path: configs/browser/chromium/webapps/chatgpt/chatgpt.desktop
+    ~/.local/share/applications/perplexity.desktop:
+      path: configs/browser/chromium/webapps/perplexity/perplexity.desktop
 
 - shell:
     - command: git submodule update --init --recursive
