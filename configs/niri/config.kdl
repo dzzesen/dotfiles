@@ -267,6 +267,11 @@ window-rule {
 }
 
 window-rule {
+    exclude is-active=true
+    opacity 0.5
+}
+
+window-rule {
     match at-startup=true app-id="Boost Note - Local"
     open-on-workspace "notes"
 }
@@ -291,6 +296,28 @@ window-rule {
     match is-focused=true app-id="dev.zed.Zed"
     scroll-factor 7.0
 }
+
+window-rule {
+    match app-id="lazygit"
+    open-floating true
+    default-floating-position x=0 y=70 relative-to="top"
+    default-window-height { proportion 0.85; }
+    default-column-width { proportion 0.85; }
+}
+
+window-rule {
+    match app-id="org.gnome.Nautilus"
+    open-floating true
+    default-floating-position x=0 y=70 relative-to="top"
+    default-window-height { proportion 0.85; }
+    default-column-width { proportion 0.85; }
+}
+
+// window-rule {
+//     match is-floating=true
+
+//     baba-is-float true
+// }
 
 workspace "notes"
 workspace "code"
