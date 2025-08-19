@@ -1,7 +1,7 @@
 {
 	"name": "Vimium C",
-	"@time": "8/16/2025, 11:49:13 AM",
-	"time": 1755330553664,
+	"@time": "8/19/2025, 11:10:30 PM",
+	"time": 1755630630100,
 	"environment": {
 		"extension": "2.12.2",
 		"platform": "linux",
@@ -32,6 +32,9 @@
 		"map <c-=> zoomIn",
 		"map <c--> zoomOut",
 		"map <c-y> openUrl url=\"javascript:window.open('https://translate.yandex.com/en/?source_lang=en&target_lang=ru&text='+encodeURIComponent(getSelection().toString()))\"",
+		"map / enterFindMode",
+		"map n performFind",
+		"map N performBackwardsFind",
 		""
 	],
 	"linkHintCharacters": "asdfghjkl",
