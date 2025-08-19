@@ -130,9 +130,16 @@ window-rule {
     default-column-width { proportion 0.85; }
 }
 
+window-rule {
+    match title="Picture in picture"
+    open-floating true
+    default-floating-position x=20 y=20 relative-to="bottom-right"
+    default-window-height { proportion 0.3; }
+    default-column-width { proportion 0.3; }
+}
+
 // window-rule {
 //     match is-floating=true
-
 //     baba-is-float true
 // }
 
