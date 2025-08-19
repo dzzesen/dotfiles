@@ -1,13 +1,23 @@
 {
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  "features": {
+    "edit_prediction_provider": null
+  },
   "edit_predictions": {
     "disabled_globs": [],
-    "mode": "eager",
-    "copilot": {
-      "proxy": null,
-      "proxy_no_verify": null,
-      "enterprise_uri": null
-    },
+    "mode": "subtle",
     "enabled_in_text_threads": false
+  },
+  "show_edit_predictions": false,
+  "agent": {
+    "default_profile": "minimal",
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-sonnet-4-thinking"
+    }
   },
   "collaboration_panel": {
     "dock": "right"
@@ -19,21 +29,14 @@
     "dock": "right"
   },
   "project_panel": {
-    "dock": "right"
+    "button": false,
+    "dock": "right",
+    "default_width": 500,
+    "entry_spacing": "standard",
+    "git_status": true,
+    "auto_fold_dirs": false
   },
-  "show_edit_predictions": false,
   "icon_theme": "Catppuccin Macchiato",
-  "agent": {
-    "default_profile": "minimal",
-    "default_model": {
-      "provider": "zed.dev",
-      "model": "claude-sonnet-4"
-    }
-  },
-  "telemetry": {
-    "diagnostics": false,
-    "metrics": false
-  },
   "vim_mode": true,
   "ui_font_size": 20,
   "ui_font_weight": 600,
@@ -46,9 +49,15 @@
     "dark": "Catppuccin Macchiato"
   },
   "vertical_scroll_margin": 100,
+  "minimap": {
+    "show": "always",
+    "thumb": "always",
+    "thumb_border": "none",
+    "current_line_highlight": "line"
+  },
   "languages": {
     "Python": {
-      "show_edit_predictions": true,
+      "show_edit_predictions": false,
       "language_servers": ["pyright", "ruff"],
       "formatter": [
         {

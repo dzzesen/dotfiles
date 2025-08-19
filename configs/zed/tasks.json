@@ -1,0 +1,6 @@
+[
+  {
+    "label": "start lazygit",
+    "command": "kitty --app-id lazygit -e lazygit -p $ZED_WORKTREE_ROOT"
+  }
+]
