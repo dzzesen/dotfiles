@@ -143,6 +143,7 @@ window-rule {
 //     baba-is-float true
 // }
 
+workspace "ai"
 workspace "notes"
 workspace "code"
 workspace "browser"

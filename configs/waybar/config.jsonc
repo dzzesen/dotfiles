@@ -128,6 +128,7 @@
       "disable-scroll": true,
       "format": "{icon}",
       "format-icons": {
+        "ai": "󰧑",
         "notes": "󰠮",
         "code": "",
         "browser": "󰄙",
