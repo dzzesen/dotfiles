@@ -18,75 +18,49 @@ tooltip label {
     margin: 4px;
 }
 
-#custom-launcher {
-    color: #cad3f5;
-    font-size: 28px;
-    margin-left: 14px;
-    margin-top: 4px;
-}
-
+#workspaces button,
 #tray,
 #cpu,
-#memory,
-#network,
-#pulseaudio,
-#battery,
 #language,
-#clock,
+#pulseaudio,
 #backlight,
-#workspaces button {
+#battery,
+#clock,
+#custom-launcher {
     color: #cad3f5;
     background-color: #1e2030;
     border: 2px solid #494d64;
     border-radius: 6px;
 }
 
+#custom-launcher {
+    font-size: 32px;
+}
+
 #cpu,
-#memory,
-#network,
-#pulseaudio,
-#battery,
 #language,
-#clock,
-#backlight {
-    margin: 5px 0;
-    padding: 4px 8px;
+#pulseaudio,
+#backlight,
+#battery,
+#clock {
+    margin: 5px;
 }
 
 #workspaces button {
-    margin: 2px 5px;
-    padding: 4px 0px;
+    margin: 5px 20px;
+}
+
+#tray {
+    margin: 10px 20px 0;
+}
+
+#custom-launcher {
+    margin: 5px 5px 10px;
+    padding-left: 4px;
 }
 
 #workspaces button.active {
     border-color: #c6a0f6;
-}
-
-#workspaces {
-    margin-top: 8px;
-}
-
-#tray {
-    margin: 0px 5px 10px;
-    padding: 16px 0px;
-}
-
-#battery,
-#backlight,
-#pulseaudio {
-    min-width: 70px;
-}
-
-#pulseaudio.bluetooth {
-    min-width: 90px;
-}
-
-#pulseaudio.muted {
-    min-width: 0;
-}
-
-#battery {
-    margin-right: 10px;
 }
 
 #cpu:hover,
@@ -97,8 +71,10 @@ tooltip label {
 #language:hover,
 #clock:hover,
 #backlight:hover,
-#workspaces button:hover {
+#workspaces button:hover,
+#custom-launcher:hover {
     border-color: #c6a0f6;
+    background-color: #363a4f;
 }
 
 #battery.20 {
