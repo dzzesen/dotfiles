@@ -63,12 +63,7 @@ layout {
 spawn-at-startup "xwayland-satellite" ":13"
 spawn-at-startup "sh" "/home/dzesen/.dotfiles/configs/niri/xhost.sh"
 spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
-spawn-at-startup "/opt/Boost Note - Local/boostnote.next-local"
-spawn-at-startup "gtk-launch" "chatgpt"
-spawn-at-startup "gtk-launch" "perplexity"
 spawn-at-startup "kitty"
-spawn-at-startup "zeditor"
-spawn-at-startup "chromium"
 
 environment {
     XAUTHORITY "$HOME/.Xauthority"
@@ -90,25 +85,8 @@ window-rule {
 }
 
 window-rule {
-    match at-startup=true app-id="Boost Note - Local"
-    open-on-workspace "notes"
-}
-
-window-rule {
     match at-startup=true app-id="kitty"
-    match at-startup=true app-id="dev.zed.Zed"
     open-on-workspace "code"
-}
-
-window-rule {
-    match at-startup=true app-id="Chromium"
-    open-on-workspace "ai"
-}
-
-window-rule {
-    // Set title in Chromium settings
-    match at-startup=true title="Browser" app-id="Chromium"
-    open-on-workspace "browser"
 }
 
 window-rule {
