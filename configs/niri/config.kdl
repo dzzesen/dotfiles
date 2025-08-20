@@ -141,6 +141,7 @@ binds {
     Mod+T { spawn "kitty"; }
     Mod+O { spawn "fuzzel"; }
     Mod+Space { toggle-overview; }
+    Mod+Ctrl+Q { spawn "~/.dotfiles/configs/fuzzel/power-menu.sh"; }
 
     Super+Alt+L { spawn "swaylock"; }
 

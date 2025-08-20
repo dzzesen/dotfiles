@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-DMENU_CMD="fuzzel"
+DMENU_CMD="fuzzel --config /home/dzesen/.dotfiles/configs/fuzzel/power-menu.ini"
 POWEROFF_CMD="systemctl poweroff"
 LOCK_CMD="swaylock"
 LOGOUT_CMD="niri msg action quit"
