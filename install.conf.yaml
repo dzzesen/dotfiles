@@ -76,3 +76,4 @@
     - command: gsettings set org.gnome.desktop.interface font-name 'Cantarell Bold 13 @wght=700'
     - command: gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
     - command: gsettings set org.gnome.desktop.interface monospace-font-name 'Hack Nerd Font Bold 13'
+    - command: chmod +x ~/.dotfiles/configs/fuzzel/power-menu.sh

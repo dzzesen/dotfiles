@@ -1,6 +1,5 @@
 * {
     font-family: "Symbols Nerd Font", "Hack Nerd Font Mono";
-    font-weight: 500;
     font-size: 20px;
 }
 
@@ -18,8 +17,9 @@ tooltip label {
     margin: 4px;
 }
 
-#workspaces button,
+#custom-power,
 #tray,
+#workspaces button,
 #cpu,
 #language,
 #pulseaudio,
@@ -33,10 +33,14 @@ tooltip label {
     border-radius: 6px;
 }
 
-#custom-launcher {
-    font-size: 32px;
+#custom-power {
+    margin: 10px 5px 5px;
+    padding: 8px 0 8px 4px;
+    font-size: 28px;
 }
 
+#tray,
+#workspaces button,
 #cpu,
 #language,
 #pulseaudio,
@@ -44,25 +48,24 @@ tooltip label {
 #battery,
 #clock {
     margin: 5px;
-}
-
-#workspaces button {
-    margin: 5px 20px;
-}
-
-#tray {
-    margin: 10px 20px 0;
+    padding: 5px 3px;
 }
 
 #custom-launcher {
     margin: 5px 5px 10px;
-    padding-left: 4px;
+    padding: 5px 0 5px 4px;
+    font-size: 32px;
+}
+
+#workspaces button * {
+    font-size: 28px;
 }
 
 #workspaces button.active {
     border-color: #c6a0f6;
 }
 
+#custom-power:hover,
 #cpu:hover,
 #memory:hover,
 #network:hover,
