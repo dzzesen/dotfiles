@@ -8,7 +8,7 @@
     "spacing": 0,
     "reload_style_on_change": true,
     "fixed-center": false,
-    "modules-left": ["custom/power", "tray"],
+    "modules-left": ["custom/launcher", "custom/power", "tray"],
     "modules-center": ["niri/workspaces"],
     "modules-right": [
       "cpu",
@@ -16,8 +16,7 @@
       "pulseaudio",
       "backlight",
       "battery",
-      "clock",
-      "custom/launcher"
+      "clock"
     ],
     "custom/power": {
       "format": "⏼",

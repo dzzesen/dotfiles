@@ -17,30 +17,30 @@ tooltip label {
     margin: 4px;
 }
 
-#custom-power,
 #tray,
+#custom-power,
+#custom-launcher,
 #workspaces button,
 #cpu,
 #language,
 #pulseaudio,
 #backlight,
 #battery,
-#clock,
-#custom-launcher {
+#clock {
     color: #cad3f5;
     background-color: #1e2030;
     border: 2px solid #494d64;
     border-radius: 6px;
 }
 
-#custom-power {
-    margin: 10px 5px 5px;
-    padding: 8px 0 8px 4px;
-    font-size: 28px;
+#tray,
+#custom-power,
+#custom-launcher,
+#workspaces button {
+    margin: 5px 18px;
+    padding: 10px 3px;
 }
 
-#tray,
-#workspaces button,
 #cpu,
 #language,
 #pulseaudio,
@@ -52,11 +52,18 @@ tooltip label {
 }
 
 #custom-launcher {
-    margin: 5px 5px 10px;
-    padding: 5px 0 5px 4px;
-    font-size: 32px;
+    margin-top: 10px;
 }
 
+#clock {
+    margin-bottom: 10px;
+}
+
+#custom-power {
+    font-size: 24px;
+}
+
+#custom-launcher,
 #workspaces button * {
     font-size: 28px;
 }
