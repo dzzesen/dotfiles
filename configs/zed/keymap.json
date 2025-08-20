@@ -2,11 +2,11 @@
   {
     "bindings": {
       "ctrl-q": "workspace::CloseAllDocks",
-      "g n": "project_panel::ToggleFocus",
-      "g a": "agent::ToggleFocus",
-      "g c": "git_panel::ToggleFocus",
-      "g o": "outline_panel::ToggleFocus",
-      "g l": [
+      "ctrl-g n": "project_panel::ToggleFocus",
+      "ctrl-g a": "agent::ToggleFocus",
+      "ctrl-g c": "git_panel::ToggleFocus",
+      "ctrl-g o": "outline_panel::ToggleFocus",
+      "ctrl-g l": [
         "task::Spawn",
         { "task_name": "start lazygit", "reveal_target": "center" }
       ]
