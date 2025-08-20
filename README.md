@@ -42,7 +42,7 @@ paru -S bluez bluez-utils brightnessctl gnome-keyring networkmanager man-db man-
 
 Install workspace packages:
 ```bash
-paru -S blueman fuzzel keyd network-manager-applet noto-fonts-emoji papirus-icon-theme swaybg swayidle swaync ttf-hack-nerd ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono waybar
+paru -S blueman fuzzel keyd network-manager-applet noto-fonts-emoji papirus-icon-theme swaybg swayidle swaylock swaync ttf-hack-nerd ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono waybar
 ```
 
 Install tui packages:
