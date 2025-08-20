@@ -37,6 +37,8 @@
       path: configs/waybar/config.jsonc
     ~/.config/waybar/style.css:
       path: configs/waybar/style.css
+    ~/.config/swaylock/config:
+      path: configs/swaylock/config
     ~/.themes/Catppuccin-Macchiato-Standard-Sky-Dark:
       path: configs/gnome-themes/Catppuccin-Macchiato-Standard-Sky-Dark
     ~/.config/swaync/style.css:
