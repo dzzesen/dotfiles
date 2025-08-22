@@ -56,6 +56,8 @@
       path: configs/zsh/.zshrc
     ~/.config/starship.toml:
       path: configs/starship/starship.toml
+    ~/.config/yazi:
+      path: configs/yazi
     ~/.config/fuzzel/fuzzel.ini:
       path: configs/fuzzel/fuzzel.ini
     ~/.config/nvim:
