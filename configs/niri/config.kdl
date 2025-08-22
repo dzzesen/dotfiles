@@ -12,7 +12,6 @@ input {
         tap
         dwt
         drag true
-        drag-lock
         accel-speed 0.25
         scroll-factor 1.5
         accel-profile "adaptive"

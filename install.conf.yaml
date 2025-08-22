@@ -66,6 +66,12 @@
       path: configs/browser/chromium/webapps/chatgpt/chatgpt.desktop
     ~/.local/share/applications/perplexity.desktop:
       path: configs/browser/chromium/webapps/perplexity/perplexity.desktop
+    ~/.local/share/applications/gmail-kopeykindzzesen.desktop:
+      path: configs/browser/chromium/webapps/gmail/gmail-kopeykindzzesen.desktop
+    ~/.local/share/applications/gmail-razortheory.desktop:
+      path: configs/browser/chromium/webapps/gmail/gmail-razortheory.desktop
+    ~/.local/share/applications/gmail-rawbot.desktop:
+      path: configs/browser/chromium/webapps/gmail/gmail-rawbot.desktop
 
 - shell:
     - command: git submodule update --init --recursive

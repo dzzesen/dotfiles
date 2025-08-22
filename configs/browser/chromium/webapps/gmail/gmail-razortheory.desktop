@@ -1,0 +1,8 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Gmail - denis.k@razortheory.com
+Exec=chromium --app=https://mail.google.com/mail/u/1/#inbox
+Icon=/home/dzesen/.dotfiles/configs/browser/chromium/webapps/gmail/gmail-icon.png
+Comment=Open https://mail.google.com/mail/u/1/#inbox in a new window in Chromium.
