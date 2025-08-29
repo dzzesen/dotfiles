@@ -60,14 +60,16 @@
       "on-click-middle": "close"
     },
     "niri/language": {
-      "format-pl": "EN",
+      "format-en": "EN",
       "format-ru": "RU",
+      "format-pl": "PL",
+      "format-fi": "FI",
       "tooltip-format": "{long}",
       "on-click": "niri msg action switch-layout next"
     },
     "pulseaudio": {
       "format": "{icon} {volume}",
-      "format-bluetooth": "󰂱 {icon} {volume}",
+      "format-bluetooth": "󰂱 {volume}",
       "format-muted": "  ",
       "format-icons": [" ", " ", " ", " ", " "],
       "on-click": "pavucontrol",

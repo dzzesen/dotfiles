@@ -1,10 +1,10 @@
 input {
     keyboard {
         xkb {
-            layout "pl,ru"
+            layout "us,ru,fi,pl"
         }
-        repeat-delay 250
-        repeat-rate 70
+        repeat-delay 300
+        repeat-rate 90
         track-layout "global"
     }
 
@@ -136,24 +136,15 @@ workspace "media"
 binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
-    // Suggested binds for running programs: terminal, app launcher, screen locker.
-    Mod+T { spawn "kitty"; }
     Mod+O { spawn "fuzzel"; }
     Mod+Space { toggle-overview; }
-    Mod+Ctrl+Q { spawn "~/.dotfiles/configs/fuzzel/power-menu.sh"; }
+    Mod+Backspace { spawn "~/.dotfiles/configs/fuzzel/power-dmenu.sh"; }
+    Mod+I { spawn "~/.dotfiles/configs/fuzzel/layout-dmenu.sh"; }
+    Mod+M { spawn "~/.dotfiles/configs/niri/switch-layout.sh"; }
 
-    Super+Alt+L { spawn "swaylock"; }
-
-    // You can also use a shell. Do this if you need pipes, multiple commands, etc.
-    // Note: the entire command goes as a single argument in the end.
-    // Mod+T { spawn "bash" "-c" "notify-send hello && exec alacritty"; }
-
-    // Example volume keys mappings for PipeWire & WirePlumber.
-    // The allow-when-locked=true property makes them work even when the session is locked.
-    XF86AudioRaiseVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1+"; }
-    XF86AudioLowerVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1-"; }
-    XF86AudioMute        allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"; }
-    XF86AudioMicMute     allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SOURCE@" "toggle"; }
+    XF86AudioRaiseVolume allow-when-locked=true { spawn "pactl" "set-sink-volume" "@DEFAULT_SINK@" "+1%"; }
+    XF86AudioLowerVolume allow-when-locked=true { spawn "pactl" "set-sink-volume" "@DEFAULT_SINK@" "-1%"; }
+    XF86AudioMute        allow-when-locked=true { spawn "pactl" "set-sink-mute" "@DEFAULT_SINK@" "toggle"; }
 
     Mod+Q { close-window; }
 
@@ -342,14 +333,6 @@ binds {
     // Windows in this column will appear as vertical tabs,
     // rather than stacked on top of each other.
     Mod+W { toggle-column-tabbed-display; }
-
-    // Actions to switch layouts.
-    // Note: if you uncomment these, make sure you do NOT have
-    // a matching layout switch hotkey configured in xkb options above.
-    // Having both at once on the same hotkey will break the switching,
-    // since it will switch twice upon pressing the hotkey (once by xkb, once by niri).
-    Ctrl+Space       { switch-layout "next"; }
-    // Mod+Shift+Space { switch-layout "prev"; }
 
     Print { spawn "bash" "-c" "flameshot gui"; }
     Ctrl+Print { screenshot-screen; }
