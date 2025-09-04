@@ -55,10 +55,18 @@
     "thumb_border": "none",
     "current_line_highlight": "line"
   },
+  "inlay_hints": {
+    "enabled": true,
+    "show_type_hints": true,
+    "show_parameter_hints": true,
+    "show_other_hints": true
+  },
+  "format_on_save": "off",
   "languages": {
     "Python": {
       "show_edit_predictions": false,
       "language_servers": ["pyright", "ruff"],
+      // "language_servers": ["python-lsp/python-lsp-server"],
       "formatter": [
         {
           "code_actions": {
