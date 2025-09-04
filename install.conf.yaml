@@ -62,6 +62,8 @@
       path: configs/fuzzel/fuzzel.ini
     ~/.config/nvim:
       path: configs/nvim
+    ~/.config/helix:
+      path: configs/helix
     ~/.config/ptpython/config.py:
       path: configs/ptpython/config.py
     ~/.local/share/applications/chatgpt.desktop:
