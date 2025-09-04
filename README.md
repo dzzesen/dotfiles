@@ -47,17 +47,17 @@ paru -S blueman fuzzel keyd network-manager-applet noto-fonts-emoji papirus-icon
 
 Install tui packages:
 ```bash
-paru -S btop jq neovim lazygit pgcli pgweb starship yazi zsh
+paru -S btop jq helix lazygit pgcli pgweb starship yazi zsh
 ```
 
 Install gui packages:
 ```bash
-paru -S another-redis-desktop-manager-appimage boost-note-local-bin chromium flameshot kitty obs-studio slack-desktop telegram-desktop totem wezterm zed
+paru -S another-redis-desktop-manager-appimage blender boost-note-local-bin chromium flameshot godot kitty obs-studio slack-desktop telegram-desktop totem wezterm zed
 ```
 
 Install packages for coding:
 ```bash
-paru -S bore cloudflared docker docker-compose luarocks npm python-pipenv pre-commit pyright ruff ruff-lsp rustup uv
+paru -S bore cloudflared docker docker-compose luarocks npm marksman python-pipenv pre-commit pyright ruff ruff-lsp rustup uv
 ```
 
 Run installation. You can do it safely multiple times:
