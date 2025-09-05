@@ -5,6 +5,7 @@ export PIPENV_VENV_IN_PROJECT=1
 
 
 eval "$(starship init zsh)"
+eval "$(atuin init zsh)"
 eval $(ssh-agent) > /dev/null
 
 
