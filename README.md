@@ -45,9 +45,9 @@ Install workspace packages:
 paru -S blueman fuzzel keyd network-manager-applet noto-fonts-emoji papirus-icon-theme swaybg swayidle swaylock swaync ttf-hack-nerd ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono waybar
 ```
 
-Install tui packages:
+Install terminal packages:
 ```bash
-paru -S btop jq helix lazygit pgcli pgweb starship yazi zsh
+paru -S btop jq helix lazygit lsd pgcli pgweb starship yazi zsh
 ```
 
 Install gui packages:

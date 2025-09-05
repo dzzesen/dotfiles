@@ -24,6 +24,7 @@ function dockerps {
 }
 alias y="yazi"
 alias g="git"
+alias l="lsd -lA"
 alias h="helix"
 
 export GROFF_NO_SGR=1

@@ -58,6 +58,8 @@
       path: configs/starship/starship.toml
     ~/.config/yazi:
       path: configs/yazi
+    ~/.config/lsd:
+      path: configs/lsd
     ~/.config/fuzzel/fuzzel.ini:
       path: configs/fuzzel/fuzzel.ini
     ~/.config/nvim:
