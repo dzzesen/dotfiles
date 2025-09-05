@@ -5,8 +5,12 @@ local config = {}
 config.enable_wayland = false
 color_scheme.apply_to_config(config)
 config.font = wezterm.font("Hack Nerd Font")
+config.font_size = 18
 config.scrollback_lines = 30000
 config.enable_scroll_bar = false
+config.use_fancy_tab_bar = false
+config.enable_tab_bar = true
+config.hide_tab_bar_if_only_one_tab = true
 
 config.ssh_domains = {
     {
