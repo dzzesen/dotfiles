@@ -52,7 +52,7 @@ paru -S atuin btop git-delta jq helix lazygit lsd pgcli pgweb starship yazi zsh
 
 Install gui packages:
 ```bash
-paru -S another-redis-desktop-manager-appimage blender boost-note-local-bin chromium flameshot godot kitty obs-studio slack-desktop telegram-desktop totem wezterm zed
+paru -S another-redis-desktop-manager-appimage blender boost-note-local-bin chromium flameshot foot godot obs-studio slack-desktop telegram-desktop totem
 ```
 
 Install packages for coding:

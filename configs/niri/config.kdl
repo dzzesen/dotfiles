@@ -62,7 +62,7 @@ layout {
 spawn-at-startup "xwayland-satellite" ":13"
 spawn-at-startup "sh" "/home/dzesen/.dotfiles/configs/niri/xhost.sh"
 spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
-spawn-at-startup "kitty"
+spawn-at-startup "foot"
 
 environment {
     XAUTHORITY "$HOME/.Xauthority"
@@ -84,13 +84,8 @@ window-rule {
 }
 
 window-rule {
-    match at-startup=true app-id="kitty"
+    match at-startup=true app-id="foot"
     open-on-workspace "code"
-}
-
-window-rule {
-    match is-focused=true app-id="kitty"
-    scroll-factor 10.0
 }
 
 window-rule {

@@ -49,6 +49,8 @@
       path: configs/kitty
     ~/.config/wezterm:
       path: configs/wezterm
+    ~/.config/foot:
+      path: configs/foot
     ~/.config/zed:
       path: configs/zed
       force: true
