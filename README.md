@@ -47,7 +47,7 @@ paru -S blueman fuzzel keyd network-manager-applet noto-fonts-emoji papirus-icon
 
 Install terminal packages:
 ```bash
-paru -S atuin btop jq helix lazygit lsd pgcli pgweb starship yazi zsh
+paru -S atuin btop git-delta jq helix lazygit lsd pgcli pgweb starship yazi zsh
 ```
 
 Install gui packages:

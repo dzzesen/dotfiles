@@ -2,6 +2,14 @@
 	name = Dzenis Kopeikin
 	email = kopeykindzzesen@gmail.com
 [core]
+	pager = delta
 	editor = vim --nofork
 [alias]
 	history = log --pretty='%C(yellow)%h %C(cyan)%cd %Cblue%aN%C(auto)%d %Creset%s' --graph --date=relative --date-order
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+	navigate = true
+	dark = true
+[merge]
+	conflictStyle = zdiff3
