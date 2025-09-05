@@ -94,11 +94,6 @@ window-rule {
 }
 
 window-rule {
-    match is-focused=true app-id="dev.zed.Zed"
-    scroll-factor 7.0
-}
-
-window-rule {
     match app-id="lazygit"
     open-floating true
     default-floating-position x=0 y=70 relative-to="top"
@@ -118,8 +113,8 @@ window-rule {
     match title="Picture in picture"
     open-floating true
     default-floating-position x=20 y=20 relative-to="bottom-right"
-    default-window-height { proportion 0.3; }
-    default-column-width { proportion 0.3; }
+    default-window-height { proportion 0.35; }
+    default-column-width { proportion 0.35; }
 }
 
 // window-rule {
@@ -127,8 +122,7 @@ window-rule {
 //     baba-is-float true
 // }
 
-workspace "notes"
-workspace "ai"
+workspace "0"
 workspace "code"
 workspace "browser"
 workspace "media"
