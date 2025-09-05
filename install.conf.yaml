@@ -45,15 +45,8 @@
       path: configs/swaync/style.css
     ~/.config/paru/paru.conf:
       path: configs/paru/paru.conf
-    ~/.config/kitty:
-      path: configs/kitty
-    ~/.config/wezterm:
-      path: configs/wezterm
     ~/.config/foot:
       path: configs/foot
-    ~/.config/zed:
-      path: configs/zed
-      force: true
     ~/.zshrc:
       path: configs/zsh/.zshrc
     ~/.config/starship.toml:
@@ -64,8 +57,6 @@
       path: configs/lsd
     ~/.config/fuzzel/fuzzel.ini:
       path: configs/fuzzel/fuzzel.ini
-    ~/.config/nvim:
-      path: configs/nvim
     ~/.config/helix:
       path: configs/helix
     ~/.config/ptpython/config.py:
