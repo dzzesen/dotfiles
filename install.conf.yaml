@@ -88,3 +88,4 @@
     - command: chmod +x ~/.dotfiles/configs/niri/switch-layout.sh
     - command: chmod +x ~/.dotfiles/configs/foot/open-lazygit.sh
     - command: chmod +x ~/.dotfiles/configs/foot/open-yazi.sh
+    - command: chmod +x ~/.dotfiles/configs/foot/open-git-history.sh

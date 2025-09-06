@@ -9,6 +9,7 @@
     /etc/pacman.conf:
     /bin/open-lazygit:
     /bin/open-yazi:
+    /bin/open-git-history:
 
 - link:
     /etc/keyd/default.conf:
@@ -26,6 +27,8 @@
       path: configs/foot/open-lazygit.sh
     /bin/open-yazi:
       path: configs/foot/open-yazi.sh
+    /bin/open-git-history:
+      path: configs/foot/open-git-history.sh
 
 - shell:
     - command: sudo systemctl enable keyd
