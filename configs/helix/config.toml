@@ -1,1 +1,5 @@
 theme = "catppuccin_macchiato"
+
+
+[keys.normal."+"]
+g = ":run-shell-command open-lazygit"

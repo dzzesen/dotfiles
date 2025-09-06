@@ -20,6 +20,8 @@
     /etc/pacman.conf:
       path: configs/paru/pacman.conf
       force: true
+    /bin/open-lazygit:
+      path: configs/foot/open-lazygit.sh
 
 - shell:
     - command: sudo systemctl enable keyd
