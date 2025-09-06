@@ -89,7 +89,7 @@ window-rule {
 }
 
 window-rule {
-    match app-id="lazygit"
+    match app-id="float"
     open-floating true
     default-floating-position x=0 y=70 relative-to="top"
     default-window-height { proportion 0.85; }
