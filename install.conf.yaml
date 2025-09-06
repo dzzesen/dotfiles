@@ -87,3 +87,4 @@
     - command: chmod +x ~/.dotfiles/configs/fuzzel/layout-dmenu.sh
     - command: chmod +x ~/.dotfiles/configs/niri/switch-layout.sh
     - command: chmod +x ~/.dotfiles/configs/foot/open-lazygit.sh
+    - command: chmod +x ~/.dotfiles/configs/foot/open-yazi.sh

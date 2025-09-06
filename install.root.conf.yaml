@@ -7,6 +7,8 @@
     /etc/keyd:
     /etc/ly/config.ini:
     /etc/pacman.conf:
+    /bin/open-lazygit:
+    /bin/open-yazi:
 
 - link:
     /etc/keyd/default.conf:
@@ -22,6 +24,8 @@
       force: true
     /bin/open-lazygit:
       path: configs/foot/open-lazygit.sh
+    /bin/open-yazi:
+      path: configs/foot/open-yazi.sh
 
 - shell:
     - command: sudo systemctl enable keyd
