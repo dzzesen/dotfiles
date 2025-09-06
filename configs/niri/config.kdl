@@ -125,6 +125,7 @@ workspace "media"
 binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
+    Mod+T { spawn "foot"; }
     Mod+O { spawn "fuzzel"; }
     Mod+Space { toggle-overview; }
     Mod+Backspace { spawn "~/.dotfiles/configs/fuzzel/power-dmenu.sh"; }
