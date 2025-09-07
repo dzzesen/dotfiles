@@ -41,6 +41,16 @@ export LESS=\
 "--color=u+g$ "
 
 
+autoload -Uz add-zsh-hook
+
+foot_integration() {
+    # Jumping between prompts
+    print -Pn "\e]133;A\e\\"
+}
+
+add-zsh-hook precmd foot_integration
+
+
 # Plug in plugins
 
 # zsh-vi-mode
