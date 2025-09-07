@@ -48,7 +48,7 @@
         "warning": 50,
         "critical": 85
       },
-      "on-click": "kitty -e btop"
+      "on-click": "foot --app-id=btop-float btop"
     },
     "wlr/taskbar": {
       "format": "{icon}",
