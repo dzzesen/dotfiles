@@ -10,6 +10,7 @@
     /bin/open-lazygit:
     /bin/open-yazi:
     /bin/open-git-history:
+    /bin/open-git-diff:
 
 - link:
     /etc/keyd/default.conf:
@@ -29,6 +30,8 @@
       path: configs/foot/open-yazi.sh
     /bin/open-git-history:
       path: configs/foot/open-git-history.sh
+    /bin/open-git-diff:
+      path: configs/foot/open-git-diff.sh
 
 - shell:
     - command: sudo systemctl enable keyd

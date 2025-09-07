@@ -3,5 +3,6 @@ theme = "catppuccin_macchiato"
 
 [keys.normal."+"]
 g = ":run-shell-command open-lazygit"
-y = ":run-shell-command open-yazi"
 h = ":run-shell-command open-git-history"
+d = ":run-shell-command open-git-diff"
+y = ":run-shell-command open-yazi"
