@@ -1,6 +1,6 @@
 * {
     font-family: "Symbols Nerd Font", "Hack Nerd Font Mono";
-    font-size: 20px;
+    font-size: 18px;
 }
 
 window#waybar {
@@ -64,12 +64,12 @@ tooltip label {
 }
 
 #custom-power {
-    font-size: 24px;
+    font-size: 20px;
 }
 
 #custom-launcher,
 #workspaces button * {
-    font-size: 30px;
+    font-size: 24px;
 }
 
 #workspaces button.active {

@@ -3,7 +3,7 @@
     "name": "leftbar",
     "layer": "top",
     "position": "left",
-    "width": 50,
+    "width": 40,
     "margin": 0,
     "spacing": 0,
     "reload_style_on_change": true,
@@ -25,7 +25,7 @@
     },
     "tray": {
       "spacing": 5,
-      "icon-size": 28
+      "icon-size": 22
     },
     "niri/workspaces": {
       "disable-scroll": true,
@@ -42,22 +42,13 @@
     "cpu": {
       "interval": 1,
       "min-length": 6,
-      "format": "{icon} {usage}%",
+      "format": "{icon}{usage}%",
       "format-icons": ["󱙺 ", "󱚠 ", "󱚢 "],
       "states": {
         "warning": 50,
-        "critical": 85
+        "critical": 80
       },
       "on-click": "foot --app-id=btop-float btop"
-    },
-    "wlr/taskbar": {
-      "format": "{icon}",
-      "icon-theme": "Papirus-Dark",
-      "icon-size": 28,
-      "tooltip": true,
-      "tooltip-format": "{title} | {app_id}",
-      "on-click": "activate",
-      "on-click-middle": "close"
     },
     "niri/language": {
       "format-en": "EN",
@@ -68,7 +59,7 @@
       "on-click": "niri msg action switch-layout next"
     },
     "pulseaudio": {
-      "format": "{icon} {volume}",
+      "format": "{icon}{volume}",
       "format-bluetooth": "󰂱 {volume}",
       "format-muted": "  ",
       "format-icons": [" ", " ", " ", " ", " "],
@@ -78,7 +69,7 @@
       "max-volume": 300
     },
     "backlight": {
-      "format": "{icon} {percent}",
+      "format": "{icon}{percent}",
       "format-icons": ["󰃞 ", "󰃟 ", "󰃝 ", "󰃠 "],
       "tooltip-format": "{percent}%",
       "on-click": "",
