@@ -36,6 +36,10 @@ input {
     position x=1280 y=0
 }
 
+cursor {
+    hide-after-inactive-ms 1000
+}
+
 layout {
     gaps 12
     center-focused-column "never"
