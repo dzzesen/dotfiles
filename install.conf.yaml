@@ -63,6 +63,8 @@
       path: configs/ptpython/config.py
     ~/.local/share/applications/claude.desktop:
       path: configs/browser/chromium/webapps/claude/claude.desktop
+    ~/.local/share/applications/deepseek.desktop:
+      path: configs/browser/chromium/webapps/deepseek/deepseek.desktop
     ~/.local/share/applications/chatgpt.desktop:
       path: configs/browser/chromium/webapps/chatgpt/chatgpt.desktop
     ~/.local/share/applications/perplexity.desktop:
