@@ -57,7 +57,10 @@ paru -S another-redis-desktop-manager-appimage blender boost-note-local-bin chro
 
 Install packages for coding:
 ```bash
-paru -S bore cloudflared docker docker-compose luarocks npm marksman python-pipenv pre-commit pyright ruff ruff-lsp rustup uv
+paru -S bore cloudflared docker docker-compose luarocks npm marksman pre-commit rustup uv
+```
+```bash
+uv tool install ty ruff zuban python-lsp-server
 ```
 
 Run installation. You can do it safely multiple times:
