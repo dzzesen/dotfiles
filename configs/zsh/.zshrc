@@ -27,6 +27,8 @@ alias y="yazi"
 alias g="git"
 alias l="lsd -lA"
 alias h="helix"
+alias cdbirthdaybot="cd ~/Projects/birthdaybot"
+alias cddotfiles="cd ~/Projects/dotfiles"
 
 export GROFF_NO_SGR=1
 export LESS=\
