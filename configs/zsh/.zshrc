@@ -29,6 +29,7 @@ alias l="lsd -lA"
 alias h="helix"
 alias cdbirthdaybot="cd ~/Projects/birthdaybot"
 alias cddotfiles="cd ~/Projects/dotfiles"
+alias cdnotes="cd ~/Notes"
 
 export GROFF_NO_SGR=1
 export LESS=\
