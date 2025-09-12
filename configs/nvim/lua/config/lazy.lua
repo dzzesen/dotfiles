@@ -1,6 +1,7 @@
 require("lazy").setup({
   spec = {
     { import = "plugins.catppuccin_theme" },
+    { import = "plugins.which_key" },
   },
   defaults = { version = false },
   install = { colorscheme = { "catppuccin" } },
@@ -16,3 +17,4 @@ require("lazy").setup({
     frequency = 86400, -- check for updates every day
   },
 })
+
