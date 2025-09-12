@@ -6,7 +6,7 @@ return {
     win = {
       no_overlap = false,
       width = { min = 100, max = 100 },
-      height = { min = 20, max = 20 },
+      height = { min = 10, max = 10 },
       border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
       title_pos = "right",
     },
@@ -20,6 +20,7 @@ return {
         { "g", group = "goto" },
         { "<leader>t", group = "Tools", icon = "󱁤 " },
         { "<leader>tl", "<cmd>Lazy<cr>", desc = "Lazy.nvim (plugin manager)", icon = " " },
+        { "<leader>tm", "<cmd>Mason<cr>", desc = "Mason.nvim (package manager)", icon = "󰏖 " },
 	{
           "<leader>w",
           group = "Windows",
