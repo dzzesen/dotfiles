@@ -42,12 +42,22 @@ paru -S bluez bluez-utils brightnessctl gnome-keyring networkmanager man-db man-
 
 Install workspace packages:
 ```bash
-paru -S blueman fuzzel keyd network-manager-applet noto-fonts-emoji papirus-icon-theme swaybg swayidle swaylock swaync ttf-hack-nerd ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono waybar
+paru -S blueman fuzzel keyd network-manager-applet swaybg swayidle swaylock swaync waybar
+```
+```
+
+Install fonts, emojies and icons:
+```bash
+paru -S ttf-hack-nerd otf-comicshanns-nerd noto-fonts-emoji papirus-icon-theme 
+```
+```
+```
+```
 ```
 
 Install terminal packages:
 ```bash
-paru -S atuin btop git-delta jq helix lazygit lsd pgcli pgweb starship yazi zsh
+paru -S atuin btop git-delta jq helix lazygit lsd nvim pgcli pgweb starship yazi zsh
 ```
 
 Install gui packages:

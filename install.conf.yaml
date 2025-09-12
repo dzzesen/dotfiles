@@ -83,7 +83,7 @@
     - command: systemctl --user daemon-reload
     - command: gsettings set org.gnome.desktop.interface gtk-theme 'Catppuccin-Macchiato-Standard-Sky-Dark'
     - command: gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
-    - command: gsettings set org.gnome.desktop.interface document-font-name 'Hack Nerd Font Propo 13'
+    - command: gsettings set org.gnome.desktop.interface document-font-name 'JetBrainsMono Nerd Font Propo 13'
     - command: gsettings set org.gnome.desktop.interface font-name 'Cantarell Bold 13 @wght=700'
     - command: gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
     - command: gsettings set org.gnome.desktop.interface monospace-font-name 'Hack Nerd Font Bold 13'
