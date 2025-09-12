@@ -15,14 +15,20 @@ return {
       scroll_up = "<c-k>",
     },
     show_help = false,
-  },
-  keys = {
-    {
-      "<leader>?",
-      function()
-        require("which-key").show({ global = false })
-      end,
-      desc = "Buffer Local Keymaps (which-key)",
+    spec = {
+      { mode = { "n", "v" },
+        { "g", group = "goto" },
+        { "<leader>t", group = "Tools", icon = "󱁤 " },
+        { "<leader>tl", "<cmd>Lazy<cr>", desc = "Lazy.nvim (plugin manager)", icon = " " },
+	{
+          "<leader>w",
+          group = "Windows",
+          proxy = "<c-w>",
+          expand = function()
+            return require("which-key.extras").expand.win()
+          end,
+        },
+      },
     },
   },
 }
