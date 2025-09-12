@@ -4,5 +4,8 @@ return {
   priority = 1000,
   opts = {
     flavour = "macchiato",
+    float = {
+      transparent = true,
+    },
   }
 }
