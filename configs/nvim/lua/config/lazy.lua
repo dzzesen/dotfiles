@@ -4,6 +4,7 @@ require("lazy").setup({
     { import = "plugins.which_key" }, -- key hints
     { import = "plugins.mason" }, -- lsp, linter, formatter manager
     { import = "plugins.nvim_treesitter" }, -- highlighting
+    { import = "plugins.diagflow" }, -- diagnostic messages
   },
   defaults = { version = false },
   install = { colorscheme = { "catppuccin" } },
@@ -19,3 +20,4 @@ require("lazy").setup({
     frequency = 86400, -- check for updates every day
   },
 })
+
