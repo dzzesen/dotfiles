@@ -1,8 +1,9 @@
 require("lazy").setup({
   spec = {
-    { import = "plugins.catppuccin_theme" },
-    { import = "plugins.which_key" },
-    { import = "plugins.mason" },
+    { import = "plugins.catppuccin_theme" }, -- color theme
+    { import = "plugins.which_key" }, -- key hints
+    { import = "plugins.mason" }, -- lsp, linter, formatter manager
+    { import = "plugins.nvim_treesitter" }, -- highlighting
   },
   defaults = { version = false },
   install = { colorscheme = { "catppuccin" } },
@@ -18,4 +19,3 @@ require("lazy").setup({
     frequency = 86400, -- check for updates every day
   },
 })
-

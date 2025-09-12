@@ -69,9 +69,6 @@ Install packages for coding:
 ```bash
 paru -S bore cloudflared docker docker-compose luarocks npm marksman pre-commit rustup uv
 ```
-```bash
-uv tool install ty ruff zuban python-lsp-server
-```
 
 Run installation. You can do it safely multiple times:
 ```bash
