@@ -2,11 +2,11 @@ return {
   "folke/which-key.nvim",
   event = "VeryLazy",
   opts = {
-    preset = "helix",
+    preset = "modern",
     win = {
       no_overlap = false,
-      width = { min = 50, max = 50 },
-      height = { min = 100, max = 100 },
+      width = { min = 100, max = 100 },
+      height = { min = 20, max = 20 },
       border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
       title_pos = "right",
     },

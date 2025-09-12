@@ -6,7 +6,7 @@ require("lazy").setup({
   defaults = { version = false },
   install = { colorscheme = { "catppuccin" } },
   ui = {
-    size = { width = 0.55, height = 0.90 },
+    size = { width = 100 },
     border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
     backdrop = 100,
     title = "lazy.nvim",
