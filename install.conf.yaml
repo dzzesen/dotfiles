@@ -59,6 +59,8 @@
       path: configs/fuzzel/fuzzel.ini
     ~/.config/helix:
       path: configs/helix
+    ~/.config/nvim:
+      path: configs/nvim
     ~/.config/ptpython/config.py:
       path: configs/ptpython/config.py
     ~/.local/share/applications/claude.desktop:
