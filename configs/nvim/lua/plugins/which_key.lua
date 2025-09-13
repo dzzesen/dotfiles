@@ -2,13 +2,27 @@ return {
   "folke/which-key.nvim",
   event = "VeryLazy",
   opts = {
-    preset = "modern",
+    preset = "helix",
     win = {
       no_overlap = false,
-      width = { min = 100, max = 100 },
-      height = { min = 10, max = 10 },
+      width = { min = 40, max = 40 },
+      height = { min = 0, max = 50 },
       border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
       title_pos = "right",
+    },
+    plugins = {
+      marks = false,
+      registers = false,
+      spelling = false,
+      presets = {
+        operators = false,
+        motions = false,
+        text_objects = false,
+        windows = false,
+        nav = false,
+        z = false,
+        g = false,
+      },
     },
     keys = {
       scroll_down = "<c-j>",
@@ -16,20 +30,27 @@ return {
     },
     show_help = false,
     spec = {
-      { mode = { "n", "v" },
+      {
+        mode = { "n", "v" },
+
         { "g", group = "goto" },
+        { "gg", desc = "Go to first line", icon = " " },
+        { "ge", "G", desc = "Go to last line", icon = " " },
+        { "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", desc = "Go to definition", icon = "  " },
+
         { "<leader>t", group = "Tools", icon = "󱁤 " },
         { "<leader>tl", "<cmd>Lazy<cr>", desc = "Lazy.nvim (plugin manager)", icon = " " },
         { "<leader>tm", "<cmd>Mason<cr>", desc = "Mason.nvim (package manager)", icon = "󰏖 " },
-	{
-          "<leader>w",
-          group = "Windows",
-          proxy = "<c-w>",
-          expand = function()
-            return require("which-key.extras").expand.win()
-          end,
-        },
+      },
+      {
+        mode = { "v" },
+
+        { "<leader>a", group = "Actions", icon = " " },
+        { "<leader>au", "gu", desc = "Lowercase", icon = "󰬵 " },
+        { "<leader>aU", "gU", desc = "Upercase", icon = "󰬶 " },
+        { "<leader>a<c-u>", "~", desc = "Toggle case", icon = "󰬴 " },
       },
     },
+    sort = { "manual" },
   },
 }
