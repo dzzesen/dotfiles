@@ -41,6 +41,8 @@ return {
         { "<leader>t", group = "Tools", icon = "󱁤 " },
         { "<leader>tl", "<cmd>Lazy<cr>", desc = "Lazy.nvim (plugin manager)", icon = " " },
         { "<leader>tm", "<cmd>Mason<cr>", desc = "Mason.nvim (package manager)", icon = "󰏖 " },
+
+        { "<leader>f", "<cmd>Neotree buffers<cr>", desc = "Neo-tree (file browser)", icon = "󱁤 " },
       },
       {
         mode = { "v" },

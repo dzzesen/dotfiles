@@ -4,8 +4,8 @@ return {
       ui = {
         border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
         backdrop = 100,
-        width = 0.7,
-        height = 0.7,
+        width = 0.5,
+        height = 0.8,
       },
     },
 }
