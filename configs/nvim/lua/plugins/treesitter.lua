@@ -15,7 +15,9 @@ return {
         "markdown_inline",
         "python",
         "rust",
-        "gdscript"
+        "gdscript",
+        "html",
+        "yaml",
       },
       highlight = {
         enable = true,

@@ -43,6 +43,9 @@ return {
         { "<leader>tm", "<cmd>Mason<cr>", desc = "Mason.nvim (package manager)", icon = "󰏖 " },
 
         { "<leader>f", "<cmd>Neotree buffers<cr>", desc = "Neo-tree (file browser)", icon = "󱁤 " },
+
+        { "<leader>a", group = "Actions", icon = " " },
+        { "<leader>am", "<cmd>RenderMarkdown buf_toggle<cr>", desc = "Toggle markdown", icon = " " },
       },
       {
         mode = { "v" },

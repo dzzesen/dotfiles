@@ -6,6 +6,7 @@ require("lazy").setup({
     { import = "plugins.treesitter" }, -- highlight, indent https://github.com/nvim-treesitter/nvim-treesitter
     { import = "plugins.diagflow" }, -- diagnostic messages
     { import = "plugins.neotree" }, -- file browser https://github.com/nvim-neo-tree/neo-tree.nvim
+    { import = "plugins.markdown" }, -- markdown render https://github.com/MeanderingProgrammer/render-markdown.nvim
   },
   defaults = { version = false },
   install = { colorscheme = { "catppuccin" } },
