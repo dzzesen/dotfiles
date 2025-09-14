@@ -44,8 +44,15 @@ return {
 
 				{ "<leader>f", "<cmd>Neotree buffers<cr>", desc = "Neo-tree (file browser)", icon = "󱁤 " },
 
+				{ "<leader>s", group = "Search (by Telescope)", icon = " " },
+				{ "<leader>sg", "<cmd>Telescope live_grep<cr>", desc = "Live grep", icon = "󰱼 " },
+
 				{ "<leader>a", group = "Actions", icon = " " },
-				{ "<leader>af", "<cmd>lua require('conform').format({ lsp_fallback = true, async = false, timeout_ms = 500 })<cr>", desc = "Format", icon = "󰅰 " },
+				{ "<leader>af",
+          "<cmd>lua require('conform').format({ lsp_fallback = true, async = false, timeout_ms = 500 })<cr>",
+          desc = "Format",
+          icon = "󰅰 ",
+        },
 				{ "<leader>am", "<cmd>RenderMarkdown buf_toggle<cr>", desc = "Toggle markdown", icon = " " },
 			},
 			{

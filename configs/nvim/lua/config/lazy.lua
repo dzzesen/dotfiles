@@ -9,6 +9,7 @@ require("lazy").setup({
     { import = "plugins.markdown" }, -- markdown render https://github.com/MeanderingProgrammer/render-markdown.nvim
     { import = "plugins.blinkcmp" }, -- complitions support https://github.com/Saghen/blink.cmp
     { import = "plugins.conform" }, -- formatter https://github.com/stevearc/conform.nvim
+    { import = "plugins.telescope" }, -- fuzzy finder https://github.com/nvim-telescope/telescope.nvim
   },
   defaults = { version = false },
   install = { colorscheme = { "catppuccin" } },
