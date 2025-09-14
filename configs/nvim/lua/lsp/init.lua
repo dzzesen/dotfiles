@@ -1,3 +1,16 @@
+local registry = require("mason-registry")
+
+local pylsp_pkg = registry.get_package("python-lsp-server")
+if not pylsp_pkg:is_installed() then
+	pylsp_pkg:install()
+end
+
+local pip = vim.fn.expand("~/.local/share/nvim/mason/packages/python-lsp-server/venv/bin/pip")
+vim.fn.system({ pip, "install", "pylsp-mypy" })
+
+vim.lsp.config("ruff", require("lsp.ruff"))
+vim.lsp.enable("ruff")
+
 vim.lsp.config("pylsp", require("lsp.pylsp"))
 vim.lsp.enable("pylsp")
 
