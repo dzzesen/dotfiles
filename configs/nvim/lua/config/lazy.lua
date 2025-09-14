@@ -10,6 +10,7 @@ require("lazy").setup({
     { import = "plugins.blinkcmp" }, -- complitions support https://github.com/Saghen/blink.cmp
     { import = "plugins.conform" }, -- formatter https://github.com/stevearc/conform.nvim
     { import = "plugins.telescope" }, -- fuzzy finder https://github.com/nvim-telescope/telescope.nvim
+    { import = "plugins.gitsigns" }, -- git buffer integration https://github.com/lewis6991/gitsigns.nvim
   },
   defaults = { version = false },
   install = { colorscheme = { "catppuccin" } },
