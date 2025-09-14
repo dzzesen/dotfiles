@@ -7,6 +7,7 @@ require("lazy").setup({
     { import = "plugins.diagflow" }, -- diagnostic messages
     { import = "plugins.neotree" }, -- file browser https://github.com/nvim-neo-tree/neo-tree.nvim
     { import = "plugins.markdown" }, -- markdown render https://github.com/MeanderingProgrammer/render-markdown.nvim
+    { import = "plugins.blinkcmp" }, -- complitions support https://github.com/Saghen/blink.cmp
   },
   defaults = { version = false },
   install = { colorscheme = { "catppuccin" } },
