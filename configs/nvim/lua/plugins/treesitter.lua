@@ -16,6 +16,7 @@ return {
         "python",
         "rust",
         "gdscript",
+        "javascript",
         "html",
         "yaml",
       },
