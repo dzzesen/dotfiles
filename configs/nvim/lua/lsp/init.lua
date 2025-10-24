@@ -12,3 +12,6 @@ vim.lsp.enable("gdscript")
 
 vim.lsp.config("ts_ls", require("lsp.ts_ls"))
 vim.lsp.enable("ts_ls")
+
+vim.lsp.config("rust_analizer", require("lsp.rust_analizer"))
+vim.lsp.enable("rust_analizer")
