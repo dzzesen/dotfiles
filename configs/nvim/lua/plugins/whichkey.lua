@@ -42,9 +42,12 @@ return {
 				{ "<leader>tl", "<cmd>Lazy<cr>", desc = "Lazy.nvim (plugin manager)", icon = " " },
 				{ "<leader>tm", "<cmd>Mason<cr>", desc = "Mason.nvim (package manager)", icon = "󰏖 " },
 
-				{ "<leader>f", "<cmd>Neotree buffers<cr>", desc = "Neo-tree (file browser)", icon = "󱁤 " },
+				{ "<leader>f", group = "File browser (Neo-tree)", icon = "󱁤 " },
+				{ "<leader>ff", "<cmd>Neotree reveal<cr>", desc = "Files", icon = "󱁤 " },
+				{ "<leader>fb", "<cmd>Neotree buffers<cr>", desc = "Buffers", icon = "󱁤 " },
+				{ "<leader>fg", "<cmd>Neotree git_status<cr>", desc = "Git status", icon = "󱁤 " },
 
-				{ "<leader>s", group = "Search (by Telescope)", icon = " " },
+				{ "<leader>s", group = "Search (Telescope)", icon = " " },
 				{ "<leader>sg", "<cmd>Telescope live_grep<cr>", desc = "Live grep", icon = "󰱼 " },
 				{ "<leader>sw", "<cmd>Telescope grep_string<cr>", desc = "Grep word", icon = "󰱼 " },
 				{ "<leader>sd", "<cmd>Telescope diagnostics<cr>", desc = "Diagnostics", icon = "󰱼 " },
