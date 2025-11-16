@@ -1,7 +1,7 @@
 input {
     keyboard {
         xkb {
-            layout "us,ru,fi,pl"
+            layout "us,ru,rs(latin),fi"
         }
         repeat-delay 300
         repeat-rate 90
