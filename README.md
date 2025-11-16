@@ -42,27 +42,23 @@ paru -S bluez bluez-utils brightnessctl curl gnome-keyring gzip networkmanager m
 
 Install workspace packages:
 ```bash
-paru -S blueman fuzzel keyd network-manager-applet swaybg swayidle swaylock swaync waybar
-```
+paru -S blueman fuzzel grim keyd network-manager-applet satty slurp swaybg swayidle swaylock swaync waybar
+paru satty  # screenshot annotation
 ```
 
 Install fonts, emojies and icons:
 ```bash
 paru -S ttf-hack-nerd otf-comicshanns-nerd noto-fonts-emoji papirus-icon-theme 
 ```
-```
-```
-```
-```
 
 Install terminal packages:
 ```bash
-paru -S atuin btop git-delta jq helix lazygit lsd nvim pgcli pgweb starship yazi zsh
+paru -S atuin btop gitui jq lsd nvim pgcli pgweb starship yazi zsh
 ```
 
 Install gui packages:
 ```bash
-paru -S another-redis-desktop-manager-appimage blender chromium flameshot foot godot obs-studio slack-desktop telegram-desktop totem
+paru -S another-redis-desktop-manager-appimage blender chromium foot gimp godot obs-studio play-timer slack-desktop telegram-desktop totem
 ```
 
 Install packages for coding:

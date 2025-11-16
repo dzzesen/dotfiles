@@ -1,0 +1,48 @@
+[general]
+fullscreen = true
+early-exit = true
+corner-roundness = 4 
+initial-tool = "crop"
+copy-command = "wl-copy"
+annotation-size-factor = 1
+save-after-copy = false
+default-hide-toolbars = false
+focus-toggles-toolbars = false
+default-fill-shapes = false
+primary-highlighter = "block"
+disable-notifications = false
+actions-on-right-click = []
+actions-on-enter = []
+actions-on-escape = []
+no-window-decoration = true
+brush-smooth-history-size = 10
+
+[keybinds]
+pointer = "p"
+crop = "c"
+brush = "b"
+line = "i"
+arrow = "a"
+rectangle = "r"
+ellipse = "e"
+text = "t"
+marker = "m"
+blur = "u"
+highlight = "g"
+
+[font]
+family = "Roboto"
+style = "Regular"
+
+[color-palette]
+palette = [
+    "#d20f39",
+    "#40a02b",
+    "#df8e1d",
+    "#1e66f5",
+    "#8839ef",
+    "#eff1f5",
+]
+
+custom = [
+]

@@ -76,8 +76,6 @@ environment {
     XDG_CURRENT_DESKTOP "gnome"
 }
 
-screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
-
 animations {
 }
 
@@ -328,9 +326,7 @@ binds {
     // rather than stacked on top of each other.
     Mod+W { toggle-column-tabbed-display; }
 
-    Print { spawn "bash" "-c" "flameshot gui"; }
-    Ctrl+Print { screenshot-screen; }
-    Alt+Print { screenshot-window; }
+    Print { spawn "bash" "-c" "grim  - | satty -f - -o $(xdg-user-dir PICTURES)/screenshots/grim-%Y-%m-%d_%H:%M:%S.png"; }
 
     // Applications such as remote-desktop clients and software KVM switches may
     // request that niri stops processing the keyboard shortcuts defined here
