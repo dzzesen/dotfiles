@@ -53,6 +53,8 @@
       path: configs/starship/starship.toml
     ~/.config/yazi:
       path: configs/yazi
+    ~/.config/gitui:
+      path: configs/gitui
     ~/.config/lsd:
       path: configs/lsd
     ~/.config/fuzzel/fuzzel.ini:
