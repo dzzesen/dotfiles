@@ -13,6 +13,8 @@ $time\
 $directory\
 (\n\
 $python\
+$lua\
+$rust\
 $git_branch\
 $git_state\
 $git_status\
@@ -79,10 +81,15 @@ repo_root_format = '[󰉓]($style) [$read_only]($read_only_style)[$before_root_p
 disabled = false
 
 [python]
-format = '[${symbol} ${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+format = '[$symbol $pyenv_prefix($version )(\($virtualenv\) )]($style)'
 symbol = ''
-style = 'yellow'
+style = 'bold yellow'
 disabled = false
+
+[rust]
+format = '[$symbol ($version )]($style)'
+symbol = '🦀'
+style = 'bold yellow'
 
 [git_branch]
 always_show_remote = false
