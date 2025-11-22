@@ -5,6 +5,31 @@
 These dotfiles use [Dotbot](https://github.com/anishathalye/dotbot) for installation.
 
 
+Set up wifi:
+```bash
+paru -S iwd dhcpcd impala
+
+# disable nm service
+sudo systemctl stop NetworkManager
+sudo systemctl disable NetworkManager
+
+# enable iwd service
+sudo systemctl enable iwd
+sudo systemctl start iwd
+
+# set up dhcp
+sudo dhcpcd wlan0  # get station name 'iwctl station list'
+
+# set up dns resolution
+sudo systemctl enable systemd-resolved
+sudo systemctl start system-resolved
+sudo ln -sf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
+sudo systemctl restart iwd
+
+# connect
+impala
+```
+
 Install git:
 ```bash
 sudo pacman -S git
@@ -37,12 +62,12 @@ paru -S niri
 
 Install important packages:
 ```bash
-paru -S bluez bluez-utils brightnessctl curl gnome-keyring gzip networkmanager man-db man-pages pavucontrol pulseaudio pulseaudio-bluetooth sqlite tar wget wireguard-tools unzip xdg-desktop-portal-gnome xdg-desktop-portal-wlr xwayland-satellite
+paru -S bluez bluez-utils brightnessctl curl gnome-keyring gzip man-db man-pages pavucontrol pulseaudio pulseaudio-bluetooth sqlite tar wget wireguard-tools unzip xdg-desktop-portal-gnome xdg-desktop-portal-wlr xwayland-satellite
 ```
 
 Install workspace packages:
 ```bash
-paru -S blueman fuzzel grim keyd network-manager-applet satty slurp swaybg swayidle swaylock swaync waybar
+paru -S bluetui fuzzel grim keyd satty slurp swaybg swayidle swaylock swaync waybar
 paru satty  # screenshot annotation
 ```
 

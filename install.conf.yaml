@@ -81,6 +81,10 @@
       path: configs/browser/chromium/webapps/gmail/gmail-razortheory.desktop
     ~/.local/share/applications/gmail-rawbot.desktop:
       path: configs/browser/chromium/webapps/gmail/gmail-rawbot.desktop
+    ~/.local/share/applications/bluetui.desktop:
+      path: configs/foot/apps/bluetui.desktop
+    ~/.local/share/applications/impala-wifi.desktop:
+      path: configs/foot/apps/impala-wifi.desktop
 
 - shell:
     - command: git submodule update --init --recursive
@@ -100,3 +104,5 @@
     - command: chmod +x ~/.dotfiles/configs/foot/open-yazi.sh
     - command: chmod +x ~/.dotfiles/configs/foot/open-git-history.sh
     - command: chmod +x ~/.dotfiles/configs/foot/open-git-diff.sh
+    - command: chmod +x ~/.dotfiles/configs/foot/open-bluetui.sh
+    - command: chmod +x ~/.dotfiles/configs/foot/open-impala-wifi.sh

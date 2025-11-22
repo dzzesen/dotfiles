@@ -1,0 +1,8 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Impala (WiFi manager)
+Exec=/home/dzesen/.dotfiles/configs/foot/open-impala-wifi.sh
+Icon=/home/dzesen/.dotfiles/configs/foot/apps/wifi-icon.svg
+Comment=Open impala, wifi tui manager.

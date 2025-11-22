@@ -8,8 +8,8 @@
     "spacing": 0,
     "reload_style_on_change": true,
     "fixed-center": false,
-    "modules-left": ["custom/launcher", "custom/power", "tray"],
-    "modules-center": ["niri/workspaces"],
+    "modules-left": ["tray", "niri/workspaces"],
+    "modules-center": [],
     "modules-right": [
       "cpu",
       "niri/language",
@@ -18,11 +18,6 @@
       "battery",
       "clock"
     ],
-    "custom/power": {
-      "format": "⏼",
-      "on-click": "~/.dotfiles/configs/fuzzel/power-dmenu.sh",
-      "tooltip": false
-    },
     "tray": {
       "spacing": 5,
       "icon-size": 22
@@ -147,11 +142,6 @@
         "on-scroll-down": "shift_down",
         "on-scroll-up": "shift_up"
       }
-    },
-    "custom/launcher": {
-      "format": "",
-      "on-click": "fuzzel",
-      "tooltip": false
     }
   }
 ]
