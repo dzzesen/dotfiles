@@ -14,11 +14,11 @@ sudo systemctl stop NetworkManager
 sudo systemctl disable NetworkManager
 
 # enable iwd service
-sudo systemctl enable iwd
-sudo systemctl start iwd
+sudo systemctl enable --now iwd
 
 # set up dhcp
-sudo dhcpcd wlan0  # get station name 'iwctl station list'
+sudo systemctl enable --now dhcpcd@wlan0.service  # get station name 'iwctl station list'
+sudo systemctl enable --now dhcpcd  # or start the daemon for all newtwork interfaces
 
 # set up dns resolution
 sudo systemctl enable systemd-resolved

@@ -8,9 +8,10 @@
     "spacing": 0,
     "reload_style_on_change": true,
     "fixed-center": false,
-    "modules-left": ["tray", "niri/workspaces"],
+    "modules-left": ["niri/workspaces"],
     "modules-center": [],
     "modules-right": [
+      "tray", 
       "cpu",
       "niri/language",
       "pulseaudio",
