@@ -73,7 +73,7 @@ paru satty  # screenshot annotation
 
 Install fonts, emojies and icons:
 ```bash
-paru -S ttf-hack-nerd otf-comicshanns-nerd noto-fonts-emoji papirus-icon-theme 
+paru -S otf-myna noto-fonts-emoji papirus-icon-theme 
 ```
 
 Install terminal packages:
