@@ -93,7 +93,7 @@ style = 'bold yellow'
 
 [git_branch]
 always_show_remote = false
-format = '[$symbol $branch(:$remote_branch)]($style) '
+format = '[$symbol $branch(:$remote_branch)]($style)  '
 style = 'purple'
 symbol = ''
 truncation_length = 24
@@ -104,21 +104,21 @@ disabled = false
 disabled = false
 
 [git_status]
-format = '($conflicted )($stashed )($deleted )($renamed )($modified )($staged )($untracked )($ahead_behind )'
-conflicted = '[󱐋$count](red)'
-ahead = '[$count](green)'
-behind = '[$count](green)'
-diverged = '[$ahead_count](green)[$behind_count](red)'
-untracked = '[?$count](white)'
-stashed = '[$count](blue)'
-modified = '[!$count](yellow)'
-staged = '[$count](green)'
-renamed = '[󰴓$count](yellow)'
-deleted = '[󰗨$count](yellow)'
+format = '($conflicted  )($stashed  )($deleted  )($renamed  )($modified  )($staged  )($untracked  )($ahead_behind  )'
+conflicted = '[ $count](red)'
+ahead = '[ $count](green)'
+behind = '[ $count](green)'
+diverged = '[ $ahead_count](green)[ $behind_count](red)'
+untracked = '[ $count](white)'
+stashed = '[ $count](blue)'
+modified = '[󱇮 $count](yellow)'
+staged = '[ $count](green)'
+renamed = '[󰝶 $count](yellow)'
+deleted = '[󰮈 $count](yellow)'
 disabled = false
 
 [git_metrics]
-format = '(([$added]($added_style))([✘$deleted]($deleted_style)) )' 
+format = '(([ $added  ]($added_style))([ $deleted  ]($deleted_style)) )' 
 added_style='green'
 deleted_style='yellow'
 disabled = false
