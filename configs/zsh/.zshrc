@@ -23,7 +23,7 @@ alias ls="ls --color=auto"
 function dockerps {
     docker ps $@ --format '{ "ID":"{{.ID}}", "Names":"{{.Names}}", "Status":"{{.Status}}", "State":"{{.State}}", "Size":"{{.Size}}", "Networks":"{{.Networks}}", "Ports":"{{.Ports}}", "CreatedAt":"{{.CreatedAt}}" }' | jq
 }
-alias y="yazi"
+alias j="joshuto"
 alias g="git"
 alias l="lsd -lA"
 alias h="helix"

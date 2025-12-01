@@ -78,7 +78,7 @@ paru -S otf-myna noto-fonts-emoji papirus-icon-theme
 
 Install terminal packages:
 ```bash
-paru -S atuin btop gitui jq lsd nvim pgcli pgweb starship yazi zsh
+paru -S joshuto  # file manager
 ```
 
 Install gui packages:
