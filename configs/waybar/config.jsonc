@@ -117,7 +117,7 @@
     "clock": {
       "interval": 1,
       "format": "{:%H:%M}",
-      "timezones": ["Asia/Baku", "Europe/Warsaw"],
+      "timezones": ["Asia/Bishkek", "Europe/Warsaw"],
       "max-length": 3,
       "tooltip-format": "<span color='#cad3f5'>{:%T (%Z)\n%A, %d %B %Y}</span>\n\n<tt>{calendar}</tt>",
       "calendar": {
