@@ -78,12 +78,16 @@ paru -S otf-myna noto-fonts-emoji papirus-icon-theme
 
 Install terminal packages:
 ```bash
+paru -S atuin btop gitui jq lsd nvim pgcli starship zsh
 paru -S joshuto  # file manager
+paru -S csvlens  # a command line CSV file viewer
+paru -S mdfried  # a markdown viewer
+paru -S oxker    # a simple tui to view & control docker containers
 ```
 
 Install gui packages:
 ```bash
-paru -S another-redis-desktop-manager-appimage blender chromium foot gimp godot obs-studio play-timer slack-desktop telegram-desktop totem
+paru -S another-redis-desktop-manager-appimage blender bkeeper-studio-bin chromium foot gimp godot obs-studio play-timer slack-desktop telegram-desktop totem
 ```
 
 Install packages for coding:
