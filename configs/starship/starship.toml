@@ -13,7 +13,6 @@ $time\
 $directory\
 (\n\
 $python\
-$lua\
 $rust\
 $git_branch\
 $git_state\
@@ -81,22 +80,22 @@ repo_root_format = '[󰉓]($style) [$read_only]($read_only_style)[$before_root_p
 disabled = false
 
 [python]
-format = '[$symbol $pyenv_prefix($version )(\($virtualenv\) )]($style)'
-symbol = ''
+format = '[$symbol$pyenv_prefix($version )(\($virtualenv\) )]($style) '
+symbol = ' '
 style = 'bold yellow'
 disabled = false
 
 [rust]
-format = '[$symbol ($version )]($style)'
-symbol = '🦀'
+format = '[$symbol($version )]($style) '
+symbol = '🦀 '
 style = 'bold yellow'
 
 [git_branch]
 always_show_remote = false
-format = '[$symbol $branch(:$remote_branch)]($style)  '
+format = '[$symbol $branch(:$remote_branch)]($style) '
 style = 'purple'
 symbol = ''
-truncation_length = 24
+truncation_length = 100
 truncation_symbol = '…'
 disabled = false
 
@@ -104,7 +103,7 @@ disabled = false
 disabled = false
 
 [git_status]
-format = '($conflicted  )($stashed  )($deleted  )($renamed  )($modified  )($staged  )($untracked  )($ahead_behind  )'
+format = '($conflicted )($stashed )($deleted )($renamed )($modified )($staged )($untracked )($ahead_behind )'
 conflicted = '[ $count](red)'
 ahead = '[ $count](green)'
 behind = '[ $count](green)'
@@ -118,7 +117,7 @@ deleted = '[󰮈 $count](yellow)'
 disabled = false
 
 [git_metrics]
-format = '(([ $added  ]($added_style))([ $deleted  ]($deleted_style)) )' 
+format = '(([ $added ]($added_style))([ $deleted ]($deleted_style)) )' 
 added_style='green'
 deleted_style='yellow'
 disabled = false
