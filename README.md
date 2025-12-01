@@ -62,7 +62,7 @@ paru -S niri
 
 Install important packages:
 ```bash
-paru -S bluez bluez-utils brightnessctl curl gnome-keyring gzip man-db man-pages pavucontrol pulseaudio pulseaudio-bluetooth sqlite tar wget wireguard-tools unzip xdg-desktop-portal-gnome xdg-desktop-portal-wlr xwayland-satellite
+paru -S bluez bluez-utils brightnessctl curl gnome-keyring gzip man-db man-pages pavucontrol pulseaudio pulseaudio-bluetooth sqlite tar wget wireguard-tools wl-clipboard unzip xdg-desktop-portal-gnome xdg-desktop-portal-wlr xwayland-satellite
 ```
 
 Install workspace packages:
