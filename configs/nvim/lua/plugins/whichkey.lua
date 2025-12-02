@@ -50,10 +50,13 @@ return {
 				{ "<leader>s", group = "Search (Telescope)", icon = " " },
 				{ "<leader>sg", "<cmd>Telescope live_grep<cr>", desc = "Live grep", icon = "󰱼 " },
 				{ "<leader>sw", "<cmd>Telescope grep_string<cr>", desc = "Grep word", icon = "󰱼 " },
+				{ "<leader>sf", "<cmd>Telescope find_files<cr>", desc = "Find files", icon = "󰱼 " },
 				{ "<leader>sd", "<cmd>Telescope diagnostics<cr>", desc = "Diagnostics", icon = "󰱼 " },
 				{ "<leader>sr", "<cmd>Telescope resume<cr>", desc = "Last search", icon = "󰱼 " },
 
 				{ "<leader>a", group = "Actions", icon = " " },
+				{ "<leader>ac", "\"+y", desc = "Copy to clipboard", icon = " " },
+				{ "<leader>ap", "\"+p", desc = "Past from clipboard", icon = "󰆒 " },
 				{ "<leader>af",
           "<cmd>lua require('conform').format({ lsp_fallback = true, async = false, timeout_ms = 500 })<cr>",
           desc = "Format",
