@@ -11,6 +11,8 @@ require("lazy").setup({
     { import = "plugins.conform" }, -- formatter https://github.com/stevearc/conform.nvim
     { import = "plugins.telescope" }, -- fuzzy finder https://github.com/nvim-telescope/telescope.nvim
     { import = "plugins.gitsigns" }, -- git buffer integration https://github.com/lewis6991/gitsigns.nvim
+    { import = "plugins.indent-blankline" }, -- adds indentation guides https://github.com/lukas-reineke/indent-blankline.nvim
+    { import = "plugins.lualine" }, -- statusline https://github.com/nvim-lualine/lualine.nvim
   },
   defaults = { version = false },
   install = { colorscheme = { "catppuccin" } },
