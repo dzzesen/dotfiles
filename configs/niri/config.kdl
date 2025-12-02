@@ -74,6 +74,7 @@ environment {
     GTK_THEME "Catppuccin-Macchiato-Standard-Sky-Dark"
     QT_QPA_PLATFORM "wayland"
     XDG_CURRENT_DESKTOP "gnome"
+    EDITOR "nvim"
 }
 
 animations {

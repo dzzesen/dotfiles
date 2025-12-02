@@ -30,6 +30,13 @@ alias h="helix"
 alias cdbirthdaybot="cd ~/Projects/birthdaybot"
 alias cddotfiles="cd ~/Projects/dotfiles"
 alias cdnotes="cd ~/Notes"
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	IFS= read -r -d '' cwd < "$tmp"
+	[ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
+	rm -f -- "$tmp"
+}
 
 export GROFF_NO_SGR=1
 export LESS=\
