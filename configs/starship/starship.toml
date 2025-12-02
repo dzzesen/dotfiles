@@ -68,7 +68,7 @@ style = 'blue'
 disabled = false
 
 [directory]
-format = '[󰉓]($style) [$read_only]($read_only_style)[$path]($style) '
+format = '[󰉓]($style) [$read_only]($read_only_style) [$path]($style) '
 style = 'blue'
 truncation_length = 10
 truncate_to_repo = false
@@ -76,7 +76,7 @@ read_only = ' '
 truncation_symbol = '󰦩 '
 before_repo_root_style = 'blue'
 repo_root_style = 'cyan'
-repo_root_format = '[󰉓]($style) [$read_only]($read_only_style)[$before_root_path]($before_repo_root_style)[$repo_root]($repo_root_style)[$path]($style) '
+repo_root_format = '[󰉓]($style) [$read_only]($read_only_style) [$before_root_path]($before_repo_root_style)[$repo_root]($repo_root_style)[$path]($style) '
 disabled = false
 
 [python]
