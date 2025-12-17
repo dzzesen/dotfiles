@@ -13,6 +13,7 @@ require("lazy").setup({
     { import = "plugins.gitsigns" }, -- git buffer integration https://github.com/lewis6991/gitsigns.nvim
     { import = "plugins.indent-blankline" }, -- adds indentation guides https://github.com/lukas-reineke/indent-blankline.nvim
     { import = "plugins.lualine" }, -- statusline https://github.com/nvim-lualine/lualine.nvim
+    { import = "plugins.treesitter-context" }, -- code context https://github.com/nvim-treesitter/nvim-treesitter-context
   },
   defaults = { version = false },
   install = { colorscheme = { "catppuccin" } },
@@ -28,4 +29,3 @@ require("lazy").setup({
     frequency = 86400, -- check for updates every day
   },
 })
-

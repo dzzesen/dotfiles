@@ -18,6 +18,7 @@ return {
         "gdscript",
         "javascript",
         "html",
+        "htmldjango",
         "yaml",
       },
       highlight = {
