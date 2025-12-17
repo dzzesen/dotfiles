@@ -63,6 +63,8 @@ return {
           icon = "󰅰 ",
         },
 				{ "<leader>am", "<cmd>RenderMarkdown buf_toggle<cr>", desc = "Toggle markdown", icon = " " },
+				{ "<leader>ar", group = "Rust actions", icon = " " },
+				{ "<leader>ard", "<cmd>Krust<cr>", desc = "Open diagnostics", icon = "󰬌 " },
 
 				{ "<leader>g", group = "Git", icon = " " },
 				{ "<leader>gb", "<cmd>Gitsigns blame<cr>", desc = "Open blame", icon = "  " },
