@@ -4,7 +4,8 @@
     "layer": "top",
     "position": "left",
     "width": 40,
-    "margin": 0,
+    "margin-top": 10,
+    "margin-bottom": 10,
     "spacing": 0,
     "reload_style_on_change": true,
     "fixed-center": false,
@@ -117,7 +118,7 @@
     "clock": {
       "interval": 1,
       "format": "{:%H:%M}",
-      "timezones": ["Asia/Kolkata", "Europe/Warsaw"],
+      "timezones": ["Asia/Ho_Chi_Minh", "Europe/Warsaw"],
       "max-length": 3,
       "tooltip-format": "<span color='#cad3f5'>{:%T (%Z)\n%A, %d %B %Y}</span>\n\n<tt>{calendar}</tt>",
       "calendar": {

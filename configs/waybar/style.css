@@ -5,6 +5,7 @@
 
 window#waybar {
   background: #24273a;
+  border-radius: 10px;
 }
 
 tooltip {
@@ -40,6 +41,10 @@ tooltip label {
 #clock {
   margin: 5px;
   padding: 10px 0px;
+}
+
+#workspaces button {
+  margin: 5px;
 }
 
 #workspaces {
