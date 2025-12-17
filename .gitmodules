@@ -14,3 +14,6 @@
 [submodule "plugins/zsh/zsh-vi-mode"]
 	path = plugins/zsh/zsh-vi-mode
 	url = https://github.com/jeffreytse/zsh-vi-mode.git
+[submodule "plugins/nu_scripts"]
+	path = plugins/nu_scripts
+	url = https://github.com/nushell/nu_scripts.git
