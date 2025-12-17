@@ -49,6 +49,8 @@
       path: configs/foot
     ~/.zshrc:
       path: configs/zsh/.zshrc
+    ~/.config/nushell/config.nu:
+      path: configs/nushell/config.nu
     ~/.config/starship.toml:
       path: configs/starship/starship.toml
     ~/.config/yazi:
