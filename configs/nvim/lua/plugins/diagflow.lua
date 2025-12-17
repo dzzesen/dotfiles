@@ -3,8 +3,7 @@ return {
     event = "LspAttach",
     opts = {
       enable = true,
-      max_width = 100,
-      max_height = 20,
+      max_width = 40,
       format = function(diagnostic)
         return diagnostic.source .. ": " .. diagnostic.message
       end,
