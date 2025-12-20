@@ -15,3 +15,6 @@ vim.lsp.enable("ts_ls")
 
 vim.lsp.config("rust_analizer", require("lsp.rust_analizer"))
 vim.lsp.enable("rust_analizer")
+
+vim.lsp.config("nushell", require("lsp.nushell"))
+vim.lsp.enable("nushell")
