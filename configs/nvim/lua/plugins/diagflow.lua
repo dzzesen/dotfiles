@@ -5,7 +5,8 @@ return {
       enable = true,
       max_width = 40,
       format = function(diagnostic)
-        return diagnostic.source .. ": " .. diagnostic.message
+        local source = diagnostic.source or "LSP"
+        return source .. ": " .. diagnostic.message
       end,
       scope = "line",
       placement = "top",
