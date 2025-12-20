@@ -19,6 +19,7 @@ source ~/.dotfiles/plugins/nu_scripts/custom-completions/jj/jj-completions.nu
 source ~/.dotfiles/plugins/nu_scripts/custom-completions/rustup/rustup-completions.nu
 source ~/.dotfiles/plugins/nu_scripts/custom-completions/ssh/ssh-completions.nu
 source ~/.dotfiles/plugins/nu_scripts/custom-completions/uv/uv-completions.nu
+source ~/.dotfiles/configs/nushell/custom-completions/wireguard.nu
 
 source ~/.dotfiles/plugins/nu_scripts/themes/nu-themes/catppuccin-macchiato.nu
 
