@@ -7,7 +7,7 @@ These dotfiles use [Dotbot](https://github.com/anishathalye/dotbot) for installa
 
 Set up wifi:
 ```bash
-paru -S iwd dhcpcd impala
+paru -S iwd dhcpcd openresolv impala
 
 # disable nm service
 sudo systemctl stop NetworkManager
@@ -19,12 +19,6 @@ sudo systemctl enable --now iwd
 # set up dhcp
 sudo systemctl enable --now dhcpcd@wlan0.service  # get station name 'iwctl station list'
 sudo systemctl enable --now dhcpcd  # or start the daemon for all newtwork interfaces
-
-# set up dns resolution
-sudo systemctl enable systemd-resolved
-sudo systemctl start system-resolved
-sudo ln -sf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
-sudo systemctl restart iwd
 
 # connect
 impala
