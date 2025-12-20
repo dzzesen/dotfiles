@@ -131,8 +131,8 @@ binds {
     Mod+T { spawn "foot"; }
     Mod+O { spawn "fuzzel"; }
     Mod+Space { toggle-overview; }
-    Mod+Backspace { spawn "~/.dotfiles/configs/fuzzel/power-dmenu.sh"; }
-    Mod+I { spawn "~/.dotfiles/configs/fuzzel/layout-dmenu.sh"; }
+    Mod+Backspace { spawn "~/.dotfiles/configs/fuzzel/power-dmenu.nu"; }
+    Mod+Shift+M { spawn "~/.dotfiles/configs/fuzzel/layout-dmenu.sh"; }
     Mod+M { spawn "~/.dotfiles/configs/niri/switch-layout.sh"; }
 
     XF86AudioRaiseVolume allow-when-locked=true { spawn "pactl" "set-sink-volume" "@DEFAULT_SINK@" "+1%"; }

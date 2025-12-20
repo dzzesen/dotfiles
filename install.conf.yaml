@@ -99,8 +99,8 @@
     - command: gsettings set org.gnome.desktop.interface font-name 'Cantarell Bold 13 @wght=700'
     - command: gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
     - command: gsettings set org.gnome.desktop.interface monospace-font-name 'Hack Nerd Font Bold 13'
-    - command: chmod +x ~/.dotfiles/configs/fuzzel/power-dmenu.sh
-    - command: chmod +x ~/.dotfiles/configs/fuzzel/layout-dmenu.sh
+    - command: chmod +x ~/.dotfiles/configs/fuzzel/power-dmenu.nu
+    - command: chmod +x ~/.dotfiles/configs/fuzzel/layout-dmenu.nu
     - command: chmod +x ~/.dotfiles/configs/niri/switch-layout.sh
     - command: chmod +x ~/.dotfiles/configs/foot/open-lazygit.sh
     - command: chmod +x ~/.dotfiles/configs/foot/open-yazi.sh
