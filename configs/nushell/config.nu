@@ -12,14 +12,14 @@ path add ($env.CARGO_HOME | path join "bin")
 mkdir ($nu.data-dir | path join "vendor/autoload")
 starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
 
-source ~/.dotfiles/plugins/nu_scripts/custom-completions/docker/docker-completions.nu
-source ~/.dotfiles/plugins/nu_scripts/custom-completions/cargo/cargo-completions.nu
-source ~/.dotfiles/plugins/nu_scripts/custom-completions/git/git-completions.nu
-source ~/.dotfiles/plugins/nu_scripts/custom-completions/jj/jj-completions.nu
-source ~/.dotfiles/plugins/nu_scripts/custom-completions/rustup/rustup-completions.nu
-source ~/.dotfiles/plugins/nu_scripts/custom-completions/ssh/ssh-completions.nu
-source ~/.dotfiles/plugins/nu_scripts/custom-completions/uv/uv-completions.nu
+source ~/.dotfiles/configs/nushell/custom-completions/cargo.nu
+source ~/.dotfiles/configs/nushell/custom-completions/docker.nu
+source ~/.dotfiles/configs/nushell/custom-completions/git.nu
+source ~/.dotfiles/configs/nushell/custom-completions/jj.nu
+source ~/.dotfiles/configs/nushell/custom-completions/rustup.nu
+source ~/.dotfiles/configs/nushell/custom-completions/ssh.nu
+source ~/.dotfiles/configs/nushell/custom-completions/uv.nu
 source ~/.dotfiles/configs/nushell/custom-completions/wireguard.nu
 
-source ~/.dotfiles/plugins/nu_scripts/themes/nu-themes/catppuccin-macchiato.nu
+source ~/.dotfiles/configs/nushell/themes/catppuccin-macchiato.nu
 
