@@ -36,5 +36,6 @@
 - shell:
     - command: sudo systemctl enable keyd
     - command: sudo keyd reload
-    - command: sudo systemctl enable ly
+    - command: sudo systemctl enable ly@tty2.service
+    - command: sudo systemctl disable getty@tty2.service
     - command: sudo chsh -s /bin/zsh
