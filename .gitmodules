@@ -2,15 +2,3 @@
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
-[submodule "plugins/zsh/zsh-syntax-highlighting"]
-	path = plugins/zsh/zsh-syntax-highlighting
-	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
-[submodule "plugins/zsh/zsh-autosuggestions"]
-	path = plugins/zsh/zsh-autosuggestions
-	url = https://github.com/zsh-users/zsh-autosuggestions
-[submodule "plugins/zsh/zsh-history-substring-search"]
-	path = plugins/zsh/zsh-history-substring-search
-	url = https://github.com/zsh-users/zsh-history-substring-search.git
-[submodule "plugins/zsh/zsh-vi-mode"]
-	path = plugins/zsh/zsh-vi-mode
-	url = https://github.com/jeffreytse/zsh-vi-mode.git
