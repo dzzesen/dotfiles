@@ -62,7 +62,6 @@ paru -S bluez bluez-utils brightnessctl curl gnome-keyring gzip man-db man-pages
 Install workspace packages:
 ```bash
 paru -S bluetui fuzzel grim keyd satty slurp swaybg swayidle swaylock swaync waybar
-paru satty  # screenshot annotation
 ```
 
 Install fonts, emojies and icons:
@@ -72,21 +71,22 @@ paru -S otf-myna noto-fonts-emoji papirus-icon-theme
 
 Install terminal packages:
 ```bash
-paru -S btop gitui jq lsd nvim pgcli starship
-paru -S joshuto  # file manager
-paru -S csvlens  # a command line CSV file viewer
+paru -S btop gitui lsd nvim pgcli starship
+paru -S yazi     # file manager
 paru -S mdfried  # a markdown viewer
 paru -S oxker    # a simple tui to view & control docker containers
+paru witr        # why it run
 ```
 
 Install gui packages:
 ```bash
-paru -S another-redis-desktop-manager-appimage blender bkeeper-studio-bin chromium foot gimp godot obs-studio play-timer slack-desktop telegram-desktop totem
+paru -S another-redis-desktop-manager-appimage blender bkeeper-studio-bin chromium discord foot gimp godot obs-studio slack-desktop telegram-desktop
+paru haruna      # video player 
 ```
 
 Install packages for coding:
 ```bash
-paru -S bore cloudflared docker docker-compose luarocks npm marksman pre-commit rustup uv
+paru -S bore cloudflared docker docker-compose luarocks nix npm marksman pre-commit rustup uv
 ```
 
 Run installation. You can do it safely multiple times:
