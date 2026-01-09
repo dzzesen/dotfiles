@@ -1,6 +1,9 @@
 vim.lsp.config("basepyright", require("lsp.basepyright"))
 vim.lsp.enable("basepyright")
 
+-- vim.lsp.config("ty", require("lsp.ty"))
+-- vim.lsp.enable("ty")
+
 vim.lsp.config("ruff", require("lsp.ruff"))
 vim.lsp.enable("ruff")
 
