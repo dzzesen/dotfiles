@@ -19,7 +19,7 @@ $git_state\
 $git_status\
 $git_metrics)\
 \n\
-[ ](green)
+[ ](blue)
 """
 
 [os]
