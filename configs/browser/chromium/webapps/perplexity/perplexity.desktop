@@ -1,8 +1,0 @@
-#!/usr/bin/env xdg-open
-[Desktop Entry]
-Version=1.0
-Type=Application
-Name=Perplexity AI
-Exec=chromium --app=https://www.perplexity.ai/
-Icon=/home/dzesen/.dotfiles/configs/browser/chromium/webapps/perplexity/perplexity-icon.png
-Comment=Open https://www.perplexity.ai/ in a new window in Chromium.

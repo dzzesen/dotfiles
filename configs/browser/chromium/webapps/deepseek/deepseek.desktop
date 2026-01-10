@@ -1,8 +1,0 @@
-#!/usr/bin/env xdg-open
-[Desktop Entry]
-Version=1.0
-Type=Application
-Name=DeepSeek AI
-Exec=chromium --app=https://chat.deepseek.com
-Icon=/home/dzesen/.dotfiles/configs/browser/chromium/webapps/deepseek/deepseek-icon.png
-Comment=Open https://chat.deepseek.com in a new window in Chromium.

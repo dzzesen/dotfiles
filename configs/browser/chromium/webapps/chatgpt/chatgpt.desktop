@@ -1,8 +1,0 @@
-#!/usr/bin/env xdg-open
-[Desktop Entry]
-Version=1.0
-Type=Application
-Name=ChatGPT AI
-Exec=chromium --app=https://chatgpt.com/
-Icon=/home/dzesen/.dotfiles/configs/browser/chromium/webapps/chatgpt/openai-icon.png
-Comment=Open https://chatgpt.com/ in a new window in Chromium.

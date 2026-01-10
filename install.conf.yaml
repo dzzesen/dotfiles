@@ -69,20 +69,6 @@
       path: configs/nvim
     ~/.config/ptpython/config.py:
       path: configs/ptpython/config.py
-    ~/.local/share/applications/claude.desktop:
-      path: configs/browser/chromium/webapps/claude/claude.desktop
-    ~/.local/share/applications/deepseek.desktop:
-      path: configs/browser/chromium/webapps/deepseek/deepseek.desktop
-    ~/.local/share/applications/chatgpt.desktop:
-      path: configs/browser/chromium/webapps/chatgpt/chatgpt.desktop
-    ~/.local/share/applications/perplexity.desktop:
-      path: configs/browser/chromium/webapps/perplexity/perplexity.desktop
-    ~/.local/share/applications/gmail-kopeykindzzesen.desktop:
-      path: configs/browser/chromium/webapps/gmail/gmail-kopeykindzzesen.desktop
-    ~/.local/share/applications/gmail-razortheory.desktop:
-      path: configs/browser/chromium/webapps/gmail/gmail-razortheory.desktop
-    ~/.local/share/applications/gmail-rawbot.desktop:
-      path: configs/browser/chromium/webapps/gmail/gmail-rawbot.desktop
     ~/.local/share/applications/bluetui.desktop:
       path: configs/foot/apps/bluetui.desktop
     ~/.local/share/applications/impala-wifi.desktop:

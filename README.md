@@ -80,7 +80,7 @@ paru witr        # why it run
 
 Install gui packages:
 ```bash
-paru -S another-redis-desktop-manager-appimage blender bkeeper-studio-bin chromium discord foot gimp godot obs-studio slack-desktop telegram-desktop
+paru -S another-redis-desktop-manager-appimage blender bkeeper-studio-bin discord foot gimp godot obs-studio slack-desktop telegram-desktop vivaldi
 paru haruna      # video player 
 ```
 
