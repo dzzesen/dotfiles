@@ -56,7 +56,7 @@ paru -S niri
 
 Install important packages:
 ```bash
-paru -S bluez bluez-utils brightnessctl curl gnome-keyring gzip man-db man-pages pavucontrol pulseaudio pulseaudio-bluetooth sqlite tar wget wireguard-tools wl-clipboard unzip xdg-desktop-portal-gnome xdg-desktop-portal-wlr xwayland-satellite
+paru -S bluez bluez-utils brightnessctl curl gnome-keyring gzip man-db man-pages pipewire pipewire-pulse sqlite tar wget wireguard-tools wl-clipboard unzip xdg-desktop-portal-gnome xdg-desktop-portal-wlr xwayland-satellite
 ```
 
 Install workspace packages:
@@ -80,8 +80,9 @@ paru witr        # why it run
 
 Install gui packages:
 ```bash
-paru -S another-redis-desktop-manager-appimage blender bkeeper-studio-bin discord foot gimp godot obs-studio slack-desktop telegram-desktop vivaldi
+paru -S discord foot obs-studio slack-desktop telegram-desktop vivaldi
 paru haruna      # video player 
+paru eog         # image viewer
 ```
 
 Install packages for coding:
