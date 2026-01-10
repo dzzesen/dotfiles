@@ -39,8 +39,11 @@
       path: configs/waybar/style.css
     ~/.config/swaylock/config:
       path: configs/swaylock/config
+    ~/.config/user-dirs.dirs:
+      path: configs/gnome/user-dirs.dirs
+      force: True
     ~/.themes/Catppuccin-Macchiato-Standard-Sky-Dark:
-      path: configs/gnome-themes/Catppuccin-Macchiato-Standard-Sky-Dark
+      path: configs/gnome/catppuccin-theme
     ~/.config/swaync/style.css:
       path: configs/swaync/style.css
     ~/.config/paru/paru.conf:

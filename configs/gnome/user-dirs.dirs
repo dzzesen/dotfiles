@@ -1,0 +1,8 @@
+XDG_DESKTOP_DIR="$HOME/gnome/desktop"
+XDG_DOWNLOAD_DIR="$HOME/dloads"
+XDG_TEMPLATES_DIR="$HOME/gnome/templates"
+XDG_PUBLICSHARE_DIR="$HOME/gnome/public"
+XDG_DOCUMENTS_DIR="$HOME/gnome/docs"
+XDG_MUSIC_DIR="$HOME/gnome/music"
+XDG_PICTURES_DIR="$HOME/pics"
+XDG_VIDEOS_DIR="$HOME/videos"
