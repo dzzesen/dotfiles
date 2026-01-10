@@ -56,8 +56,6 @@
       path: configs/nushell/env.nu
     ~/.config/starship.toml:
       path: configs/starship/starship.toml
-    ~/.config/yazi:
-      path: configs/yazi
     ~/.config/gitui:
       path: configs/gitui
     ~/.config/lsd:
@@ -93,7 +91,6 @@
     - command: chmod +x ~/.dotfiles/configs/fuzzel/layout-dmenu.nu
     - command: chmod +x ~/.dotfiles/configs/niri/switch-layout.sh
     - command: chmod +x ~/.dotfiles/configs/foot/open-lazygit.sh
-    - command: chmod +x ~/.dotfiles/configs/foot/open-yazi.sh
     - command: chmod +x ~/.dotfiles/configs/foot/open-git-history.sh
     - command: chmod +x ~/.dotfiles/configs/foot/open-git-diff.sh
     - command: chmod +x ~/.dotfiles/configs/foot/open-bluetui.sh

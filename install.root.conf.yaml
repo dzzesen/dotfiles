@@ -8,7 +8,6 @@
     /etc/ly/config.ini:
     /etc/pacman.conf:
     /bin/open-lazygit:
-    /bin/open-yazi:
     /bin/open-git-history:
     /bin/open-git-diff:
 
@@ -26,8 +25,6 @@
       force: true
     /bin/open-lazygit:
       path: configs/foot/open-lazygit.sh
-    /bin/open-yazi:
-      path: configs/foot/open-yazi.sh
     /bin/open-git-history:
       path: configs/foot/open-git-history.sh
     /bin/open-git-diff:
