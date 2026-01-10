@@ -64,8 +64,6 @@
       path: configs/fuzzel/fuzzel.ini
     ~/.config/satty/config.toml:
       path: configs/satty/config.toml
-    ~/.config/helix:
-      path: configs/helix
     ~/.config/nvim:
       path: configs/nvim
     ~/.config/ptpython/config.py:

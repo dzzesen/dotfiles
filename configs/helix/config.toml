@@ -1,7 +1,0 @@
-theme = "catppuccin_macchiato"
-
-
-[keys.normal.";"]
-g = ":run-shell-command open-lazygit"
-h = ":run-shell-command open-git-history"
-d = ":run-shell-command open-git-diff"
