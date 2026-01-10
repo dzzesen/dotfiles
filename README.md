@@ -89,7 +89,7 @@ Install packages for coding:
 paru -S bore cloudflared docker docker-compose luarocks nix npm marksman pre-commit rustup uv
 ```
 
-Run installation. You can do it safely multiple times:
+Run installation:
 ```bash
 ./install
 sudo ./install

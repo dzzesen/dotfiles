@@ -12,9 +12,6 @@
 - link:
     ~/.dotfiles:
       path: ""
-    ~/.bashrc:
-      path: configs/bash/bashrc
-      force: true
     ~/.gitconfig:
       path: configs/git/gitconfig
     ~/.config/systemd/user/swaync.service:
