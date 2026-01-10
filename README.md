@@ -72,7 +72,7 @@ paru -S otf-myna noto-fonts-emoji papirus-icon-theme
 Install terminal packages:
 ```bash
 paru -S btop gitui lsd nvim pgcli starship
-paru -S yazi     # file manager
+paru -S josuto   # file manager
 paru -S mdfried  # a markdown viewer
 paru -S oxker    # a simple tui to view & control docker containers
 paru witr        # why it run

@@ -15,6 +15,9 @@ starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.n
 def ll [] {
   ls -a | sort-by type
 }
+def j [] {
+  joshuto
+}
 def "docker ps pretty" [] {
   docker ps --format '{ "ID":"{{.ID}}", "Name":"{{.Names}}", "Status":"{{.Status}}", "State":"{{.State}}", "Size":"{{.Size}}", "Networks":"{{.Networks}}", "Ports":"{{.Ports}}", "CreatedAt":"{{.CreatedAt}}" }' | lines | each { from json } | explore
 }
