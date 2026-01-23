@@ -5,3 +5,5 @@ alias ll='ls -al --color=auto'
 
 eval "$(starship init bash)"
 eval "$(ssh-agent -s)" > /dev/null
+
+set -o vi
