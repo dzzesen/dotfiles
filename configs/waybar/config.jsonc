@@ -1,28 +1,25 @@
 [
   {
-    "name": "leftbar",
+    "name": "topbar",
     "layer": "top",
-    "position": "left",
-    "width": 40,
+    "position": "top",
     "margin-top": 10,
-    "margin-bottom": 10,
-    "spacing": 0,
-    "reload_style_on_change": true,
-    "fixed-center": false,
+    "margin-left": 10,
+    "margin-right": 10,
+    "margin-bottom": 0,
     "modules-left": ["niri/workspaces"],
-    "modules-center": [],
+    "modules-center": ["clock"],
     "modules-right": [
       "tray", 
       "cpu",
       "niri/language",
       "pulseaudio",
       "backlight",
-      "battery",
-      "clock"
+      "battery"
     ],
     "tray": {
       "spacing": 5,
-      "icon-size": 22
+      "icon-size": 20
     },
     "niri/workspaces": {
       "disable-scroll": true,
@@ -36,7 +33,6 @@
     },
     "cpu": {
       "interval": 1,
-      "min-length": 6,
       "format": "{icon}{usage}%",
       "format-icons": ["󱙺 ", "󱚠 ", "󱚢 "],
       "states": {
@@ -58,7 +54,7 @@
       "format": "{icon}{volume}",
       "format-bluetooth": "󰂱 {volume}",
       "format-muted": "  ",
-      "format-icons": [" ", " ", " ", " ", " "],
+      "format-icons": [" ", " ", " ", " "],
       "on-click": "pavucontrol",
       "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
       "scroll-step": 1,
@@ -117,10 +113,9 @@
     },
     "clock": {
       "interval": 1,
-      "format": "{:%H:%M}",
+      "format": "{:%A - %b %e - %T (%Z)}",
       "timezones": ["Asia/Ho_Chi_Minh", "Europe/Warsaw"],
-      "max-length": 3,
-      "tooltip-format": "<span color='#cad3f5'>{:%T (%Z)\n%A, %d %B %Y}</span>\n\n<tt>{calendar}</tt>",
+      "tooltip-format": "<tt>{calendar}</tt>",
       "calendar": {
         "mode": "month",
         "mode-mon-col": 3,

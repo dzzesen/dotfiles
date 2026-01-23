@@ -39,24 +39,20 @@ tooltip label {
 #backlight,
 #battery,
 #clock {
-  margin: 5px;
-  padding: 10px 0px;
-}
-
-#workspaces button {
-  margin: 5px;
+  padding: 0px 10px;
 }
 
 #workspaces {
-  margin-top: 5px;
+  margin: 0px;
+  margin-left: 5px;
 }
 
-#clock {
-  margin-bottom: 10px;
+#battery {
+  margin-right: 5px;
 }
 
-#workspaces button * {
-  font-size: 32px;
+#workspaces button {
+  padding: 0px 13px 0px 10px;
 }
 
 #workspaces button.active {
