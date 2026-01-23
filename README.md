@@ -71,6 +71,7 @@ paru -S otf-myna noto-fonts-emoji papirus-icon-theme
 
 Install terminal packages:
 ```bash
+paru -S fish     # shell
 paru -S btop gitui lsd nvim pgcli starship
 paru -S josuto   # file manager
 paru -S mdfried  # a markdown viewer
