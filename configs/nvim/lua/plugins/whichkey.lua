@@ -51,8 +51,11 @@ return {
 				{ "<leader>sg", "<cmd>Telescope live_grep<cr>", desc = "Live grep", icon = "󰱼 " },
 				{ "<leader>sw", "<cmd>Telescope grep_string<cr>", desc = "Grep word", icon = "󰱼 " },
 				{ "<leader>sf", "<cmd>Telescope find_files<cr>", desc = "Find files", icon = "󰱼 " },
-				{ "<leader>sd", "<cmd>Telescope diagnostics<cr>", desc = "Diagnostics", icon = "󰱼 " },
 				{ "<leader>sr", "<cmd>Telescope resume<cr>", desc = "Last search", icon = "󰱼 " },
+
+				{ "<leader>d", group = "Diagnostics", icon = " " },
+				{ "<leader>dt", "<cmd>DiagflowToggle<cr>", desc = "Toggle popups", icon = "󰨙 " },
+				{ "<leader>dl", "<cmd>Trouble diagnostics toggle<cr>", desc = "Open list", icon = "󰨙 " },
 
 				{ "<leader>l", group = "LSP actions", icon = " " },
 				{

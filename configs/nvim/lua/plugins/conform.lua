@@ -6,6 +6,7 @@ return {
 			python = { "ruff_format", "ruff_organize_imports" },
       javascript = { "eslint_d" },
       rust = { "clippy" },
+      json = { "jq" },
 		},
 	},
 }

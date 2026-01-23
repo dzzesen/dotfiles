@@ -15,6 +15,7 @@ require("lazy").setup({
     { import = "plugins.lualine" }, -- statusline https://github.com/nvim-lualine/lualine.nvim
     { import = "plugins.treesitter-context" }, -- code context https://github.com/nvim-treesitter/nvim-treesitter-context
     { import = "plugins.krust" }, -- Rust diagnostics https://github.com/alexpasmantier/krust.nvim
+    { import = "plugins.trouble" }, -- List of diagnostics https://github.com/alexpasmantier/krust.nvim
   },
   defaults = { version = false },
   install = { colorscheme = { "catppuccin" } },
