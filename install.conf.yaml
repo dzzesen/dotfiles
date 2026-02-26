@@ -23,6 +23,8 @@
     ~/.config/fish/completions:
       path: configs/fish/completions
       force: true
+    ~/.config/direnv/direnv.toml:
+      path: configs/direnv/direnv.toml
     ~/.config/systemd/user/swaync.service:
       path: configs/swaync/swaync.service
     ~/.config/systemd/user/swaybg.service:

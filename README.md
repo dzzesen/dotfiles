@@ -88,7 +88,7 @@ paru eog         # image viewer
 
 Install packages for coding:
 ```bash
-paru -S bore cloudflared docker docker-compose luarocks nix npm marksman pre-commit rustup uv
+paru -S bore cloudflared direnv docker docker-compose luarocks nix npm marksman pre-commit rustup uv
 ```
 
 Run installation:
