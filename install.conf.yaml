@@ -58,6 +58,9 @@
       path: configs/paru/paru.conf
     ~/.config/foot:
       path: configs/foot
+    ~/.config/zed:
+      path: configs/zed
+      force: True
     ~/.config/starship.toml:
       path: configs/starship/starship.toml
     ~/.config/gitui:

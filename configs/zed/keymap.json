@@ -1,0 +1,14 @@
+[
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-f": "project_panel::ToggleFocus",
+    },
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "ctrl-f": "project_panel::ToggleFocus",
+    },
+  },
+]
