@@ -2,19 +2,16 @@ starship init fish | source
 
 set -U fish_greeting
 
-# start the ssh-agent service
-# systemctl --user enable --now ssh-agent
-set -Ux SSH_AUTH_SOCK $XDG_RUNTIME_DIR/ssh-agent.socket
-if test -S $SSH_AUTH_SOCK
-    ssh-add -l >/dev/null 2>&1; \
-    or ssh-add \
-    ~/.ssh/aeza_my \
-    ~/.ssh/birthdaybot.pem \
-    ~/.ssh/bitbucket_rt \
-    ~/.ssh/common-ssh-tunnel.pem \
-    ~/.ssh/slack-ssh-tunnel.pem \
-    ~/.ssh/timebot.pem \
-    ~/.ssh/uptimebot.pem
+if status is-login
+    keychain --eval --quiet --agents ssh \
+        ~/.ssh/aeza_my \
+        ~/.ssh/bitbucket_rt \
+        ~/.ssh/common-ssh-tunnel.pem \
+        ~/.ssh/slack-ssh-tunnel.pem \
+        ~/.ssh/birthdaybot.pem \
+        ~/.ssh/timebot.pem \
+        ~/.ssh/uptimebot.pem \
+    | source
 end
 
 fish_hybrid_key_bindings

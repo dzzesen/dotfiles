@@ -61,7 +61,7 @@ paru -S bluez bluez-utils brightnessctl curl gnome-keyring gzip man-db man-pages
 
 Install workspace packages:
 ```bash
-paru -S bluetui fuzzel grim keyd satty slurp swaybg swayidle swaylock swaync waybar
+paru -S bluetui fuzzel grim keychain keyd satty slurp swaybg swayidle swaylock swaync waybar
 ```
 
 Install fonts, emojies and icons:
