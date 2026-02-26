@@ -1,6 +1,6 @@
 starship init fish | source
 
-set -U fish_greeting
+set -gx fish_greeting
 
 if status is-login
     keychain --eval --quiet --agents ssh \
@@ -19,5 +19,12 @@ fish_hybrid_key_bindings
 bind -M insert \cn down-or-search
 bind -M insert \cp up-or-search
 
-alias j=joshuto
+abbr -a j 'joshuto'
+abbr -a dm 'python manage.py'
+abbr -a ll 'ls -la'
+abbr -a ap 'source .venv/bin/activate.fish'
+abbr -a dp 'deactivate'
+abbr -a cdb 'cd ~/dev/birthdaybot'
+abbr -a cdc 'cd ~/dev/dotfiles'
 
+direnv hook fish | source
