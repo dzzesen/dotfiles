@@ -20,6 +20,9 @@
     ~/.config/fish/config.fish:
       path: configs/fish/config.fish
       force: true
+    ~/.config/fish/completions:
+      path: configs/fish/completions
+      force: true
     ~/.config/systemd/user/swaync.service:
       path: configs/swaync/swaync.service
     ~/.config/systemd/user/swaybg.service:
