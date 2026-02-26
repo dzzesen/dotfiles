@@ -21,7 +21,7 @@ bind -M insert \cp up-or-search
 
 abbr -a j 'joshuto'
 abbr -a dm 'python manage.py'
-abbr -a ll 'ls -la'
+abbr -a ll 'lsd -la'
 abbr -a ap 'source .venv/bin/activate.fish'
 abbr -a dp 'deactivate'
 abbr -a cdb 'cd ~/dev/birthdaybot'
