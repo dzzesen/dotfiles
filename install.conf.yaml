@@ -14,9 +14,6 @@
       path: ""
     ~/.gitconfig:
       path: configs/git/gitconfig
-    ~/.bashrc:
-      path: configs/bash/bashrc
-      force: true
     ~/.config/fish/config.fish:
       path: configs/fish/config.fish
       force: true
@@ -61,10 +58,6 @@
       path: configs/paru/paru.conf
     ~/.config/foot:
       path: configs/foot
-    ~/.config/nushell/config.nu:
-      path: configs/nushell/config.nu
-    ~/.config/nushell/env.nu:
-      path: configs/nushell/env.nu
     ~/.config/starship.toml:
       path: configs/starship/starship.toml
     ~/.config/gitui:
@@ -75,10 +68,6 @@
       path: configs/fuzzel/fuzzel.ini
     ~/.config/satty/config.toml:
       path: configs/satty/config.toml
-    ~/.config/nvim:
-      path: configs/nvim
-    ~/.config/ptpython/config.py:
-      path: configs/ptpython/config.py
     ~/.local/share/applications/bluetui.desktop:
       path: configs/foot/apps/bluetui.desktop
     ~/.local/share/applications/impala-wifi.desktop:
@@ -99,8 +88,5 @@
     - command: chmod +x ~/.dotfiles/configs/fuzzel/power-dmenu.nu
     - command: chmod +x ~/.dotfiles/configs/fuzzel/layout-dmenu.nu
     - command: chmod +x ~/.dotfiles/configs/niri/switch-layout.sh
-    - command: chmod +x ~/.dotfiles/configs/foot/open-lazygit.sh
-    - command: chmod +x ~/.dotfiles/configs/foot/open-git-history.sh
-    - command: chmod +x ~/.dotfiles/configs/foot/open-git-diff.sh
     - command: chmod +x ~/.dotfiles/configs/foot/open-bluetui.sh
     - command: chmod +x ~/.dotfiles/configs/foot/open-impala-wifi.sh
