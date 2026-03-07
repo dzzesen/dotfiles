@@ -58,6 +58,8 @@
       path: configs/paru/paru.conf
     ~/.config/foot:
       path: configs/foot
+    ~/.config/kitty:
+      path: configs/kitty
     ~/.config/zed:
       path: configs/zed
       force: True
