@@ -7,15 +7,25 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "agent_servers": {
+    "codex": {
+      "default_config_options": {
+        "mode": "read-only"
+      }
+    }
+  },
   "completions": {
     "words_min_length": 2
   },
   "show_completions_on_input": true,
   "show_edit_predictions": true,
   "edit_predictions": {
+    "sweep": {
+      "privacy_mode": true
+    },
     "provider": "zed",
     "enabled_in_text_threads": true,
-    "mode": "subtle",
+    "mode": "eager",
   },
   "languages": {
     "HTML": {
@@ -102,12 +112,13 @@
     "dock": "right",
   },
   "project_panel": {
+    "file_icons": true,
     "indent_guides": {
       "show": "never",
     },
-    "starts_open": false,
+    "starts_open": true,
     "indent_size": 30.0,
-    "folder_icons": false,
+    "folder_icons": true,
     "entry_spacing": "standard",
     "dock": "right",
   },
@@ -158,7 +169,13 @@
       "provider": "ollama",
       "model": "qwen3-coder:480b-cloud",
     },
-    "favorite_models": [],
+    "favorite_models": [
+      {
+        "provider": "ollama",
+        "model": "qwen3-coder:480b-cloud",
+        "enable_thinking": false
+      }
+    ],
     "model_parameters": [],
   },
   "icon_theme": "Catppuccin Mocha",
