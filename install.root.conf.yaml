@@ -23,16 +23,9 @@
     /etc/pacman.conf:
       path: configs/paru/pacman.conf
       force: true
-    /bin/open-lazygit:
-      path: configs/foot/open-lazygit.sh
-    /bin/open-git-history:
-      path: configs/foot/open-git-history.sh
-    /bin/open-git-diff:
-      path: configs/foot/open-git-diff.sh
 
 - shell:
     - command: sudo systemctl enable keyd
     - command: sudo keyd reload
     - command: sudo systemctl enable ly@tty2.service
     - command: sudo systemctl disable getty@tty2.service
-    - command: sudo chsh -s /bin/zsh
