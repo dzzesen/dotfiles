@@ -7,11 +7,10 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "diff_view_style": "unified",
   "agent_servers": {
     "codex": {
-      "default_config_options": {
-        "mode": "read-only"
-      }
+      
     }
   },
   "completions": {
