@@ -48,10 +48,8 @@
     ~/.config/swaylock/config:
       path: configs/swaylock/config
     ~/.config/user-dirs.dirs:
-      path: configs/gnome/user-dirs.dirs
+      path: configs/user-dirs/user-dirs.dirs
       force: True
-    ~/.themes/Catppuccin-Macchiato-Standard-Sky-Dark:
-      path: configs/gnome/catppuccin-theme
     ~/.config/swaync/style.css:
       path: configs/swaync/style.css
     ~/.config/paru/paru.conf:
@@ -83,17 +81,6 @@
       description: Installing dotbot
       stdout: true
     - command: systemctl --user daemon-reload
-    - command: gsettings set org.gnome.desktop.interface gtk-theme 'Catppuccin-Macchiato-Standard-Sky-Dark'
-    - command: gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
-    - command: gsettings set org.gnome.desktop.interface accent-color 'purple'
-    - command: gsettings set org.gnome.desktop.interface document-font-name 'JetBrainsMono Nerd Font Propo 13'
-    - command: gsettings set org.gnome.desktop.interface font-name 'Cantarell Bold 13 @wght=700'
-    - command: gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
-    - command: gsettings set org.gnome.desktop.interface monospace-font-name 'Hack Nerd Font Bold 13'
-    - command: gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 15
-    - command: gsettings set org.gnome.desktop.peripherals.keyboard delay 250
-    - command: gsettings set org.gnome.desktop.peripherals.mouse natural-scroll false
-    - command: gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll false
     - command: chmod +x ~/.dotfiles/configs/fuzzel/power-dmenu.nu
     - command: chmod +x ~/.dotfiles/configs/fuzzel/layout-dmenu.nu
     - command: chmod +x ~/.dotfiles/configs/niri/switch-layout.sh
