@@ -5,25 +5,6 @@
 These dotfiles use [Dotbot](https://github.com/anishathalye/dotbot) for installation.
 
 
-Set up wifi:
-```bash
-paru -S iwd dhcpcd openresolv impala
-
-# disable nm service
-sudo systemctl stop NetworkManager
-sudo systemctl disable NetworkManager
-
-# enable iwd service
-sudo systemctl enable --now iwd
-
-# set up dhcp
-sudo systemctl enable --now dhcpcd@wlan0.service  # get station name 'iwctl station list'
-sudo systemctl enable --now dhcpcd  # or start the daemon for all newtwork interfaces
-
-# connect
-impala
-```
-
 Install git:
 ```bash
 sudo pacman -S git
@@ -39,56 +20,34 @@ cd paru
 makepkg -si
 ```
 
-Install video drivers:
+Install packages:
 ```bash
-paru -S mesa vulkan-radeon
-```
-
-Install display manager:
-```bash
-paru -S ly
-```
-
-Install compositor:
-```bash
-paru -S niri
-```
-
-Install important packages:
-```bash
-paru -S bluez bluez-utils brightnessctl curl gnome-keyring gzip man-db man-pages pipewire pipewire-pulse sqlite tar wget wireguard-tools wl-clipboard unzip xdg-desktop-portal-gnome xdg-desktop-portal-wlr xwayland-satellite
-```
-
-Install workspace packages:
-```bash
-paru -S bluetui fuzzel grim keychain keyd satty slurp swaybg swayidle swaylock swaync waybar
-```
-
-Install fonts, emojies and icons:
-```bash
-paru -S otf-myna noto-fonts-emoji papirus-icon-theme 
-```
-
-Install terminal packages:
-```bash
-paru -S fish     # shell
-paru -S btop gitui lsd nvim pgcli starship
-paru -S josuto   # file manager
-paru -S mdfried  # a markdown viewer
-paru -S oxker    # a simple tui to view & control docker containers
-paru witr        # why it run
-```
-
-Install gui packages:
-```bash
-paru -S discord foot obs-studio slack-desktop telegram-desktop vivaldi
-paru haruna      # video player 
-paru eog         # image viewer
-```
-
-Install packages for coding:
-```bash
-paru -S bore cloudflared direnv docker docker-compose luarocks nix npm marksman pre-commit rustup uv
+paru keyd               # key remapper
+paru otf-myna           # terminal font
+paru noto-fonts-emoji   # emoji font
+paru papirus-icon-theme # icon theme
+paru fish               # shell
+paru starship           # prompt
+paru nvim               # text editor
+paru btop               # system monitor
+paru lsd                # file listing
+paru pgcli              # postgres cli
+paru josuto             # file manager
+paru witr               # why it run
+paru obs-studio         # video recording
+paru slack-desktop      # slack desktop
+paru telegram-desktop   # telegram desktop
+paru vivaldi            # vivaldi browser
+paru haruna             # kde video player 
+paru gwenview           # kde image viewer
+paru cloudflared        # cloudflare tunnel
+paru direnv             # environment variable manager
+paru podman             # container runtime
+paru podman-compose     # container orchestration
+paru nix                # package manager
+paru npm                # node package manager
+paru rustup             # rust toolchain
+paru uv                 # python package manager
 ```
 
 Run installation:
