@@ -1,88 +1,43 @@
 - defaults:
-    link:
-      relink: true
-      create: true
+      link:
+          relink: true
+          create: true
 
 - clean:
-    ~/:
-    ~/.config:
-    ~/.config/systemd/user:
-    ~/.config/systemd/user/niri.service.wants:
+      ~/:
+      ~/.config:
+      ~/.config/systemd/user:
 
 - link:
-    ~/.dotfiles:
-      path: ""
-    ~/.gitconfig:
-      path: configs/git/gitconfig
-    ~/.config/fish/config.fish:
-      path: configs/fish/config.fish
-      force: true
-    ~/.config/fish/completions:
-      path: configs/fish/completions
-      force: true
-    ~/.config/direnv/direnv.toml:
-      path: configs/direnv/direnv.toml
-    ~/.config/systemd/user/swaync.service:
-      path: configs/swaync/swaync.service
-    ~/.config/systemd/user/swaybg.service:
-      path: configs/swaybg/swaybg.service
-    ~/.config/systemd/user/swayidle.service:
-      path: configs/swayidle/swayidle.service
-    ~/.config/systemd/user/niri.service.wants/waybar.service:
-      path: /usr/lib/systemd/user/waybar.service
-    ~/.config/systemd/user/niri.service.wants/gnome-keyring-daemon.service:
-      path: /usr/lib/systemd/user/gnome-keyring-daemon.service
-    ~/.config/systemd/user/niri.service.wants/swaync.service:
-      path: ~/.config/systemd/user/swaync.service
-    ~/.config/systemd/user/niri.service.wants/swaybg.service:
-      path: ~/.config/systemd/user/swaybg.service
-    ~/.config/systemd/user/niri.service.wants/swayidle.service:
-      path: ~/.config/systemd/user/swayidle.service
-    ~/.config/niri/config.kdl:
-      path: configs/niri/config.kdl
-      force: true
-    ~/.config/waybar/config.jsonc:
-      path: configs/waybar/config.jsonc
-    ~/.config/waybar/style.css:
-      path: configs/waybar/style.css
-    ~/.config/swaylock/config:
-      path: configs/swaylock/config
-    ~/.config/user-dirs.dirs:
-      path: configs/user-dirs/user-dirs.dirs
-      force: True
-    ~/.config/swaync/style.css:
-      path: configs/swaync/style.css
-    ~/.config/paru/paru.conf:
-      path: configs/paru/paru.conf
-    ~/.config/foot:
-      path: configs/foot
-    ~/.config/kitty:
-      path: configs/kitty
-    ~/.config/zed:
-      path: configs/zed
-      force: True
-    ~/.config/starship.toml:
-      path: configs/starship/starship.toml
-    ~/.config/gitui:
-      path: configs/gitui
-    ~/.config/lsd:
-      path: configs/lsd
-    ~/.config/fuzzel/fuzzel.ini:
-      path: configs/fuzzel/fuzzel.ini
-    ~/.config/satty/config.toml:
-      path: configs/satty/config.toml
-    ~/.local/share/applications/bluetui.desktop:
-      path: configs/foot/apps/bluetui.desktop
-    ~/.local/share/applications/impala-wifi.desktop:
-      path: configs/foot/apps/impala-wifi.desktop
+      ~/.dotfiles:
+          path: ""
+      ~/.gitconfig:
+          path: configs/git/gitconfig
+      ~/.config/fish/config.fish:
+          path: configs/fish/config.fish
+          force: true
+      ~/.config/fish/completions:
+          path: configs/fish/completions
+          force: true
+      ~/.config/direnv/direnv.toml:
+          path: configs/direnv/direnv.toml
+      ~/.config/user-dirs.dirs:
+          path: configs/user-dirs/user-dirs.dirs
+          force: True
+      ~/.config/paru/paru.conf:
+          path: configs/paru/paru.conf
+      ~/.config/kitty:
+          path: configs/kitty
+      ~/.config/zed:
+          path: configs/zed
+          force: True
+      ~/.config/starship.toml:
+          path: configs/starship/starship.toml
+      ~/.config/lsd:
+          path: configs/lsd
 
 - shell:
-    - command: git submodule update --init --recursive
-      description: Installing dotbot
-      stdout: true
-    - command: systemctl --user daemon-reload
-    - command: chmod +x ~/.dotfiles/configs/fuzzel/power-dmenu.nu
-    - command: chmod +x ~/.dotfiles/configs/fuzzel/layout-dmenu.nu
-    - command: chmod +x ~/.dotfiles/configs/niri/switch-layout.sh
-    - command: chmod +x ~/.dotfiles/configs/foot/open-bluetui.sh
-    - command: chmod +x ~/.dotfiles/configs/foot/open-impala-wifi.sh
+      - command: git submodule update --init --recursive
+        description: Installing dotbot
+        stdout: true
+      - command: systemctl --user daemon-reload

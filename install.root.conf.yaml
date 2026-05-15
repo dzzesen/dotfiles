@@ -1,23 +1,19 @@
 - defaults:
-    link:
-      relink: true
-      create: true
+      link:
+          relink: true
+          create: true
 
 - clean:
-    /etc/keyd:
-    /etc/ly/config.ini:
-    /etc/pacman.conf:
-    /bin/open-lazygit:
-    /bin/open-git-history:
-    /bin/open-git-diff:
+      /etc/keyd:
+      /etc/pacman.conf:
 
 - link:
-    /etc/keyd/default.conf:
-      path: configs/keyd/default.conf
-    /etc/pacman.conf:
-      path: configs/paru/pacman.conf
-      force: true
+      /etc/keyd/default.conf:
+          path: configs/keyd/default.conf
+      /etc/pacman.conf:
+          path: configs/paru/pacman.conf
+          force: true
 
 - shell:
-    - command: sudo systemctl enable keyd
-    - command: sudo keyd reload
+      - command: sudo systemctl enable --now keyd
+      - command: sudo keyd reload
